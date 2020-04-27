@@ -44,13 +44,15 @@ Hugin также поддерживает использование масок,
 ### Простой интерфейс пользователя
 
 * [Главное окно](Hugin_Main_window.md)
-* [Вкладка «Ассистент»](Hugin_Assistant_tab.md)
-* [Вкладка «Предпросмотр»](Hugin_Preview_tab.md)
-* [Вкладка «Размещение»](Hugin_Main_window.md#размещение)   <!-- TODO: Проконтролировать якорь -->
-* [Вкладка «Проекция»](Hugin_Projection_tab.md)
-* [Вкладка «Сдвиг/Смещение»](Hugin_move_drag_tab.md)
-* [Вкладка «Обрезка»](Hugin_Crop_tab.md)
+  * [Вкладка «Ассистент»](Hugin_Assistant_tab.md)
+  * [Вкладка «Предпросмотр»](Hugin_Preview_tab.md)
+  * [Вкладка «Размещение»](Hugin_Main_window.md#размещение)   <!-- TODO: Проконтролировать якорь -->
+  * [Вкладка «Проекция»](Hugin_Projection_tab.md)
+  * [Вкладка «Сдвиг/Смещение»](Hugin_move_drag_tab.md)
+  * [Вкладка «Обрезка»](Hugin_Crop_tab.md)
 
+### Продвинутый интерфейс пользователя
 
+* [Окно редактора панорамы](Hugin_Panorama_Editor_window.md)
 
 
