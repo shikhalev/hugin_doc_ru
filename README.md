@@ -11,7 +11,7 @@
 -->
 
 <p align="center">
- <a href="https://wiki.panotools.org/Hugin">оригинал<sup>🗗</sup></a> | <b>[Hugin](https://github.com/shikhalev/hugin_doc_ru/wiki/Hugin)</b> | лицензия (перевода) [GNU FDL 1.3](LICENSE)</p>
+ <a href="https://wiki.panotools.org/Hugin">оригинал<sup>🗗</sup></a> | <a href="https://github.com/shikhalev/hugin_doc_ru/wiki/Hugin"><b>Hugin</b></a> | лицензия (перевода) <a href="https://github.com/shikhalev/hugin_doc_ru/blob/master/LICENSE">GNU FDL 1.3</a></p>
 
 <p align="center">
 <img src="https://github.com/shikhalev/hugin_doc_ru/wiki/img/hugin-logo.png" />
