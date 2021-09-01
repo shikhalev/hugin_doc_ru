@@ -30,5 +30,6 @@
 
 Перевод ведется на [Wiki-страницах репозитория](https://github.com/shikhalev/hugin_doc_ru/wiki/), главная страница — собственно «[**Hugin**](https://github.com/shikhalev/hugin_doc_ru/wiki/Hugin)».
 
+**upd:** Начат перенос на поддомен <https://hugin.shikhalev.org>.
 
 
