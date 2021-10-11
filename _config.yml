@@ -18,13 +18,16 @@ lang: ru
 title: Перевод документации Hugin
 author: Иван Шихалев
 email: hugin-doc-ru@shikhalev.org
-description: >- # this means to ignore newlines until "baseurl:"
-  Проект перевода документации по редактору панорам Hugin на русский язык.
+description: >-
+  Проект перевода документации по редактору панорам Hugin на русский язык
 baseurl: ""
 url: "https://hugin.shikhalev.org/"
 
 show_excerpts: true
 rss: rss
+
+header_pages:
+  - about.md
 
 # Build settings
 markdown: kramdown
