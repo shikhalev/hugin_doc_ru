@@ -2,7 +2,7 @@
  <a href="https://wiki.panotools.org/Hugin">оригинал<sup>🗗</sup></a> | <a href="https://hugin.shikhalev.org/"><b>Hugin</b></a> | лицензия (перевода) <a href="LICENSE">GNU FDL 1.3</a></p>
 
 <p align="center">
-<img src="img/hugin-logo.png">
+<img src="tr/img/hugin-logo.png">
 </p>
 
 > **Hugin** (*Хугин* — один из воронов Одина в скандинавской мифологии) —
