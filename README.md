@@ -1,6 +1,3 @@
----
-layout: default
----
 <p align="center">
  <a href="https://wiki.panotools.org/Hugin">оригинал<sup>🗗</sup></a> | <a href="https://hugin.shikhalev.org/"><b>Hugin</b></a> | лицензия (перевода) <a href="LICENSE">GNU FDL 1.3</a></p>
 
