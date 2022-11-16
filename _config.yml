@@ -27,6 +27,7 @@ show_excerpts: true
 rss: rss
 
 header_pages:
+  - hugin.md
   - about.md
 
 # Build settings
