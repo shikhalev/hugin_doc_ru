@@ -1,1 +1,0 @@
-<p align="center">[[оригинал|https://wiki.panotools.org/Hugin]] | <b>[[Hugin]]</b> | [[README|Home]] | лицензия (перевода) [[GNU FDL 1.3|LICENSE]]</p>
