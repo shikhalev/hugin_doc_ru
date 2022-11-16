@@ -6,9 +6,9 @@ origin: https://wiki.panotools.org/Hugin_Projection_tab
 Эта вкладка предназначена для настройки [проекции][projections] панорамы; некоторые проекции имеют настраиваемые параметры,
 которые будут отображаться при выборе.
 
-![Вкладка «Проекция»](/img/projection-tab.png)
+![Вкладка «Проекция»](/tr/img/projection-tab.png)
 
-## ![Уместить](/img/fit.png) Уместить
+## ![Уместить](/tr/img/fit.png) Уместить
 
 Эта кнопка не меняет никаких параметров входного изображения; она просто перенастраивает выходное [поле зрения][field_of_view] так,
 чтобы все входные изображения были видны. Если все изображения смещены от центра, тогда будет много черного пространства.
@@ -31,6 +31,6 @@ origin: https://wiki.panotools.org/Hugin_Projection_tab
 и «золотое сечение».
 
 
-[projections]: {% link projections/projections.md %}
-[field_of_view]: {% link glossary/field_of_view.md %}
-[equirectangular]: {% link projections/equirectangular.md %}
+[projections]: {% link tr/projections/projections.md %}
+[field_of_view]: {% link tr/glossary/field_of_view.md %}
+[equirectangular]: {% link tr/projections/equirectangular.md %}

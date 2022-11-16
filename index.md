@@ -23,8 +23,8 @@ list_title: Новости
 
 [Требуемые (несделанные) страницы][wanted].
 
-[logo]: /img/hugin-logo.png
+[logo]: /tr/img/hugin-logo.png
 [wiki]: https://ru.wikipedia.org/wiki/Hugin
-[hugin]: {% link hugin.md %}
+[hugin]: {% link tr/hugin.md %}
 [github]: https://github.com/shikhalev/hugin_doc_ru
-[wanted]: {% link wanted.md %}
+[wanted]: {% link tr/wanted.md %}

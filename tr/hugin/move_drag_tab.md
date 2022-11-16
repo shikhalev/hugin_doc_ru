@@ -3,7 +3,7 @@ layout: translation
 title: Вкладка «Сдвиг/Смещение»
 origin: https://wiki.panotools.org/Hugin_move_drag_tab
 ---
-![Вкладка «Сдвиг/Смещение»](/img/move-drag-tab.png)
+![Вкладка «Сдвиг/Смещение»](/tr/img/move-drag-tab.png)
 
 С помощью этого инструмента вы можете изменять панораму в интерактивном режиме. Попробуйте следующее:
 
@@ -36,7 +36,7 @@ origin: https://wiki.panotools.org/Hugin_move_drag_tab
   (т.е. камера перемещается в измерениях X и Y).
 * **Мозаика, настраиваемая:** то же самое, но с возможностью выбора отдельных кадров.
 
-## ![Центрирование](/img/md-center.png) По центру
+## ![Центрирование](/tr/img/md-center.png) По центру
 
 Эта кнопка горизонтально выравнивает выходные данные, изменяя [отклонение][yaw] собранных изображений, чтобы они соответствовали
 центру выходного кадра. Это полезно, если слева или справа от выходных данных много черного пространства. Она также выполняет
@@ -45,12 +45,12 @@ origin: https://wiki.panotools.org/Hugin_move_drag_tab
 Обратите внимание, что центрирование панорамы в проекциях «[Прямолинейная][rectilinear]» или «[Рыбий глаз][fisheye]» изменит перспективу,
 что может быть нежелательным.
 
-## ![Уместить](/img/fit.png) Уместить
+## ![Уместить](/tr/img/fit.png) Уместить
 
 Эта кнопка не меняет никаких параметров входного изображения; она просто перенастраивает отображаемое [поле зрения][field_of_view] так,
 чтобы все входные изображения были видны. Если все изображения смещены от центра, будет много черного пространства.
 
-## ![Выпрямить](/img/straighten.png) Выпрямить
+## ![Выпрямить](/tr/img/straighten.png) Выпрямить
 
 Выпрямление панорамы оптимизирует [крен][roll] и [тангаж][pitch] входных изображений без изменения их относительного положения,
 выравнивая панораму в процессе. Это обычно дает хорошие результаты; если вам нужно более точное позиционирование, попробуйте
@@ -58,13 +58,13 @@ origin: https://wiki.panotools.org/Hugin_move_drag_tab
 и повторить оптимизацию.
 
 
-[control_points]: {% link glossary/control_points.md %}
-[stitching_a_photo_mosaic]: {% link tutorial/stitching_a_photo_mosaic.md %}
-[yaw]: {% link glossary/yaw.md %}
-[rectilinear]: {% link projections/rectilinear.md %}
-[fisheye]: {% link projections/fisheye.md %}
-[field_of_view]: {% link glossary/field_of_view.md %}
-[roll]: {% link glossary/roll.md %}
-[pitch]: {% link glossary/pitch.md %}
-[vertical_control_points]: {% link glossary/vertical_control_points.md %}
-[control_points_tab]: {% link hugin/control_points_tab.md %}
+[control_points]: {% link tr/glossary/control_points.md %}
+[stitching_a_photo_mosaic]: {% link tr/tutorial/stitching_a_photo_mosaic.md %}
+[yaw]: {% link tr/glossary/yaw.md %}
+[rectilinear]: {% link tr/projections/rectilinear.md %}
+[fisheye]: {% link tr/projections/fisheye.md %}
+[field_of_view]: {% link tr/glossary/field_of_view.md %}
+[roll]: {% link tr/glossary/roll.md %}
+[pitch]: {% link tr/glossary/pitch.md %}
+[vertical_control_points]: {% link tr/glossary/vertical_control_points.md %}
+[control_points_tab]: {% link tr/hugin/control_points_tab.md %}

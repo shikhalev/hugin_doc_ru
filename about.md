@@ -32,7 +32,7 @@ permalink: /about/
 
 [^me]: Иван Шихалев, см. <https://shikhalev.org> и <https://github.com/shikhalev>.
 
-[logo]: /img/hugin-logo.png
+[logo]: /tr/img/hugin-logo.png
 [wiki]: https://ru.wikipedia.org/wiki/Hugin
 [repo]: https://github.com/shikhalev/hugin_doc_ru
 [issues]: https://github.com/shikhalev/hugin_doc_ru/issues

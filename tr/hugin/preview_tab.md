@@ -3,9 +3,9 @@ layout: translation
 title: Вкладка «Предпросмотр»
 origin: https://wiki.panotools.org/Hugin_Preview_tab
 ---
-![Скриншот: вкладка «Предпросмотр»](/img/preview-tab.png)
+![Скриншот: вкладка «Предпросмотр»](/tr/img/preview-tab.png)
 
-## ![Идентификация](/img/identify.png) Идентификация
+## ![Идентификация](/tr/img/identify.png) Идентификация
 
 С помощью этого инструмента вы можете определить, где находятся ваши изображения и сопоставить их с их номером.
 Вы также можете редактировать контрольные точки.
@@ -75,14 +75,14 @@ Hugin может выровнять баланс белого ([w:Цветово
 света в сцене.
 
 
-[control_points_tab]: {% link hugin/control_points_tab.md %}
-[panorama_editor]: {% link hugin/panorama_editor_window.md %}
-[control_points]: {% link glossary/control_points.md %}
-[horizontal_control_points]: {% link glossary/horizontal_control_points.md %}
-[vertical_control_points]: {% link glossary/vertical_control_points.md %}
-[straight_line_control_points]: {% link glossary/straight_line_control_points.md %}
-[hugin]: {% link hugin.md %}
-[camera_response_curve]: {% link glossary/camera_response_curve.md %}
-[exposure_tab]: {% link hugin/exposure_tab.md %}
-[assistant_tab]: {% link hugin/assistant_tab.md %}
-[photos_tab]: {% link hugin/photos_tab.md %}
+[control_points_tab]: {% link tr/hugin/control_points_tab.md %}
+[panorama_editor]: {% link tr/hugin/panorama_editor_window.md %}
+[control_points]: {% link tr/glossary/control_points.md %}
+[horizontal_control_points]: {% link tr/glossary/horizontal_control_points.md %}
+[vertical_control_points]: {% link tr/glossary/vertical_control_points.md %}
+[straight_line_control_points]: {% link tr/glossary/straight_line_control_points.md %}
+[hugin]: {% link tr/hugin.md %}
+[camera_response_curve]: {% link tr/glossary/camera_response_curve.md %}
+[exposure_tab]: {% link tr/hugin/exposure_tab.md %}
+[assistant_tab]: {% link tr/hugin/assistant_tab.md %}
+[photos_tab]: {% link tr/hugin/photos_tab.md %}
