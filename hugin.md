@@ -78,7 +78,7 @@ Hugin также использует отдельный (фоновый) сши
   * [Вкладка «Фотоснимки»][photos_tab]
   * [Вкладка «Маски»][masks_tab]
   * [Вкладка «Контрольные точки»][control_points_tab]
-  * [Вкладка «Оптимизация»][optimizer_tab] (доступна только если выбраны ручные параметры геометрической оптимизации на [вкладке «Фотоснимки»][photos_tab])
+  * [Вкладка «Оптимизация»][optimiser_tab] (доступна только если выбраны ручные параметры геометрической оптимизации на [вкладке «Фотоснимки»][photos_tab])
   * [Вкладка «Экспозиция»][exposure_tab] (доступна только если выбраны ручные параметры фотометрической оптимизации на [вкладке «Фотоснимки»][photos_tab])
   * [Вкладка «Сшивка»][stitcher_tab]
 
@@ -220,7 +220,7 @@ Hugin — программа с открытым исходным кодом и,
 [photos_tab]: {% link hugin/photos_tab.md %}
 [masks_tab]: {% link hugin/masks_tab.md %}
 [control_points_tab]: {% link hugin/control_points_tab.md %}
-[optimizer_tab]: {% link hugin/optimizer_tab.md %}
+[optimiser_tab]: {% link hugin/optimiser_tab.md %}
 [exposure_tab]: {% link hugin/exposure_tab.md %}
 [stitcher_tab]: {% link hugin/stitcher_tab.md %}
 [nona]: {% link tools/nona.md %}
