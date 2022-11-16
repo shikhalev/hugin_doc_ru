@@ -21,7 +21,10 @@ list_title: Новости
 
 [Принять участие (проект на GitHub) »][github]
 
+[Требуемые (несделанные) страницы][wanted].
+
 [logo]: /img/hugin-logo.png
 [wiki]: https://ru.wikipedia.org/wiki/Hugin
 [hugin]: {% link hugin.md %}
 [github]: https://github.com/shikhalev/hugin_doc_ru
+[wanted]: {% link wanted.md %}
