@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: nova/default
 title: О проекте
 permalink: /about/
 ---

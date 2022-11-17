@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: nova/default
 list_title: Новости
 ---
 <p align="center">
