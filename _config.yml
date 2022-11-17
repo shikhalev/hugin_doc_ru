@@ -43,11 +43,18 @@ plugins:
 
 remote_theme: shikhalev/jekyll-theme
 
+google:
+  search: b2790c4aaf6b24d8c
+
 defaults:
   - scope:
       path: "*"
     values:
       hide_last_comments: true
+
+show_donate: false
+show_contacts: false
+show_feeds: false
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
