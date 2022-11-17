@@ -2,6 +2,7 @@
 layout: translation
 title: Hugin
 origin: https://wiki.panotools.org/Hugin
+date: 2022-11-17
 ---
 
 **Hugin** — это открытая программа для сшивки панорам и графический интерфейс (GUI) для [Panorama tools][panotools].
