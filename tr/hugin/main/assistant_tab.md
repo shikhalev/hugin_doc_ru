@@ -80,15 +80,15 @@ origin: https://wiki.panotools.org/Hugin_Assistant_tab
 Холст предварительного просмотра отображает представление окончательно сшитой выходной панорамы. Используйте полосы прокрутки,
 чтобы изменить горизонтальное и вертикальное поле зрения.
 
-[hugin]: {% link tr/hugin.md %}
+[hugin]: {% link tr/hugin/index.md %}
 [field_of_view]: {% link tr/glossary/field_of_view.md %}
 [focal_length]: {% link tr/glossary/focal_length.md %}
 [crop_factor]: {% link tr/glossary/crop_factor.md %}
-[lens_type]: {% link tr/hugin/photos_tab.md %}#lens_type
+[lens_type]: {% link tr/hugin/panoed/photos_tab.md %}#lens_type
 [control_point_detectors]: {% link tr/hugin/preferences.md %}#control_point_detectors
 [preferences_tab]: {% link tr/hugin/preferences.md %}#assistant
-[preview_tab]: {% link tr/hugin/preview_tab.md %}
-[layout_tab]: {% link tr/hugin/main_window.md %}#layout
-[projection_tab]: {% link tr/hugin/projection_tab.md %}
-[move_drag_tab]: {% link tr/hugin/move_drag_tab.md %}
-[crop_tab]: {% link tr/hugin/crop_tab.md %}
+[preview_tab]: {% link tr/hugin/main/preview_tab.md %}
+[layout_tab]: {% link tr/hugin/main/index.md %}#layout
+[projection_tab]: {% link tr/hugin/main/projection_tab.md %}
+[move_drag_tab]: {% link tr/hugin/main/move_drag_tab.md %}
+[crop_tab]: {% link tr/hugin/main/crop_tab.md %}

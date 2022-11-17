@@ -67,4 +67,4 @@ origin: https://wiki.panotools.org/Hugin_move_drag_tab
 [roll]: {% link tr/glossary/roll.md %}
 [pitch]: {% link tr/glossary/pitch.md %}
 [vertical_control_points]: {% link tr/glossary/vertical_control_points.md %}
-[control_points_tab]: {% link tr/hugin/control_points_tab.md %}
+[control_points_tab]: {% link tr/hugin/panoed/control_points_tab.md %}

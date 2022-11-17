@@ -1,10 +1,8 @@
 ---
-layout: nova/default
+layout: translation
 list_title: Новости
 ---
-<p align="center">
-![Hugin Logo][logo]
-</p>
+{% include image.liquid place="right" width=320 src="/assets/img/hugin-splash.svg" link=false class="logo" %}
 
 > **Hugin** (*Хугин* — один из воронов Одина в скандинавской мифологии) —
 > свободная кроссплатформенная программа, базирующаяся на идеях
@@ -27,7 +25,7 @@ list_title: Новости
 
 [logo]: /tr/img/hugin-logo.png
 [wiki]: https://ru.wikipedia.org/wiki/Hugin
-[hugin]: {% link tr/hugin.md %}
+[hugin]: {% link tr/hugin/index.md %}
 [github]: https://github.com/shikhalev/hugin_doc_ru
 [wanted]: {% link tr/wanted.md %}
 

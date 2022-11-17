@@ -1,4 +1,4 @@
 ---
-layout: translation
+layout: nova/page
 title: PG
 ---

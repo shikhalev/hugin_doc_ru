@@ -116,20 +116,20 @@ Hugin состоит из вкладки «Ассистент» и нескол�
 * «**О программе**» показывает соответствующее окно.
 
 
-[assistant_tab]: {% link tr/hugin/assistant_tab.md %}
-[preview_tab]: {% link tr/hugin/preview_tab.md %}
-[control_points_tab]: {% link tr/hugin/control_points_tab.md %}
-[projection_tab]: {% link tr/hugin/projection_tab.md %}
+[assistant_tab]: {% link tr/hugin/main/assistant_tab.md %}
+[preview_tab]: {% link tr/hugin/main/preview_tab.md %}
+[control_points_tab]: {% link tr/hugin/panoed/control_points_tab.md %}
+[projection_tab]: {% link tr/hugin/main/projection_tab.md %}
 [projections]: {% link tr/projections/projections.md %}
-[move_drag_tab]: {% link tr/hugin/move_drag_tab.md %}
-[crop_tab]: {% link tr/hugin/crop_tab.md %}
-[hugin]: {% link tr/hugin.md %}
+[move_drag_tab]: {% link tr/hugin/main/move_drag_tab.md %}
+[crop_tab]: {% link tr/hugin/main/crop_tab.md %}
+[hugin]: {% link tr/hugin/index.md %}
 [ptgui]: {% link tr/panotools/ptgui.md %}
 [ptassembler]: {% link tr/panotools/ptassembler.md %}
 [autopano]: {% link tr/tools/autopano.md %}
 [autopano-sift]: {% link tr/tools/autopano-sift.md %}
 [batch_processor]: {% link tr/hugin/batch_processor.md %}
 [preferences]: {% link tr/hugin/preferences.md %}
-[panorama_editor_window]: {% link tr/hugin/panorama_editor_window.md %}
+[panorama_editor_window]: {% link tr/hugin/panoed/index.md %}
 [fast_preview_window]: {% link tr/hugin/fast_preview_window.md %}
 [faq]: {% link tr/FAQ.md %}

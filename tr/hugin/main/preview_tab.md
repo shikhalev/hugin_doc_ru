@@ -75,14 +75,14 @@ Hugin может выровнять баланс белого ([w:Цветово
 света в сцене.
 
 
-[control_points_tab]: {% link tr/hugin/control_points_tab.md %}
-[panorama_editor]: {% link tr/hugin/panorama_editor_window.md %}
+[control_points_tab]: {% link tr/hugin/panoed/control_points_tab.md %}
+[panorama_editor]: {% link tr/hugin/panoed/index.md %}
 [control_points]: {% link tr/glossary/control_points.md %}
 [horizontal_control_points]: {% link tr/glossary/horizontal_control_points.md %}
 [vertical_control_points]: {% link tr/glossary/vertical_control_points.md %}
 [straight_line_control_points]: {% link tr/glossary/straight_line_control_points.md %}
-[hugin]: {% link tr/hugin.md %}
+[hugin]: {% link tr/hugin/index.md %}
 [camera_response_curve]: {% link tr/glossary/camera_response_curve.md %}
-[exposure_tab]: {% link tr/hugin/exposure_tab.md %}
-[assistant_tab]: {% link tr/hugin/assistant_tab.md %}
-[photos_tab]: {% link tr/hugin/photos_tab.md %}
+[exposure_tab]: {% link tr/hugin/panoed/exposure_tab.md %}
+[assistant_tab]: {% link tr/hugin/main/assistant_tab.md %}
+[photos_tab]: {% link tr/hugin/panoed/photos_tab.md %}

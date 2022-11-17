@@ -45,5 +45,5 @@ origin: https://wiki.panotools.org/Hugin_Photos_tab
 *TODO: ...*
 <!-- TODO: ... -->
 
-[move_drag_tab]: {% link tr/hugin/move_drag_tab.md %}
-[main_window]: {% link tr/hugin/main_window.md %}
+[move_drag_tab]: {% link tr/hugin/main/move_drag_tab.md %}
+[main_window]: {% link tr/hugin/main/index.md %}

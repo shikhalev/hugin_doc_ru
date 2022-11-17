@@ -1,5 +1,5 @@
 ---
-layout: translation
+layout: nova/page
 title: Lalala!
 short: La!
 ---

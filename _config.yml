@@ -29,8 +29,8 @@ rss: rss
 started: 2020-04-27
 
 header_pages:
-  - tr/hugin.md
-  - about.md
+  - tr/hugin/index.md
+  - about/index.md
 
 # Build settings
 markdown: kramdown
@@ -55,7 +55,7 @@ defaults:
       hide_last_comments: true
 
 show_donate: false
-show_contacts: false
+show_contacts: true
 show_feeds: false
 
 date_format: '%Y/%m/%d'

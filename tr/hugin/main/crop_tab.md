@@ -1,6 +1,6 @@
 ---
 layout: translation
-title: Вкладка «Обрезка«
+title: Вкладка «Обрезка»
 origin: https://wiki.panotools.org/Hugin_Crop_tab
 ---
 Используйте вкладку «**Обрезка**», чтобы указать область панорамы, которая должна использоваться в качестве выходного изображения.
@@ -29,5 +29,5 @@ origin: https://wiki.panotools.org/Hugin_Crop_tab
 Примечание 2: Эта вкладка не предназначена для обрезки отдельных изображений, таких как фотографии на циркулярный фишай с черными областями
 по краям, или отсканированные изображения с ненужными полями.
 
-[assistant_tab]: {% link tr/hugin/assistant_tab.md %}
+[assistant_tab]: {% link tr/hugin/main/assistant_tab.md %}
 [crop_factor]: {% link tr/glossary/crop_factor.md %}

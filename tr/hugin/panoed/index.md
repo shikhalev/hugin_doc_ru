@@ -185,16 +185,16 @@ origin: https://wiki.panotools.org/Hugin_Panorama_Editor_window
 
 
 
-[photos_tab]: {% link tr/hugin/photos_tab.md %}
-[masks_tab]: {% link tr/hugin/masks_tab.md %}
-[hugin]: {% link tr/hugin.md %}
+[photos_tab]: {% link tr/hugin/panoed/photos_tab.md %}
+[masks_tab]: {% link tr/hugin/panoed/masks_tab.md %}
+[hugin]: {% link tr/hugin/index.md %}
 [control_points]: {% link tr/glossary/control_points.md %}
-[control_points_tab]: {% link tr/hugin/control_points_tab.md %}
-[control_points_table]: {% link tr/hugin/control_points_table.md %}
-[assistant_tab]: {% link tr/hugin/assistant_tab.md %}
-[optimiser_tab]: {% link tr/hugin/optimiser_tab.md %}
-[exposure_tab]: {% link tr/hugin/exposure_tab.md %}
-[stitcher_tab]: {% link tr/hugin/stitcher_tab.md %}
+[control_points_tab]: {% link tr/hugin/panoed/control_points_tab.md %}
+[control_points_table]: {% link tr/hugin/panoed/control_points_table.md %}
+[assistant_tab]: {% link tr/hugin/main/assistant_tab.md %}
+[optimiser_tab]: {% link tr/hugin/panoed/optimiser_tab.md %}
+[exposure_tab]: {% link tr/hugin/panoed/exposure_tab.md %}
+[stitcher_tab]: {% link tr/hugin/panoed/stitcher_tab.md %}
 [ptgui]: {% link tr/panotools/ptgui.md %}
 [ptassembler]: {% link tr/panotools/ptassembler.md %}
 [autopano]: {% link tr/tools/autopano.md %}
@@ -207,7 +207,7 @@ origin: https://wiki.panotools.org/Hugin_Panorama_Editor_window
 [raw_import]: {% link tr/hugin/raw_import.md %}
 [fast_preview_window]: {% link tr/hugin/fast_preview_window.md %}
 [preview_window]: {% link tr/hugin/preview_window.md %}
-[assistant_preview]: {% link tr/hugin/assistant_tab.md %}#preview
-[main_window]: {% link tr/hugin/main_window.md %}
-[panorama_editor_window]: {% link tr/hugin/panorama_editor_window.md %}
+[assistant_preview]: {% link tr/hugin/main/assistant_tab.md %}#preview
+[main_window]: {% link tr/hugin/main/index.md %}
+[panorama_editor_window]: {% link tr/hugin/panoed/index.md %}
 [faq]: {% link tr/FAQ.md %}
