@@ -1,5 +1,5 @@
 <p align="center">
- <a href="https://wiki.panotools.org/Hugin">оригинал<sup>🗗</sup></a> | <a href="https://hugin.shikhalev.org/"><b>Hugin</b></a> | лицензия (перевода) <a href="LICENSE">GNU FDL 1.3</a></p>
+ <a href="https://wiki.panotools.org/Hugin">оригинальная документация<sup>🗗</sup></a> | <a href="https://hugin.shikhalev.org/"><b>Hugin по-русски</b></a> | лицензия <a href="LICENSE">GNU FDL 1.3</a></p>
 
 <p align="center">
 <img src="tr/img/hugin-logo.png">
