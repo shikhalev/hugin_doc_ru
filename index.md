@@ -23,7 +23,7 @@ list_title: Новости
 
 [Требуемые (несделанные) страницы][wanted].
 
-[1][pg]
+[1][pg] [3][tp]
 
 [logo]: /tr/img/hugin-logo.png
 [wiki]: https://ru.wikipedia.org/wiki/Hugin
@@ -32,3 +32,4 @@ list_title: Новости
 [wanted]: {% link tr/wanted.md %}
 
 [pg]: {% link pg/index.md %}
+[tp]: {% link pg/lalala/the_page.md %}
