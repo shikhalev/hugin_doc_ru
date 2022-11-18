@@ -1,6 +1,6 @@
 ---
-layout: under_construction
 title: Вкладка «Фотоснимки»
+status: undone
 origin: https://wiki.panotools.org/Hugin_Photos_tab
 ---
 Вкладка «Фотоснимки» используется для:

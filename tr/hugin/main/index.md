@@ -1,6 +1,6 @@
 ---
-layout: translation
 title: Главное окно
+status: done
 origin: https://wiki.panotools.org/Hugin_Main_window
 ---
 ## Вкладки

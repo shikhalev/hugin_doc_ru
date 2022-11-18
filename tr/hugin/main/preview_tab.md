@@ -1,6 +1,6 @@
 ---
-layout: translation
 title: Вкладка «Предпросмотр»
+status: done
 origin: https://wiki.panotools.org/Hugin_Preview_tab
 ---
 ![Скриншот: вкладка «Предпросмотр»](/tr/img/preview-tab.png)

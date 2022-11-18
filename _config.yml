@@ -29,7 +29,8 @@ rss: rss
 started: 2020-04-27
 
 header_pages:
-  - tr/hugin/index.md
+  - guide/index.md
+  - tr/index.md
   - about/index.md
 
 # Build settings
@@ -53,6 +54,8 @@ defaults:
       path: "*"
     values:
       hide_last_comments: true
+      status: stub
+      layout: page
 
 show_donate: false
 show_contacts: true

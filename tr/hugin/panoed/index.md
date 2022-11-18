@@ -1,6 +1,6 @@
 ---
-layout: translation
 title: Редактор панорамы
+status: done
 origin: https://wiki.panotools.org/Hugin_Panorama_Editor_window
 ---
 ## Вкладки

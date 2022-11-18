@@ -1,0 +1,42 @@
+{%- assign status = include.status | default: 'stub' -%}
+{%- if status == 'done' -%}
+  {%- assign title = 'Переведено' -%}
+{%- elsif status == 'process' -%}
+  {%- assign title = 'В процессе' -%}
+{%- elsif status == 'stub' -%}
+  {%- assign title = 'Заглушки' -%}
+{%- elsif status == 'undone' -%}
+  {%- assign title = 'Назавершенные' -%}
+{%- elsif status == 'outdate' -%}
+  {%- assign title = 'Устаревшие' -%}
+{%- elsif status == 'bad' -%}
+  {%- assign title = 'Есть проблемы' -%}
+{%- elsif status == 'wrong' -%}
+  {%- assign title = 'Недостоверные' -%}
+{%- endif -%}
+
+{%- assign list = '' | split: '///' -%}
+{%- assign pages = site.pages | where: 'status', status | sort: 'path' -%}
+{%- for p in pages -%}
+  {%- if p.url contains '/tr/' and p != page -%}
+    {%- assign list = list | push: p -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if list.size > 0 -%}
+  <h3 id="h-{{- status -}}">{{ title }}</h3>
+  <table class="wide">
+   <tr><th>Страница</th><th>Оригинал</th></tr>
+   {%- for pp in list -%}
+   <tr>
+    <td>
+      <a href="{{- pp.url | relative_url -}}">{{ pp.title | default: pp.path }}</a>
+    </td>
+    <td>
+      {%- if pp.origin -%}
+        <a href="{{- pp.origin -}}">{{- pp.origin -}}</a>
+      {%- endif -%}
+    </td>
+   </tr>
+   {%- endfor -%}
+  </table>
+{%- endif -%}

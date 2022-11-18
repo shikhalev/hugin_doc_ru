@@ -1,6 +1,6 @@
 ---
-layout: translation
 list_title: Новости
+status: undone
 ---
 {% include image.liquid place="right" width=320 src="/assets/img/hugin-splash.svg" link=false class="logo" %}
 
@@ -21,13 +21,8 @@ list_title: Новости
 
 [Требуемые (несделанные) страницы][wanted].
 
-[1][pg] [3][tp]
-
 [logo]: /tr/img/hugin-logo.png
 [wiki]: https://ru.wikipedia.org/wiki/Hugin
 [hugin]: {% link tr/hugin/index.md %}
 [github]: https://github.com/shikhalev/hugin_doc_ru
-[wanted]: {% link tr/wanted.md %}
-
-[pg]: {% link pg/index.md %}
-[tp]: {% link pg/lalala/the_page.md %}
+[wanted]: {% link tr/index.md %}#h-stub

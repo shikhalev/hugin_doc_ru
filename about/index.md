@@ -2,6 +2,7 @@
 layout: page
 title: О проекте
 description: Что и как здесь происходит...
+status: process
 icon: id-card
 image: /assets/img/hugin-splash.svg
 ---
@@ -44,9 +45,12 @@ image: /assets/img/hugin-splash.svg
 
 TODO: ...
 
+[Статусы страниц][statuses]
+
 ## Q&A
 
 TODO: ...
 
 [hugin]: https://hugin.sourceforge.io/
 [doc]: https://wiki.panotools.org/Main_Page
+[statuses]: {% link about/statuses.md %}

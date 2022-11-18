@@ -1,6 +1,6 @@
 ---
-layout: translation
 title: Hugin
+status: done
 origin: https://wiki.panotools.org/Hugin
 date: 2022-11-17
 ---
