@@ -6,39 +6,55 @@
  <p>Перевод страницы <a href="{{ page.origin }}">{{ page.origin }}</a></p>
  {% endif %}
 </div>
+<hr>
 {% elsif page.status == 'undone' %}
 <div class="sticker" style="max-width: 600px; margin-left: auto; margin-right: auto;">
  <p>Эта страница не завершена, следует заполнить ее контентом и сменить статус.</p>
  {% if page.origin %}
  <p>Нужен перевод страницы <a href="{{ page.origin }}">{{ page.origin }}</a></p>
  {% endif %}
+ <p style="text-align: right;"><a href="https://github.com/shikhalev/hugin_doc_ru/edit/master/{{- page.path -}}"
+  class="img-icon-github" style="font-weight: bold;">Редактировать на GitHub »</a></p>
 </div>
+<hr>
 {% elsif page.status == 'outdate' %}
 <div class="sticker" style="max-width: 600px; margin-left: auto; margin-right: auto;">
  <p>Информация на этой странице относится к неактуальной версии документации или ПО. Следует актуализировать информацию и сменить статус страницы.</p>
  {% if page.origin %}
  <p>Перевод страницы <a href="{{ page.origin }}">{{ page.origin }}</a></p>
  {% endif %}
+ <p style="text-align: right;"><a href="https://github.com/shikhalev/hugin_doc_ru/edit/master/{{- page.path -}}"
+  class="img-icon-github" style="font-weight: bold;">Редактировать на GitHub »</a></p>
 </div>
+<hr>
 {% elsif page.status == 'bad' %}
 <div class="sticker" style="max-width: 600px; margin-left: auto; margin-right: auto;">
  <p>Страница содержит ошибки или упущения, требуется доделка/исправление.</p>
  {% if page.origin %}
  <p>Перевод страницы <a href="{{ page.origin }}">{{ page.origin }}</a></p>
  {% endif %}
+ <p style="text-align: right;"><a href="https://github.com/shikhalev/hugin_doc_ru/edit/master/{{- page.path -}}"
+  class="img-icon-github" style="font-weight: bold;">Редактировать на GitHub »</a></p>
 </div>
+<hr>
 {% elsif page.status == 'wrong' %}
 <div class="sticker" style="max-width: 600px; margin-left: auto; margin-right: auto;">
  <p>Страница содержит существенные ошибки или неверную информацию. До исправления следует относиться к написанному здесь с осторожностью.</p>
  {% if page.origin %}
  <p>Перевод страницы <a href="{{ page.origin }}">{{ page.origin }}</a></p>
  {% endif %}
+ <p style="text-align: right;"><a href="https://github.com/shikhalev/hugin_doc_ru/edit/master/{{- page.path -}}"
+  class="img-icon-github" style="font-weight: bold;">Редактировать на GitHub »</a></p>
 </div>
+<hr>
 {% else %}
 <div class="sticker" style="max-width: 600px; margin-left: auto; margin-right: auto;">
   <p>Это заглушка страницы, следует заполнить ее контентом и сменить статус.</p>
   {% if page.origin %}
   <p>Нужен перевод страницы <a href="{{ page.origin }}">{{ page.origin }}</a></p>
   {% endif %}
+  <p style="text-align: right;"><a href="https://github.com/shikhalev/hugin_doc_ru/edit/master/{{- page.path -}}"
+    class="img-icon-github" style="font-weight: bold;">Редактировать на GitHub »</a></p>
 </div>
+<hr>
 {% endif %}
