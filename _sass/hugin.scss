@@ -1,0 +1,12 @@
+@import "nova/preset";
+
+p.meta {
+  font-family: $compact-font-family;
+  color: $semidark-gray-color;
+
+  a,
+  a:link,
+  a:visited {
+    color: $semidark-gray-color;
+  }
+}

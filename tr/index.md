@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Переводы
+title: Перевод
 status: done
 icon: folder-open-black
 ---
