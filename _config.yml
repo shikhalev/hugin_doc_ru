@@ -48,6 +48,7 @@ remote_theme: shikhalev/jekyll-theme
 
 google:
   search: b2790c4aaf6b24d8c
+  analytics: G-JBR18FLSCW
 
 defaults:
   - scope:
