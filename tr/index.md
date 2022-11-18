@@ -2,7 +2,7 @@
 layout: page
 title: Перевод
 status: done
-icon: folder-open-black
+icon: language
 ---
 
 ## Что читать?
