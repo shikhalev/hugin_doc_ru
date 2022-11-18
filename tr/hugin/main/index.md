@@ -120,7 +120,7 @@ Hugin состоит из вкладки «Ассистент» и нескол�
 [preview_tab]: {% link tr/hugin/main/preview_tab.md %}
 [control_points_tab]: {% link tr/hugin/panoed/control_points_tab.md %}
 [projection_tab]: {% link tr/hugin/main/projection_tab.md %}
-[projections]: {% link tr/projections/projections.md %}
+[projections]: {% link tr/projections/index.md %}
 [move_drag_tab]: {% link tr/hugin/main/move_drag_tab.md %}
 [crop_tab]: {% link tr/hugin/main/crop_tab.md %}
 [hugin]: {% link tr/hugin/index.md %}

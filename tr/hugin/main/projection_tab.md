@@ -31,6 +31,6 @@ origin: https://wiki.panotools.org/Hugin_Projection_tab
 и «золотое сечение».
 
 
-[projections]: {% link tr/projections/projections.md %}
+[projections]: {% link tr/projections/index.md %}
 [field_of_view]: {% link tr/glossary/field_of_view.md %}
 [equirectangular]: {% link tr/projections/equirectangular.md %}

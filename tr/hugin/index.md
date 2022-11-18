@@ -198,7 +198,7 @@ Hugin — программа с открытым исходным кодом и,
 * [Mac OS X][mac].
 
 
-[panotools]: {% link tr/panotools/panorama_tools.md %}
+[panotools]: {% link tr/panotools/index.md %}
 [gui_front_ends]: {% link tr/panotools/gui_frontends.md %}
 [exposure_correction]: {% link tr/glossary/exposure_correction.md %}
 [vignetting]: {% link tr/glossary/vignetting.md %}
@@ -207,7 +207,7 @@ Hugin — программа с открытым исходным кодом и,
 [bracketing]: {% link tr/glossary/bracketing.md %}
 [16bit]: {% link tr/glossary/16bit.md %}
 [fisheye]: {% link tr/projections/fisheye.md %}
-[projections]: {% link tr/projections/projections.md %}
+[projections]: {% link tr/projections/index.md %}
 [hugin_batch_processor]: {% link tr/hugin/batch_processor.md %}
 [faq]: {% link tr/FAQ.md %}
 [main_window]: {% link tr/hugin/main/index.md %}
