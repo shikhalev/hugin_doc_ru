@@ -99,6 +99,22 @@ status: process
 - Использование [SmartBlend][smartblend]
 - Использование внутреннего блендера [PTGui][ptgui] (только последние версии).
 
+### Enblend
+
+[`enblend`][enblend] хорошо обрабатывает 16-битные изображения. Сделайте то, что вы делали и раньше, используя `enblend`,
+и вы получите смешанный 16-битный [TIFF][tiff]. Однако имейте в виду, что в изображение добавляется дополнительный [альфа-канал][alpha_channel].
+
+### SmartBlend
+
+[SmartBlend][smartblend] может работать с 16-битными изображениями, начиная с версии 1.2.2. Он работает точно так же, как `enblend`,
+с тем большим отличием, что он пытается удалить [«призраков»][ghosting].
+
+### Photoshop CS
+
+#### Импорт изображений
+
+
+
 
 TODO: ...
 
@@ -121,3 +137,5 @@ TODO: ...
 [krita]: {% link tr/glossary/krita.md %}
 [gimp]: {% link tr/glossary/gimp.md %}
 [smartblend]: {% link tr/panotools/smartblend.md %}
+[alpha_channel]: {% link tr/glossary/alpha_channel.md %}
+[ghosting]: {% link tr/glossary/ghosting.md %}
