@@ -2,6 +2,7 @@
 layout: page
 title: Перевод
 status: done
+service: true
 icon: language
 ---
 

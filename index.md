@@ -1,6 +1,7 @@
 ---
 list_title: Новости
 status: undone
+service: true
 ---
 {% include image.liquid place="right" width=320 src="/assets/img/hugin-splash.svg" link=false class="logo" %}
 
