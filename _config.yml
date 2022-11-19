@@ -50,6 +50,9 @@ google:
   search: b2790c4aaf6b24d8c
   analytics: G-JBR18FLSCW
 
+yandex:
+  metrika: 91267624
+
 defaults:
   - scope:
       path: "*"
