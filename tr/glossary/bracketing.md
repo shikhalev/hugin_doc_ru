@@ -61,9 +61,9 @@ status: done
 - Операторы локальной тональной компрессии будут вести себя по-разному для перекрывающихся областей, нужно надеяться,
   что смешивание с [`enblend`][enblend], [`smartblend`][smartblend] или [`PTGui`][ptgui] исправит их.
 
-[extend]: {% link tr/tutorial/extended_bracketing_control.md %}
+[extend]: {% link tr/tutorials/extended_bracketing_control.md %}
 [contrast_blending]: {% link tr/glossary/contrast_blending.md %}
-[16wf]: {% link tr/tutorial/full_16_bit_workflow.md %}
+[16wf]: {% link tr/tutorials/full_16_bit_workflow.md %}
 [enblend]: {% link tr/tools/enblend.md %}
 [ghosting]: {% link tr/glossary/ghosting.md %}
 [hdr]: {% link tr/glossary/hdr.md %}

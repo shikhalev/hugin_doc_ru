@@ -1,7 +1,7 @@
 ---
 title: Полностью 16-битный процесс
 origin: https://wiki.panotools.org/Full_16_bit_workflow
-status: process
+status: done
 ---
 Одной из самых больших проблем при создании панорам является [динамический диапазон][dynamic_range]. Чтобы сохранить
 как максимальное количество уровней, так и максимальный динамический диапазон, рекомендуется использовать 16-битный
@@ -153,18 +153,34 @@ S-образную кривую, чтобы увеличить контраст 
 [отображения тонов][tone_mapping], например, один из тех, которые сравниваются при [сжатии HDR][hdr_compression], которые также работают
 с 16-битными изображениями.
 
+## Исправления
 
-<hr>
+### Извлечение видов
 
-{:.bold}
-TODO: ...
+Извлечение видов[^view] для «заклеивания» штатива, каких-то дыр или несоответствий в зените и проч., — может составлять некоторую проблему,
+если вы хотите все делать в чистом 16-битном формате. Самая удобная возможность — [PTEditor][pteditor] — читает 16-битные [TIFF][tiff],
+но записывает только 8-битные.
+
+Единственная возможность выполнить задачу в 16-битной версии — это либо использовать [PTStitcher][ptstitcher] (с одним
+из [GUI-интерфейсов][gui_frontends] или со сценарием), либо совместимые с [Photoshop][photoshop] [плагины Panorama Tools][panotools_plugins]
+в 16-битной версии, предоставленные [Томасом Ниманном][thomas].
+
+Различные возможности описаны в разделе [«Извлечение и вставка прямолинейных видов»][rect_views].
+
+### Вставка «колпачков штатива»
+
+Еще один способ закрыть штатив — вставить какое-нибудь другое изображение, например, логотип или зеркальный шар.
+Это не должно быть проблемой для 16-битной версии, если это делается либо с помощью 16-битных плагинов (как упоминалось выше),
+либо с помощью [PTStitcher][ptstitcher]. Многие возможности описаны в [дополнительных материалах][tripod_caps].
 
 
 [^three]: В оригинале так и написано: «there are three possible ways...» — *прим. перев.*
 
+[^view]: Тут есть проблемы с терминологией, «вид» («view») очень уж общее понятие. Речь идет о кусках изображения, которые с одной стороны являются сплошными кусками, с другой — не соответствуют ни исходным кадрам, ни даже их фрагментам, поскольку могут состоять из разных частей разных исходных кадров, к тому же с учетом слияния разных экспозиций и т.д. — *прим. перев.*
+
 [dynamic_range]: {% link tr/glossary/dynamic_range.md %}
 [raw]: {% link tr/glossary/raw.md %}
-[raw_extraction]: {% link tr/tutorial/raw_dynamic_range_extraction.md %}
+[raw_extraction]: {% link tr/tutorials/raw_dynamic_range_extraction.md %}
 [pano12]: {% link tr/panotools/pano12.md %}
 [gui_fronts]: {% link tr/panotools/gui_frontends.md %}
 [autopano]: {% link tr/tools/autopano.md %}
@@ -183,3 +199,10 @@ TODO: ...
 [sharpening]: {% link tr/glossary/sharpening.md %}
 [tone_mapping]: {% link tr/glossary/tone_mapping.md %}
 [hdr_compression]: {% link tr/glossary/hdr_compression.md %}
+[pteditor]: {% link tr/panotools/pteditor.md %}
+[ptstitcher]: {% link tr/panotools/ptstitcher.md %}
+[gui_frontends]: {% link tr/panotools/gui_frontends.md %}
+[panotools_plugins]: {% link tr/panotools/plugins.md %}
+[thomas]: http://epaperpress.com/ptplugins/index.html
+[rect_views]: {% link tr/tutorials/extract_and_insert_rectilinear_views.md %}
+[tripod_caps]: {% link tr/tutorials/index.md %}#tripod_caps

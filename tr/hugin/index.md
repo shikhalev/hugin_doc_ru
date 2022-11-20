@@ -230,7 +230,7 @@ Hugin — программа с открытым исходным кодом и,
 [autooptimiser]: {% link tr/tools/autooptimiser.md %}
 [ptoptimizer]: {% link tr/panotools/ptoptimizer.md %}
 [align_image_stack]: {% link tr/tools/align_image_stack.md %}
-[align_a_stack_of_photos]: {% link tr/tutorial/align_a_stack_of_photos.md %}
+[align_a_stack_of_photos]: {% link tr/tutorials/align_a_stack_of_photos.md %}
 [tca_correct]: {% link tr/tools/tca_correct.md %}
 [hugin_executor]: {% link tr/tools/hugin_executor.md %}
 [pto_gen]: {% link tr/tools/pto_gen.md %}

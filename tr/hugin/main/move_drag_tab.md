@@ -59,7 +59,7 @@ origin: https://wiki.panotools.org/Hugin_move_drag_tab
 
 
 [control_points]: {% link tr/glossary/control_points.md %}
-[stitching_a_photo_mosaic]: {% link tr/tutorial/stitching_a_photo_mosaic.md %}
+[stitching_a_photo_mosaic]: {% link tr/tutorials/stitching_a_photo_mosaic.md %}
 [yaw]: {% link tr/glossary/yaw.md %}
 [rectilinear]: {% link tr/projections/rectilinear.md %}
 [fisheye]: {% link tr/projections/fisheye.md %}
