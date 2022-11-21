@@ -1,0 +1,6 @@
+{%- assign pages = site.pages | where: 'status', 'done' | sort: 'title' -%}
+{%- for pg in pages -%}
+  {%- if pg.url contains '/tr/glossary/' and pg != page -%}
+    <p><a href="{{- pg.url | relative_url -}}" title="{{- pg.description | default: pg.title -}}">{{- pg.title | default: pg.path -}}</a></p>
+  {%- endif -%}
+{%- endfor -%}
