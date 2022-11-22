@@ -24,7 +24,7 @@ baseurl: ""
 url: "https://hugin.shikhalev.org/"
 
 show_excerpts: true
-rss: rss
+excerpt_separator: <!--more-->
 
 started: 2020-04-27
 
