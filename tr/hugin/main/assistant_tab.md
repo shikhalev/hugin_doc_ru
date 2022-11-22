@@ -2,6 +2,7 @@
 title: Вкладка «Ассистент»
 status: done
 origin: https://wiki.panotools.org/Hugin_Assistant_tab
+last_modified_at: 2022-11-22
 ---
 Ассистент [Hugin][hugin] автоматизирует почти все, что нужно для создания панорамы; просто выполните три шага, описанных ниже.
 

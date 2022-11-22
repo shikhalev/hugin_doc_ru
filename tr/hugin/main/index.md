@@ -1,6 +1,7 @@
 ---
 title: Главное окно
 status: done
+last_modified_at: 2022-11-22
 origin: https://wiki.panotools.org/Hugin_Main_window
 ---
 ## Вкладки

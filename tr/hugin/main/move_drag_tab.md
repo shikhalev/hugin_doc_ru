@@ -1,6 +1,7 @@
 ---
 title: Вкладка «Сдвиг/Смещение»
 status: done
+last_modified_at: 2022-11-22
 origin: https://wiki.panotools.org/Hugin_move_drag_tab
 ---
 ![Вкладка «Сдвиг/Смещение»](/tr/img/move-drag-tab.png)

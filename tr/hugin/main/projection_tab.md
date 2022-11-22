@@ -1,6 +1,7 @@
 ---
 title: Вкладка «Проекция»
 status: done
+last_modified_at: 2022-11-22
 origin: https://wiki.panotools.org/Hugin_Projection_tab
 ---
 Эта вкладка предназначена для настройки [проекции][projections] панорамы; некоторые проекции имеют настраиваемые параметры,
