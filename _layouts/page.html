@@ -6,7 +6,7 @@ meta: false
 stylesheet: local
 ---
 {%- if page.origin -%}
-<p class="meta">Источник: <a href="{{- page.origin -}}">{{- page.origin -}}</a></p>
+<p class="meta">Источник: <a href="{{- page.origin -}}">{{- page.origin | replace: '_', '​_' -}}</a></p>
 {%- endif -%}
 
 <hr style="clear: both;">
