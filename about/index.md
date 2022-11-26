@@ -6,19 +6,20 @@ status: process
 icon: id-card
 image: /assets/img/hugin-splash.svg
 ---
-{% include image.liquid place="right" width=320 src="/assets/img/hugin-splash.svg" class="logo" %}
+{% include image.liquid place="right" width=320 src="/assets/img/hugin-splash.svg"
+                                              shape="/assets/img/hugin-splash-mask.png" link=false class="logo" %}
 
 {:.epigraph}
 > **Hugin** (Хугин — один из воронов Одина в скандинавской мифологии) —
-> свободная кроссплатформенная программа, базирующаяся на идеях
+> сво­бод­ная кроссплатформенная программа, базирующаяся на идеях
 > док­то­ра Хельмута Дерша (Helmut Dersch), заложенных им в набор
-> бесплатных инструментов под названием Panorama Tools, и позволяющая
-> не только автоматизировать процесс сшивания панорамных фотографий,
+> бесплатных ин­с­т­ру­мен­тов под названием Panorama Tools, и позволяющая
+> не толь­ко ав­то­ма­ти­зи­ро­вать процесс сшивания панорамных фотографий,
 > но и вручную гибко устанавливать параметры или изменять их, что
 > положительно влияет на конечный результат по сравнению с мно­ги­ми
 > программами, обеспечивающими полностью автоматизированную сшивку.
 >
-> *[Wikipedia](https://ru.wikipedia.org/wiki/Hugin){:.img-icon-wikipedia}*
+> *[Wikipedia](https://ru.wikipedia.org/wiki/Hugin)*
 
 -----
 
