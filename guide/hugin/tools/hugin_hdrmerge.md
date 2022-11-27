@@ -1,0 +1,3 @@
+---
+title: hugin_hdrmerge
+---

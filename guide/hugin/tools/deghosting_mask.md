@@ -1,0 +1,3 @@
+---
+title: deghosting_mask
+---

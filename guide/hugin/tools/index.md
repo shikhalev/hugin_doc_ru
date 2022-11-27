@@ -1,4 +1,5 @@
 ---
-title: "Hugin: утилиты"
+title: Утилиты Hugin
+short: Утилиты
 status: stub
 ---
