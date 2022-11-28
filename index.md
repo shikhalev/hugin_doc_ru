@@ -1,29 +1,58 @@
 ---
+title: Hugin по-русски
+layout: home
 list_title: Новости
 status: undone
 service: true
+category_id: home
+last_modified_at: 2022-11-29
 ---
-{% include image.liquid place="right" width=320 src="/assets/img/hugin-splash.svg" link=false class="logo" %}
+<hr style="clear: both;">
 
-> **Hugin** (*Хугин* — один из воронов Одина в скандинавской мифологии) —
-> свободная кроссплатформенная программа, базирующаяся на идеях
-> доктора Хельмута Дерша (Helmut Dersch), заложенных им в набор
-> бесплатных инструментов под названием Panorama Tools, и позволяющая
-> не только автоматизировать процесс сшивания панорамных фотографий,
-> но и вручную гибко устанавливать параметры или изменять их, что
-> положительно влияет на конечный результат по сравнению с многими
+{% include image.liquid place="right" width=320 src="/assets/img/hugin-splash.svg"
+                                              shape="/assets/img/hugin-splash-mask.png" link=false class="logo" %}
+
+{:.epigraph}
+> **Hugin** (Хугин — один из воронов Одина в скандинавской мифологии) —
+> сво­бод­ная кроссплатформенная программа, базирующаяся на идеях
+> док­то­ра Хельмута Дерша (Helmut Dersch), заложенных им в набор
+> бесплатных ин­с­т­ру­мен­тов под названием Panorama Tools, и позволяющая
+> не толь­ко ав­то­ма­ти­зи­ро­вать процесс сшивания панорамных фотографий,
+> но и вручную гибко устанавливать параметры или изменять их, что
+> положительно влияет на конечный результат по сравнению с мно­ги­ми
 > программами, обеспечивающими полностью автоматизированную сшивку.
 >
-> *[Wikipedia][wiki]*
+> *[Wikipedia](https://ru.wikipedia.org/wiki/Hugin)*
 
-[Читать перевод »][hugin]{: style="font-weight: bold;"}
+<hr style="clear: both;">
 
-[Принять участие (проект на GitHub) »][github]
+## Разделы сайта
 
-[Требуемые (несделанные) страницы][wanted].
+Если вы еще не зна­ко­мы с **[Hu­gin][hugin]**{:.img-icon-hugin}, то можно начать с [пе­ре­во­да описания этого программного пакета][hugin_ru].
 
-[logo]: /tr/img/hugin-logo.png
-[wiki]: https://ru.wikipedia.org/wiki/Hugin
-[hugin]: {% link tr/hugin/index.md %}
-[github]: https://github.com/shikhalev/hugin_doc_ru
-[wanted]: {% link tr/index.md %}#h-stub
+### [Перевод][trans]{:.fa-icon-language}
+
+Перевод документации по соф­ту для сши­ва­ния панорам **[Hugin][hugin]**{:.img-icon-hugin} и связанных материалов с сай­та **[wiki.panotools.org][panotools]**.
+Там очень много всякого ин­те­рес­но­го — не толь­ко описание собственно Hugin, но и некоторая базовая теория создания панорам, информация о раз­лич­ных графических
+инструментах, форматах файлов и т.д.
+
+Объемы большие, поэтому помощь в пе­ре­во­де крайне при­вет­с­т­ву­ет­ся — в про­ек­те на **Git­Hub**{:.fa-icon-github} — **[shikhalev/hugin_doc_ru][repo]**.
+
+### [Руководство][guide]{:.fa-icon-book-open}
+
+Однако, как это часто бывает в wi­ki-проектах, материал крайне неровный и не очень хорошо структурированный. Поэтому мне захотелось сделать некоторую ком­пи­ля­цию —
+в прин­ци­пе то же самое, только под еди­ной редакцией и несколько выровненное по уров­ню (актуализированное, дополненное другими источниками, или наоборот сокращенное).
+
+### [О проекте][about]{:.fa-icon-id-card}
+
+В этом разделе собраны (будут) пояснения по сай­ту, инструкции на те­му, как поучаствовать в пе­ре­во­де или написании руководства, и т.д, и т.п.
+
+<hr style="clear: both;">
+
+[trans]: {% link tr/index.md %}
+[guide]: {% link guide/index.md %}
+[about]: {% link about/index.md %}
+[hugin]: https://hugin.sourceforge.net/
+[panotools]: https://wiki.panotools.org/
+[repo]: https://github.com/shikhalev/hugin_doc_ru
+[hugin_ru]: {% link tr/hugin/index.md %}

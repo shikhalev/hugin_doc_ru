@@ -4,7 +4,7 @@ title: Руководство
 status: process
 service: true
 ---
-## Содержание (TODO)
+## Содержание (план)
 
 <ul class="caption">
   <li class="fa-icon-li-folder-open">
@@ -105,13 +105,19 @@ service: true
     <a href="{% link guide/ref/index.md %}">Справочная информация</a>
     <ul>
       <li class="fa-icon-li-folder-open">
-        <a href="{% link guide/ref/format/index.md %}">Форматы файлов</a>
+        <a href="{% link guide/ref/format/index.md %}">Форматы данных</a>
         <ul>
           <li class="fa-icon-li-file"><a href="{% link guide/ref/format/tiff.md %}">TIFF</a></li>
           <li class="fa-icon-li-file"><a href="{% link guide/ref/format/jpeg.md %}">JPEG</a></li>
           <li class="fa-icon-li-file"><a href="{% link guide/ref/format/raw.md %}">Raw-форматы</a></li>
           <li class="fa-icon-li-file"><a href="{% link guide/ref/format/dng.md %}">DNG</a></li>
           <li class="fa-icon-li-file"><a href="{% link guide/ref/format/openexr.md %}">OpenEXR</a></li>
+          <li class="fa-icon-li-file">
+            <a href="{% link guide/ref/format/exif.md %}">Метаданные (EXIF)</a>
+            <ul>
+              <li class="fa-icon-li-file"><a href="{% link guide/ref/format/xmp.md %}">XMP</a></li>
+            </ul>
+          </li>
         </ul>
       </li>
       <li class="fa-icon-li-folder-open">
@@ -144,6 +150,14 @@ service: true
       <li class="fa-icon-li-file">
         <a href="{% link guide/ref/glossary.md %}">Глоссарий</a>
       </li>
+    </ul>
+  </li>
+  <li class="fa-icon-li-folder-open">
+    <a href="{% link guide/shoot/index.md %}">О съемке</a>
+    <ul>
+      <li class="fa-icon-li-file"><a href="{% link guide/shoot/heads.md %}">Панорамные головки</a></li>
+      <li class="fa-icon-li-file"><a href="{% link guide/shoot/lens.md %}">Немного об объективах</a></li>
+      <li class="fa-icon-li-file"><a href="{% link guide/shoot/hands.md %}">Съемка с рук</a></li>
     </ul>
   </li>
 </ul>
