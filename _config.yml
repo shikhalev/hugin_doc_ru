@@ -21,7 +21,7 @@ email: hugin-doc-ru@shikhalev.org
 description: >-
   Проект перевода/переложения документации по редактору панорам Hugin на русский язык
 baseurl: ""
-url: "https://hugin.shikhalev.org/"
+url: "https://hugin.shikhalev.org"
 
 show_excerpts: true
 excerpt_separator: <!--more-->
