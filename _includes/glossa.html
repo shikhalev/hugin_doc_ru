@@ -1,0 +1,22 @@
+{%- assign current_group = nil -%}
+{%- assign group_started = false -%}
+{%- assign list = site.glossary | sort: "alpha_key" -%}
+{%- for gloss in list -%}
+  {%- if gloss.alpha_group != current_group -%}
+    {%- if group_started -%}
+      </div>
+    {%- endif -%}
+    <div class="glossary_group">
+    {%- assign group_started = true -%}
+    <h2 id="group-{{- gloss.alpha_group -}}">{{- gloss.alpha_group -}}</h2>
+    {%- assign current_group = gloss.alpha_group -%}
+  {%- endif -%}
+  <h3 id="{{- gloss.link_key -}}">{{- gloss.title -}}</h3>
+  {%- if gloss.status != 'done' -%}
+    <p class="meta">Status: {{ gloss.status }}</p>
+  {%- endif -%}
+  {{- gloss.content | markdownify -}}
+{%- endfor -%}
+{%- if group_started -%}
+  </div>
+{%- endif -%}

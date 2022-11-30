@@ -68,6 +68,11 @@ show_feeds: false
 
 date_format: '%Y/%m/%d'
 
+collections:
+  glossary:
+    sort_by: alpha_key
+    output: false
+
 license:
   content:
     name: GNU FDL 1.3

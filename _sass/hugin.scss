@@ -1,4 +1,6 @@
-@import "nova/preset";
+@import "nova/preset",
+        "fonts/awesome",
+        "nova/icons";
 
 p.meta {
   font-family: $compact-font-family;
@@ -7,6 +9,44 @@ p.meta {
   a,
   a:link,
   a:visited {
+    color: $semidark-gray-color;
+  }
+}
+
+div.glossary_box {
+  columns: 2;
+  column-gap: 20px;
+
+  @media screen and (max-width: 650px) {
+    columns: 1;
+  }
+}
+
+div.glossary_group {
+  break-inside: avoid-column;
+  margin-bottom: 20px;
+
+  h2 {
+    margin-top: 0px;
+  }
+}
+
+.giscus {
+  @media print {
+    display: none;
+  }
+}
+
+.done {
+  @extend .fa-icon-check-square;
+  font-weight: bold;
+}
+
+.stub {
+  @extend .fa-icon-square;
+  color: $semidark-gray-color;
+
+  &:link, &:visited {
     color: $semidark-gray-color;
   }
 }
