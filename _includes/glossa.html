@@ -15,6 +15,10 @@
   {%- if gloss.status != 'done' -%}
     <p class="meta">Status: {{ gloss.status }}</p>
   {%- endif -%}
+  {%- if gloss.see -%}
+    {%- assign gg = site.glossary | where: 'link_key', gloss.see | first -%}
+    <p class="meta">См. <a href="{%- link guide/ref/glossary.md -%}#{{- gloss.see -}}">{{- gg.title -}}</a></p>
+  {%- endif -%}
   {{- gloss.content | markdownify -}}
 {%- endfor -%}
 {%- if group_started -%}
