@@ -3,7 +3,7 @@ title: Быстрый старт
 description: Базовый процесс создания панорамы в Hugin пошагово
 status: done
 software:
-  - "Hugin: v2021.0.0"
+  - "Hugin v2021.0.0"
   - "Linux Mint 21 Vanessa"
 last_modified_at: 2022-11-30
 image: /assets/img/quick_start/01_loaded.png
@@ -154,7 +154,7 @@ image: /assets/img/quick_start/01_loaded.png
 
 Полученные файлы не отличаются высоким контрастом и яркими цветами, но, напомню, они 16-битные, и свобода улучшения у нас довольно большая.
 
-Собственно, вот что мы примерно получаем:
+Собственно, вот что мы примерно получаем[^cnv]:
 
 - Файл без каких либо корректировок, только изменение размера и конвертация в JPEG.
 
@@ -179,6 +179,8 @@ image: /assets/img/quick_start/01_loaded.png
 [^tgt]: Впрочем, никто не за­пре­ща­ет формировать сразу финальную картинку в фор­ма­те JPEG, с за­дан­ны­ми размерами, с окон­ча­тель­ной обрезкой...
         Однако, трудно себе представить ситуацию, когда имеется Hugin (и достаточно мощное железо), но нет никакого фоторедактора для фи­наль­ной
         доводки.
+
+[^cnv]: Есть некоторый нюанс с по­лу­ча­е­мы­ми файлами в фор­ма­те TIFF, описанный в от­дель­ной за­мет­ке — [«Размер холста в TIFF»][canvas].
 
 [peng]: https://shikhalev.org/2016/06/hugin.html
 [bracketing]: {% link guide/ref/glossary.md %}#bracketing
@@ -205,3 +207,4 @@ image: /assets/img/quick_start/01_loaded.png
 [control_points]: {% link guide/ref/glossary.md %}#control_points
 [nadir]: {% link guide/ref/glossary.md %}#nadir
 [zenith]: {% link guide/ref/glossary.md %}#zenith
+[canvas]: {% link guide/notes/tiff_canvas.md %}

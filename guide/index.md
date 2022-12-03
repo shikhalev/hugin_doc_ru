@@ -102,6 +102,12 @@ service: true
     <a class="stub" href="{% link guide/howto/index.md %}">HOWTOs</a>
   </li>
   <li class="fa-icon-li-folder-open">
+    <a class="stub" href="{% link guide/notes/index.md %}">Заметки</a>
+    <ul>
+      <li class="fa-icon-li-file"><a class="done" href="{% link guide/notes/tiff_canvas.md %}">Размер холста в TIFF</a></li>
+    </ul>
+  </li>
+  <li class="fa-icon-li-folder-open">
     <a class="stub" href="{% link guide/ref/index.md %}">Справочная информация</a>
     <ul>
       <li class="fa-icon-li-folder-open">
