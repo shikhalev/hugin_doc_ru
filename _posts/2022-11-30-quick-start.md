@@ -1,6 +1,7 @@
 ---
 title: Статья в руководстве
 status: done
+image: /assets/img/quick_start/01_loaded.png
 ---
 Написал статью по базовому использованию Hugin.
 
