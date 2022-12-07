@@ -4,9 +4,9 @@ status: done
 last_modified_at: 2022-11-22
 origin: https://wiki.panotools.org/Hugin_Preview_tab
 ---
-![Скриншот: вкладка «Предпросмотр»](/tr/img/preview-tab.png)
+![Скриншот: вкладка «Предпросмотр»](/assets/img/tr/preview-tab.png)
 
-## ![Идентификация](/tr/img/identify.png) Идентификация
+## ![Идентификация](/assets/img/tr/identify.png) Идентификация
 
 С помощью этого инструмента вы можете определить, где находятся ваши изображения и сопоставить их с их номером.
 Вы также можете редактировать контрольные точки.
@@ -76,14 +76,14 @@ Hugin может выровнять баланс белого ([w:Цветово
 света в сцене.
 
 
-[control_points_tab]: {% link tr/hugin/panoed/control_points_tab.md %}
-[panorama_editor]: {% link tr/hugin/panoed/index.md %}
-[control_points]: {% link tr/glossary/control_points.md %}
-[horizontal_control_points]: {% link tr/glossary/horizontal_control_points.md %}
-[vertical_control_points]: {% link tr/glossary/vertical_control_points.md %}
-[straight_line_control_points]: {% link tr/glossary/straight_line_control_points.md %}
-[hugin]: {% link tr/hugin/index.md %}
-[camera_response_curve]: {% link tr/glossary/camera_response_curve.md %}
-[exposure_tab]: {% link tr/hugin/panoed/exposure_tab.md %}
-[assistant_tab]: {% link tr/hugin/main/assistant_tab.md %}
-[photos_tab]: {% link tr/hugin/panoed/photos_tab.md %}
+[control_points_tab]: {% link _tr/hugin/panoed/control_points_tab.md %}
+[panorama_editor]: {% link _tr/hugin/panoed/index.md %}
+[control_points]: {% link _tr/glossary/control_points.md %}
+[horizontal_control_points]: {% link _tr/glossary/horizontal_control_points.md %}
+[vertical_control_points]: {% link _tr/glossary/vertical_control_points.md %}
+[straight_line_control_points]: {% link _tr/glossary/straight_line_control_points.md %}
+[hugin]: {% link _tr/hugin/index.md %}
+[camera_response_curve]: {% link _tr/glossary/camera_response_curve.md %}
+[exposure_tab]: {% link _tr/hugin/panoed/exposure_tab.md %}
+[assistant_tab]: {% link _tr/hugin/main/assistant_tab.md %}
+[photos_tab]: {% link _tr/hugin/panoed/photos_tab.md %}

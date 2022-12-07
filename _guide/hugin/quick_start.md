@@ -198,7 +198,7 @@ image: /assets/img/quick_start/01_loaded.png
 [cylinrical]: {% link _guide/ref/projection/cylindrical.md %}
 [equirectangular]: {% link _guide/ref/projection/equirectangular.md %}
 [projection]: {% link _guide/ref/projection/index.md %}
-[fisheye]: {% link tr/projections/fisheye.md %}
+[fisheye]: {% link _tr/projections/fisheye.md %}
 [move]: {% link _guide/hugin/gui/simple.md %}#move_drag
 [crop_tab]: {% link _guide/hugin/gui/simple.md %}#crop
 [gimp]: {% link _guide/tools/other/gimp.md %}

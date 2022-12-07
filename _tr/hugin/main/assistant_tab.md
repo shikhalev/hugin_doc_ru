@@ -8,7 +8,7 @@ last_modified_at: 2022-11-22
 
 Снимок части верхней половины экрана:
 
-![Кнопки «Ассистента»](/tr/img/assistant-steps.png)
+![Кнопки «Ассистента»](/assets/img/tr/assistant-steps.png)
 
 ## 1. Загрузить снимки...
 
@@ -37,7 +37,7 @@ last_modified_at: 2022-11-22
 Наконец, используйте «**Создать панораму...**», чтобы сшить панораму в файл изображения со стандартными настройками качества. После того,
 как вы нажмете кнопку «Создать панораму», появится новое диалоговое окно сшивки. Это даст вам легкий для понимания обзор вариантов.
 
-![Диалог создания панорамы](/tr/img/create-dialog.png)
+![Диалог создания панорамы](/assets/img/tr/create-dialog.png)
 
 <!-- TODO: тут не хватает перевода -->
 
@@ -55,7 +55,7 @@ last_modified_at: 2022-11-22
 
 ### Обзор
 
-<img align="left" alt="Панель обзора" src="/tr/img/overview-pane.png" style="margin-right: 10px" />
+<img align="left" alt="Панель обзора" src="/assets/img/tr/overview-pane.png" style="margin-right: 10px" />
 <!-- TODO: нормальные стили для обтекания -->
 
 **Обзор** представляет собой интерактивный предварительный просмотр панорамы.
@@ -81,15 +81,15 @@ last_modified_at: 2022-11-22
 Холст предварительного просмотра отображает представление окончательно сшитой выходной панорамы. Используйте полосы прокрутки,
 чтобы изменить горизонтальное и вертикальное поле зрения.
 
-[hugin]: {% link tr/hugin/index.md %}
-[field_of_view]: {% link tr/glossary/field_of_view.md %}
-[focal_length]: {% link tr/glossary/focal_length.md %}
-[crop_factor]: {% link tr/glossary/crop_factor.md %}
-[lens_type]: {% link tr/hugin/panoed/photos_tab.md %}#lens_type
-[control_point_detectors]: {% link tr/hugin/preferences.md %}#control_point_detectors
-[preferences_tab]: {% link tr/hugin/preferences.md %}#assistant
-[preview_tab]: {% link tr/hugin/main/preview_tab.md %}
-[layout_tab]: {% link tr/hugin/main/index.md %}#layout
-[projection_tab]: {% link tr/hugin/main/projection_tab.md %}
-[move_drag_tab]: {% link tr/hugin/main/move_drag_tab.md %}
-[crop_tab]: {% link tr/hugin/main/crop_tab.md %}
+[hugin]: {% link _tr/hugin/index.md %}
+[field_of_view]: {% link _tr/glossary/field_of_view.md %}
+[focal_length]: {% link _tr/glossary/focal_length.md %}
+[crop_factor]: {% link _tr/glossary/crop_factor.md %}
+[lens_type]: {% link _tr/hugin/panoed/photos_tab.md %}#lens_type
+[control_point_detectors]: {% link _tr/hugin/preferences.md %}#control_point_detectors
+[preferences_tab]: {% link _tr/hugin/preferences.md %}#assistant
+[preview_tab]: {% link _tr/hugin/main/preview_tab.md %}
+[layout_tab]: {% link _tr/hugin/main/index.md %}#layout
+[projection_tab]: {% link _tr/hugin/main/projection_tab.md %}
+[move_drag_tab]: {% link _tr/hugin/main/move_drag_tab.md %}
+[crop_tab]: {% link _tr/hugin/main/crop_tab.md %}

@@ -3,6 +3,7 @@ title: Главное окно
 status: done
 last_modified_at: 2022-11-22
 origin: https://wiki.panotools.org/Hugin_Main_window
+permalink: /tr/hugin/main/
 ---
 ## Вкладки
 
@@ -10,7 +11,7 @@ origin: https://wiki.panotools.org/Hugin_Main_window
 
 Hugin — это программа, основанная на «вкладках». Ниже вы видите фрагмент экрана Hugin, показывающий вкладки.
 
-![Вкладки главного окна](/tr/img/main-tabs.png)
+![Вкладки главного окна](/assets/img/tr/main-tabs.png)
 
 Этот процесс сборки нескольких фотографий и создания «бесшовной» панорамы является полностью автоматическим, если вы используете
 [вкладку «Ассистент»][assistant_tab], которая является вкладкой по умолчанию, но **Hugin** также позволяет полностью вручную управлять
@@ -47,7 +48,7 @@ Hugin состоит из вкладки «Ассистент» и нескол�
 
 **Вкладка «Размещение»** показывает весь проект в виде диаграммы с цветными линиями, соединяющими все фотографии.
 
-![Вкладка «Размещение»](/tr/img/layout.png)
+![Вкладка «Размещение»](/assets/img/tr/layout.png)
 <!-- TODO: сделать нормальные открываемые картинки -->
 
 Зеленые линии, соединяющие изображения, показывают, что контрольные точки имеют небольшую ошибку; красные линии показывают большую ошибку.
@@ -118,20 +119,20 @@ Hugin состоит из вкладки «Ассистент» и нескол�
 * «**О программе**» показывает соответствующее окно.
 
 
-[assistant_tab]: {% link tr/hugin/main/assistant_tab.md %}
-[preview_tab]: {% link tr/hugin/main/preview_tab.md %}
-[control_points_tab]: {% link tr/hugin/panoed/control_points_tab.md %}
-[projection_tab]: {% link tr/hugin/main/projection_tab.md %}
-[projections]: {% link tr/projections/index.md %}
-[move_drag_tab]: {% link tr/hugin/main/move_drag_tab.md %}
-[crop_tab]: {% link tr/hugin/main/crop_tab.md %}
-[hugin]: {% link tr/hugin/index.md %}
-[ptgui]: {% link tr/panotools/ptgui.md %}
-[ptassembler]: {% link tr/panotools/ptassembler.md %}
-[autopano]: {% link tr/tools/autopano.md %}
-[autopano-sift]: {% link tr/tools/autopano-sift.md %}
-[batch_processor]: {% link tr/hugin/batch_processor.md %}
-[preferences]: {% link tr/hugin/preferences.md %}
-[panorama_editor_window]: {% link tr/hugin/panoed/index.md %}
-[fast_preview_window]: {% link tr/hugin/fast_preview_window.md %}
-[faq]: {% link tr/FAQ.md %}
+[assistant_tab]: {% link _tr/hugin/main/assistant_tab.md %}
+[preview_tab]: {% link _tr/hugin/main/preview_tab.md %}
+[control_points_tab]: {% link _tr/hugin/panoed/control_points_tab.md %}
+[projection_tab]: {% link _tr/hugin/main/projection_tab.md %}
+[projections]: {% link _tr/projections/index.md %}
+[move_drag_tab]: {% link _tr/hugin/main/move_drag_tab.md %}
+[crop_tab]: {% link _tr/hugin/main/crop_tab.md %}
+[hugin]: {% link _tr/hugin/index.md %}
+[ptgui]: {% link _tr/panotools/ptgui.md %}
+[ptassembler]: {% link _tr/panotools/ptassembler.md %}
+[autopano]: {% link _tr/tools/autopano.md %}
+[autopano-sift]: {% link _tr/tools/autopano-sift.md %}
+[batch_processor]: {% link _tr/hugin/batch_processor.md %}
+[preferences]: {% link _tr/hugin/preferences.md %}
+[panorama_editor_window]: {% link _tr/hugin/panoed/index.md %}
+[fast_preview_window]: {% link _tr/hugin/fast_preview_window.md %}
+[faq]: {% link _tr/FAQ.md %}

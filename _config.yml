@@ -74,6 +74,8 @@ collections:
     output: false
   guide:
     output: true
+  tr:
+    output: true
 #    permalink: /:collection/:path:output_ext
 
 license:

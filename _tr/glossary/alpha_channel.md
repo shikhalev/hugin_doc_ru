@@ -17,7 +17,7 @@ last_modified_at: 2022-11-22
 
 Дополнительную информацию см. в [википедии][wiki].
 
-[enblend]: {% link tr/tools/enblend.md %}
-[smartblend]: {% link tr/panotools/smartblend.md %}
-[howto]: {% link tr/tutorials/how_to_use_enblend_for_patching_zenith_and_nadir_images.md %}
+[enblend]: {% link _tr/tools/enblend.md %}
+[smartblend]: {% link _tr/panotools/smartblend.md %}
+[howto]: {% link _tr/tutorials/how_to_use_enblend_for_patching_zenith_and_nadir_images.md %}
 [wiki]: https://en.wikipedia.org/wiki/Alpha_compositing

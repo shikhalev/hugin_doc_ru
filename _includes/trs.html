@@ -16,9 +16,9 @@
 {%- endif -%}
 
 {%- assign list = '' | split: '///' -%}
-{%- assign pages = site.pages | where: 'status', status | sort: 'path' -%}
+{%- assign pages = site.tr | where: 'status', status | sort: 'path' -%}
 {%- for p in pages -%}
-  {%- if p.url contains '/tr/' and p != page -%}
+  {%- if p != page -%}
     {%- assign list = list | push: p -%}
   {%- endif -%}
 {%- endfor -%}

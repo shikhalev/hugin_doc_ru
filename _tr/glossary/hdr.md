@@ -49,28 +49,28 @@ HDR используется более или менее всегда, чтоб
 и [`enfuse`][enfuse].
 
 
-[dynamic_range]: {% link tr/glossary/dynamic_range.md %}
-[bracketing]: {% link tr/glossary/bracketing.md %}
-[raw]: {% link tr/glossary/raw.md %}
-[photoshop]: {% link tr/glossary/photoshop.md %}
-[tone_mapping]: {% link tr/glossary/tone_mapping.md %}
-[contrast_blending]: {% link tr/glossary/contrast_blending.md %}
+[dynamic_range]: {% link _tr/glossary/dynamic_range.md %}
+[bracketing]: {% link _tr/glossary/bracketing.md %}
+[raw]: {% link _tr/glossary/raw.md %}
+[photoshop]: {% link _tr/glossary/photoshop.md %}
+[tone_mapping]: {% link _tr/glossary/tone_mapping.md %}
+[contrast_blending]: {% link _tr/glossary/contrast_blending.md %}
 [hdr_for_dummy]: http://360vr.com/HDRforDummies/
-[photomatix]: {% link tr/glossary/photomatix.md %}
-[fdrtools]: {% link tr/glossary/fdrtools.md %}
-[pfstools]: {% link tr/glossary/pfstools.md %}
-[hdr_compression]: {% link tr/glossary/hdr_compression.md %}
+[photomatix]: {% link _tr/glossary/photomatix.md %}
+[fdrtools]: {% link _tr/glossary/fdrtools.md %}
+[pfstools]: {% link _tr/glossary/pfstools.md %}
+[hdr_compression]: {% link _tr/glossary/hdr_compression.md %}
 [spherocam_hdr]: http://spheron.com/spheron/public/en/hdri_spherocamhdr/hdri_spherocamhdr.php
 [brightside_hdr]: http://www.brightsidetech.com/
-[rgbe]: {% link tr/glossary/rgbe.md %}
-[tiff]: {% link tr/glossary/tiff.md %}
-[exr]: {% link tr/glossary/openexr.md %}
-[gui_frontends]: {% link tr/panotools/gui_frontends.md %}
-[hugin]: {% link tr/hugin/index.md %}
-[hdr_workflow_with_hugin]: {% link tr/tutorials/hdr_workflow_with_hugin.md %}
-[enblend]: {% link tr/tools/enblend.md %}
+[rgbe]: {% link _tr/glossary/rgbe.md %}
+[tiff]: {% link _tr/glossary/tiff.md %}
+[exr]: {% link _tr/glossary/openexr.md %}
+[gui_frontends]: {% link _tr/panotools/gui_frontends.md %}
+[hugin]: {% link _tr/hugin/index.md %}
+[hdr_workflow_with_hugin]: {% link _tr/tutorials/hdr_workflow_with_hugin.md %}
+[enblend]: {% link _tr/tools/enblend.md %}
 [wiki]: http://www.wikipedia.org/wiki/High_dynamic_range_imaging
 [hdr_faq]: http://www.hdrsoft.com/resources/dri.html
-[hdr_software_overview]: {% link tr/hdr_software_overview.md %}
-[batch_merge_handheld_images]: {% link tr/tutorials/batch_merge_handheld_images.md %}
-[enfuse]: {% link tr/tools/enfuse.md %}
+[hdr_software_overview]: {% link _tr/hdr_software_overview.md %}
+[batch_merge_handheld_images]: {% link _tr/tutorials/batch_merge_handheld_images.md %}
+[enfuse]: {% link _tr/tools/enfuse.md %}

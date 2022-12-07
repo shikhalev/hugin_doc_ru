@@ -92,19 +92,19 @@ Enblend — это проект с от­кры­тым исходным ко�
 
 [^xblend]: Ссылка не работает.
 
-[ptgui]: {% link tr/panotools/ptgui.md %}
-[hugin]: {% link tr/hugin/index.md %}
-[ptassembler]: {% link tr/panotools/ptassembler.md %}
+[ptgui]: {% link _tr/panotools/ptgui.md %}
+[hugin]: {% link _tr/hugin/index.md %}
+[ptassembler]: {% link _tr/panotools/ptassembler.md %}
 [enblend_front_end]: https://wiki.panotools.org/Historical:Enblend_Front_End
-[parallax]: {% link tr/glossary/parallax.md %}
+[parallax]: {% link _tr/glossary/parallax.md %}
 [project]: https://enblend.sourceforge.net/
-[cropped_tiff]: {% link tr/glossary/cropped_tiff.md %}
+[cropped_tiff]: {% link _tr/glossary/cropped_tiff.md %}
 [enblend_reference_manual]: https://wiki.panotools.org/index.php?title=Enblend_reference_manual&oldid=13483
-[ubuntu]: {% link tr/tutorials/hugin_compiling_ubuntu.md %}
-[fedora]: {% link tr/tutorials/hugin_compiling_fedora.md %}
-[osx]: {% link tr/tutorials/hugin_compiling_osx.md %}
-[windows]: {% link tr/tutorials/hugin_compiling_windows.md %}
-[hole]: {% link tr/tutorials/using_enblend_to_fill_the_Hole_in_the_floor.md %}
-[zenith]: {% link tr/tutorials/how_to_use_enblend_for_patching_zenith_and_nadir_images.md %}
-[error]: {% link tr/tutorials/how_to_remove_blending_error_caused_by_enblend_and_enfuse_at_zenith_and_nadir_automatic.md %}
+[ubuntu]: {% link _tr/tutorials/hugin_compiling_ubuntu.md %}
+[fedora]: {% link _tr/tutorials/hugin_compiling_fedora.md %}
+[osx]: {% link _tr/tutorials/hugin_compiling_osx.md %}
+[windows]: {% link _tr/tutorials/hugin_compiling_windows.md %}
+[hole]: {% link _tr/tutorials/using_enblend_to_fill_the_Hole_in_the_floor.md %}
+[zenith]: {% link _tr/tutorials/how_to_use_enblend_for_patching_zenith_and_nadir_images.md %}
+[error]: {% link _tr/tutorials/how_to_remove_blending_error_caused_by_enblend_and_enfuse_at_zenith_and_nadir_automatic.md %}
 [xblend]: http://www.kekus.com/xblend

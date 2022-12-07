@@ -3,12 +3,13 @@ title: Редактор панорамы
 status: done
 last_modified_at: 2022-11-22
 origin: https://wiki.panotools.org/Hugin_Panorama_Editor_window
+permalink: /tr/hugin/panoed/
 ---
 ## Вкладки
 
 Окно редактора панорамы также основано на вкладках. Ниже вы видите частичный скриншот, на котором показаны вкладки с панелью кнопок над ними.
 
-![Вкладки редактора панорамы](/tr/img/panorama-editor-tabs.png)
+![Вкладки редактора панорамы](/assets/img/tr/panorama-editor-tabs.png)
 
 ### Фотоснимки
 
@@ -135,80 +136,80 @@ origin: https://wiki.panotools.org/Hugin_Panorama_Editor_window
 
 Над рядом вкладок находится ряд кнопок для основных команд:
 
-### ![](/tr/img/btn-new.png) Новый проект
+### ![](/assets/img/tr/btn-new.png) Новый проект
 
 Отменяет текущий проект и начинает новый пустой проект.
 
-### ![](/tr/img/btn-open.png) Открыть проект
+### ![](/assets/img/tr/btn-open.png) Открыть проект
 
 Открывает существующий файл проекта [Hugin][hugin], [PTGUI][ptgui], [PTAssembler][ptassembler], [autopano][autopano] или [autopano-sift][autopano-sift].
 
-### ![](/tr/img/btn-save.png) Сохранить проект
+### ![](/assets/img/tr/btn-save.png) Сохранить проект
 
 Сохраняет текущий проект в виде `.pto`-файла.
 
-### ![](/tr/img/btn-save-as.png) Save project as...
+### ![](/assets/img/tr/btn-save-as.png) Save project as...
 
 Сохраняет как файл `.pto` с другим именем.
 
-### ![](/tr/img/btn-undo.png) Отменить
+### ![](/assets/img/tr/btn-undo.png) Отменить
 
 Отменяет самое последнее изменение текущего проекта.
 
-### ![](/tr/img/btn-redo.png) Повторить
+### ![](/assets/img/tr/btn-redo.png) Повторить
 
 Повторяет отмененное изменение.
 
-### ![](/tr/img/btn-add-image.png) Добавить изображение
+### ![](/assets/img/tr/btn-add-image.png) Добавить изображение
 
 Добавляет изображение в текущий проект.
 
-### ![](/tr/img/btn-reoptimize.png) Заново оптимизировать
+### ![](/assets/img/tr/btn-reoptimize.png) Заново оптимизировать
 
 Повторно оптимизирует текущий проект. Это имеет тот же эффект, что и нажатие кнопки «**Вновь оптимизировать!**» на [вкладке «Оптимизация»][optimiser_tab].
 
-### ![](/tr/img/btn-fast-preview.png) Быстрый предпросмотр
+### ![](/assets/img/tr/btn-fast-preview.png) Быстрый предпросмотр
 
 Открывает предпросмотр в [окне быстрого предпросмотра][fast_preview_window].
 
-### ![](/tr/img/btn-preview.png) Просмотреть панораму
+### ![](/assets/img/tr/btn-preview.png) Просмотреть панораму
 
 Открывает [окно предпросмотра][preview_window].
 
-### ![](/tr/img/btn-show-cps.png) Показать контрольные точки
+### ![](/assets/img/tr/btn-show-cps.png) Показать контрольные точки
 
 Открывает [окно со списком контрольных точек][control_points_table].
 
-### ![](/tr/img/btn-about.png) О Hugin
+### ![](/assets/img/tr/btn-about.png) О Hugin
 
 Открывает окно «О программе». В нем отображается текущая версия и список участников.
 
 
 
 
-[photos_tab]: {% link tr/hugin/panoed/photos_tab.md %}
-[masks_tab]: {% link tr/hugin/panoed/masks_tab.md %}
-[hugin]: {% link tr/hugin/index.md %}
-[control_points]: {% link tr/glossary/control_points.md %}
-[control_points_tab]: {% link tr/hugin/panoed/control_points_tab.md %}
-[control_points_table]: {% link tr/hugin/panoed/control_points_table.md %}
-[assistant_tab]: {% link tr/hugin/main/assistant_tab.md %}
-[optimiser_tab]: {% link tr/hugin/panoed/optimiser_tab.md %}
-[exposure_tab]: {% link tr/hugin/panoed/exposure_tab.md %}
-[stitcher_tab]: {% link tr/hugin/panoed/stitcher_tab.md %}
-[ptgui]: {% link tr/panotools/ptgui.md %}
-[ptassembler]: {% link tr/panotools/ptassembler.md %}
-[autopano]: {% link tr/tools/autopano.md %}
-[autopano-sift]: {% link tr/tools/autopano-sift.md %}
-[ptstitcher]: {% link tr/panotools/ptstitcher.md %}
-[nona]: {% link tr/tools/nona.md %}
-[ptmender]: {% link tr/panotools/ptmender.md %}
-[batch_processor]: {% link tr/hugin/batch_processor.md %}
-[preferences]: {% link tr/hugin/preferences.md %}
-[raw_import]: {% link tr/hugin/raw_import.md %}
-[fast_preview_window]: {% link tr/hugin/fast_preview_window.md %}
-[preview_window]: {% link tr/hugin/preview_window.md %}
-[assistant_preview]: {% link tr/hugin/main/assistant_tab.md %}#preview
-[main_window]: {% link tr/hugin/main/index.md %}
-[panorama_editor_window]: {% link tr/hugin/panoed/index.md %}
-[faq]: {% link tr/FAQ.md %}
+[photos_tab]: {% link _tr/hugin/panoed/photos_tab.md %}
+[masks_tab]: {% link _tr/hugin/panoed/masks_tab.md %}
+[hugin]: {% link _tr/hugin/index.md %}
+[control_points]: {% link _tr/glossary/control_points.md %}
+[control_points_tab]: {% link _tr/hugin/panoed/control_points_tab.md %}
+[control_points_table]: {% link _tr/hugin/panoed/control_points_table.md %}
+[assistant_tab]: {% link _tr/hugin/main/assistant_tab.md %}
+[optimiser_tab]: {% link _tr/hugin/panoed/optimiser_tab.md %}
+[exposure_tab]: {% link _tr/hugin/panoed/exposure_tab.md %}
+[stitcher_tab]: {% link _tr/hugin/panoed/stitcher_tab.md %}
+[ptgui]: {% link _tr/panotools/ptgui.md %}
+[ptassembler]: {% link _tr/panotools/ptassembler.md %}
+[autopano]: {% link _tr/tools/autopano.md %}
+[autopano-sift]: {% link _tr/tools/autopano-sift.md %}
+[ptstitcher]: {% link _tr/panotools/ptstitcher.md %}
+[nona]: {% link _tr/tools/nona.md %}
+[ptmender]: {% link _tr/panotools/ptmender.md %}
+[batch_processor]: {% link _tr/hugin/batch_processor.md %}
+[preferences]: {% link _tr/hugin/preferences.md %}
+[raw_import]: {% link _tr/hugin/raw_import.md %}
+[fast_preview_window]: {% link _tr/hugin/fast_preview_window.md %}
+[preview_window]: {% link _tr/hugin/preview_window.md %}
+[assistant_preview]: {% link _tr/hugin/main/assistant_tab.md %}#preview
+[main_window]: {% link _tr/hugin/main/index.md %}
+[panorama_editor_window]: {% link _tr/hugin/panoed/index.md %}
+[faq]: {% link _tr/FAQ.md %}

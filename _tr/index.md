@@ -4,6 +4,7 @@ title: Перевод
 status: done
 service: true
 icon: language
+permalink: /tr/
 ---
 
 ## Что читать?
@@ -26,4 +27,4 @@ icon: language
 
 {% include trs.html status='wrong' %}
 
-[hugin]: {% link tr/hugin/index.md %}
+[hugin]: {% link _tr/hugin/index.md %}

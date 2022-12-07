@@ -49,10 +49,10 @@ last_modified_at: 2022-11-29
 
 <hr style="clear: both;">
 
-[trans]: {% link tr/index.md %}
+[trans]: {% link _tr/index.md %}
 [guide]: {% link _guide/index.md %}
 [about]: {% link about/index.md %}
 [hugin]: https://hugin.sourceforge.net/
 [panotools]: https://wiki.panotools.org/
 [repo]: https://github.com/shikhalev/hugin_doc_ru
-[hugin_ru]: {% link tr/hugin/index.md %}
+[hugin_ru]: {% link _tr/hugin/index.md %}

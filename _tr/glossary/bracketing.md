@@ -62,14 +62,14 @@ last_modified_at: 2022-11-22
 - Операторы локальной тональной компрессии будут вести себя по-разному для перекрывающихся областей, нужно надеяться,
   что смешивание с [`enblend`][enblend], [`smartblend`][smartblend] или [`PTGui`][ptgui] исправит их.
 
-[extend]: {% link tr/tutorials/extended_bracketing_control.md %}
-[contrast_blending]: {% link tr/glossary/contrast_blending.md %}
-[16wf]: {% link tr/tutorials/full_16_bit_workflow.md %}
-[enblend]: {% link tr/tools/enblend.md %}
-[ghosting]: {% link tr/glossary/ghosting.md %}
-[hdr]: {% link tr/glossary/hdr.md %}
-[tone_mapping]: {% link tr/glossary/tone_mapping.md %}
-[equirectangular]: {% link tr/projections/equirectangular.md %}
-[hugin]: {% link tr/hugin/index.md %}
-[smartblend]: {% link tr/panotools/smartblend.md %}
-[ptgui]: {% link tr/panotools/ptgui.md %}
+[extend]: {% link _tr/tutorials/extended_bracketing_control.md %}
+[contrast_blending]: {% link _tr/glossary/contrast_blending.md %}
+[16wf]: {% link _tr/tutorials/full_16_bit_workflow.md %}
+[enblend]: {% link _tr/tools/enblend.md %}
+[ghosting]: {% link _tr/glossary/ghosting.md %}
+[hdr]: {% link _tr/glossary/hdr.md %}
+[tone_mapping]: {% link _tr/glossary/tone_mapping.md %}
+[equirectangular]: {% link _tr/projections/equirectangular.md %}
+[hugin]: {% link _tr/hugin/index.md %}
+[smartblend]: {% link _tr/panotools/smartblend.md %}
+[ptgui]: {% link _tr/panotools/ptgui.md %}
