@@ -17,7 +17,7 @@
   {%- endif -%}
   {%- if gloss.see -%}
     {%- assign gg = site.glossary | where: 'link_key', gloss.see | first -%}
-    <p class="meta">См. <a href="{%- link guide/ref/glossary.md -%}#{{- gloss.see -}}">{{- gg.title -}}</a></p>
+    <p class="meta">См. <a href="{%- link _guide/ref/glossary.md -%}#{{- gloss.see -}}">{{- gg.title -}}</a></p>
   {%- endif -%}
   {{- gloss.content | markdownify -}}
 {%- endfor -%}

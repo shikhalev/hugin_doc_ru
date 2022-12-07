@@ -7,4 +7,4 @@ image: /assets/img/quick_start/01_loaded.png
 
 - [Быстрый старт][ref]
 
-[ref]: {% link guide/hugin/quick_start.md %}
+[ref]: {% link _guide/hugin/quick_start.md %}

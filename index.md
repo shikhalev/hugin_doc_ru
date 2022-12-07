@@ -50,7 +50,7 @@ last_modified_at: 2022-11-29
 <hr style="clear: both;">
 
 [trans]: {% link tr/index.md %}
-[guide]: {% link guide/index.md %}
+[guide]: {% link _guide/index.md %}
 [about]: {% link about/index.md %}
 [hugin]: https://hugin.sourceforge.net/
 [panotools]: https://wiki.panotools.org/

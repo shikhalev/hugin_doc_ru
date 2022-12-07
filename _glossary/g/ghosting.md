@@ -11,6 +11,6 @@ status: done
 или при не­пра­виль­ной ее настройке; а так же быстро движущиеся объекты, успевшие поменять свое местоположение
 меж­ду кадрами.
 
-[bracketing]: {% link guide/ref/glossary.md %}#bracketing
-[hands]: {% link guide/shoot/hands.md %}
-[heads]: {% link guide/shoot/heads.md %}
+[bracketing]: {% link _guide/ref/glossary.md %}#bracketing
+[hands]: {% link _guide/shoot/hands.md %}
+[heads]: {% link _guide/shoot/heads.md %}

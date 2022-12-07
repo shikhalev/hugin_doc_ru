@@ -32,8 +32,8 @@ last_modified_at: 2022-12-03
 
 [^src]: Для иллюстрации взяты файлы, полученные в про­цес­се написания статьи [«Быстрый старт»][start].
 
-[tiff]: {% link guide/ref/format/tiff.md %}
-[gimp]: {% link guide/tools/other/gimp.md %}
-[darktable]: {% link guide/tools/other/raw_converters.md %}
-[start]: {% link guide/hugin/quick_start.md %}
-[magick]: {% link guide/tools/other/magick.md %}
+[tiff]: {% link _guide/ref/format/tiff.md %}
+[gimp]: {% link _guide/tools/other/gimp.md %}
+[darktable]: {% link _guide/tools/other/raw_converters.md %}
+[start]: {% link _guide/hugin/quick_start.md %}
+[magick]: {% link _guide/tools/other/magick.md %}

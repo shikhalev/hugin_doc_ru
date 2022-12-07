@@ -9,4 +9,4 @@ status: done
 Термин, обозначающий технологии, форматы данных, оборудование и так да­лее, позволяющие обрабатывать, хранить или выводить изображения
 с бо́ль­шим [динамическим диапазоном][dynamic_range], чем *обычно* (а обыч­но — это 8 бит на цве­то­вой канал).
 
-[dynamic_range]: {% link guide/ref/glossary.md %}#dynamic_range
+[dynamic_range]: {% link _guide/ref/glossary.md %}#dynamic_range

@@ -72,6 +72,9 @@ collections:
   glossary:
     sort_by: alpha_key
     output: false
+  guide:
+    output: true
+#    permalink: /:collection/:path:output_ext
 
 license:
   content:
