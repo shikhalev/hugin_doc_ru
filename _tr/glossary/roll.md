@@ -2,6 +2,7 @@
 title: Крен
 origin: https://wiki.panotools.org/Roll
 status: done
+last_modified_at: 2022-12-08
 ---
 Угол поворота вокруг оси объектива. См. так­же *[тангаж][pitch]* и *[рысканье][yaw]*.
 

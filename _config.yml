@@ -61,6 +61,7 @@ defaults:
       status: stub
       layout: page
       comments: false
+      date: "2022-01-01"
 
 show_donate: false
 show_contacts: true
