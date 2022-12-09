@@ -62,6 +62,10 @@ defaults:
       layout: page
       comments: false
       date: "2022-01-01"
+  - scope:
+      path: "_posts"
+    values:
+      icon: file-alt
 
 show_donate: false
 show_contacts: true
