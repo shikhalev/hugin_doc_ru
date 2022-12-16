@@ -34,7 +34,7 @@ image: /assets/img/hugin-splash.svg
 
 **TODO: ...**
 
-[Статусы страниц][statuses]
+- **[Статусы страниц][statuses]**
 
 ## Q&A
 
