@@ -43,7 +43,13 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-toc
   - jekyll-remote-theme
+
+toc:
+  min_level: 2
+  max_level: 4
+  list_id: toc_list
 
 remote_theme: shikhalev/jekyll-theme
 
@@ -63,6 +69,7 @@ defaults:
       layout: page
       comments: false
       date: "2022-01-01"
+      toc: true
   - scope:
       path: "_posts"
     values:
