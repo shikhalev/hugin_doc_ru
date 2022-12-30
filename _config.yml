@@ -51,7 +51,7 @@ toc:
   max_level: 4
   list_id: toc_list
 
-remote_theme: shikhalev/jekyll-theme
+theme: jekyll-theme-shikhalev
 
 google:
   search: b2790c4aaf6b24d8c
