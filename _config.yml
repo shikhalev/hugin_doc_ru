@@ -45,6 +45,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-toc
   - jekyll-remote-theme
+  - shi-jekyll-images
+
+shi_images:
+  image_bounds: fhd
 
 toc:
   min_level: 2
@@ -89,7 +93,8 @@ collections:
     output: true
   tr:
     output: true
-#    permalink: /:collection/:path:output_ext
+  src:
+    output: false
 
 license:
   content:

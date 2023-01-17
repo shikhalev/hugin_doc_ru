@@ -5,15 +5,16 @@ status: done
 software:
   - "Hugin v2021.0.0"
   - "Linux Mint 21 Vanessa"
+date: 2022-11-30
 last_modified_at: 2022-11-30
-image: /assets/img/quick_start/01_loaded.png
+image: _src/guides/hugin/quick_start/01_loaded.png
 ---
 Эта статья описывает процесс создания панорамы в Hugin в прос­том и общем виде[^ref]. С од­ной стороны, мы не бу­дем рассматривать
 сложные случаи, с дру­гой — в боль­шин­с­т­ве случаев, если исходные кадры сняты аккуратно, этого вполне достаточно.
 
 ## Вкратце о съемке
 
-{% include image.liquid place="right" width=320 src="/assets/img/quick_start/source.png" title="Исходные кадры для панорамы" %}
+{% image @_src/guides/hugin/quick_start/source.png figure right width=320px title="Исходные кадры для панорамы" %}
 
 Для панорамы я выбрал 12 кад­ров, которые представляют на са­мом деле 4 сце­ны, снятые с [бре­ке­тин­гом][bracketing] по экспозиции ±2EV.
 Это достаточно обычный случай, поскольку именно там, где используются панорамы, очень часто динамический диапазон сцены существенно
@@ -34,15 +35,11 @@ image: /assets/img/quick_start/01_loaded.png
 *Первым шагом* загружаем снимки в прог­рам­му. В ос­нов­ном окне в вер­х­ней части, во [вклад­ке «Ассистент»][assistant] имеется большая кнопка
 с со­от­вет­с­т­ву­ю­щей надписью **«1. За­гру­зить снимки...»**, которую и следует нажать.
 
-{% include image.liquid place="center"
-                        width=800
-                          src="/assets/img/quick_start/01_loaded.png"
-                        title="Главное окно Hugin со све­же­за­гру­жен­ны­ми кадрами"
-                           id="scr_loaded" %}
+{% image @_src/guides/hugin/quick_start/01_loaded.png figure center width=800px title="Главное окно Hugin со све­же­за­гру­жен­ны­ми кадрами" id="scr_loaded" %}
 
 В процессе мы можем видеть сообщение:
 
-{% include image.liquid place="center" width=415 src="/assets/img/quick_start/big_range.png" title="Сообщение о боль­шом диапазоне яркости" %}
+{% image @_src/guides/hugin/quick_start/big_range.png figure center width=415px title="Сообщение о боль­шом диапазоне яркости" %}
 
 Сообщает нам оно о том, что с од­ной стороны мы загрузили изображения, которые вместе покрывают большой диапазон яркости, но при этом,
 с дру­гой стороны, Hugin не мо­жет автоматически определить их в стоп­ки с оди­на­ко­вы­ми сценами. Это, в об­щем-то, прямое следствие съемки
@@ -62,7 +59,7 @@ image: /assets/img/quick_start/01_loaded.png
 *Второй шаг* нам снова подсказывает интерфейс, а имен­но — кнопка с над­писью **«2. Вы­ров­нять...»** — нажимаем и некоторое время наблюдаем
 процесс выравнивания:
 
-{% include image.liquid place="center" width=450 src="/assets/img/quick_start/aligning.png" title="Окно процесса выравнивания" %}
+{% image @_src/guides/hugin/quick_start/aligning.png figure center width=500px title="Окно процесса выравнивания" %}
 
 Программа автоматически находит контрольные точки и выстраивает в со­от­вет­с­т­вии с ни­ми снимки. На этом этапе нас могут поджидать затруднения,
 если кадры плохо стыкуются, что бывает не так уж редко при съем­ке с рук. Также усложняющим фактором может стать объектив с боль­шим
@@ -71,7 +68,7 @@ image: /assets/img/quick_start/01_loaded.png
 
 Получаем следующую картину:
 
-{% include image.liquid place="center" width=800 src="/assets/img/quick_start/02_aligned.png" title="Главное окно после выравнивания" id="scr_aligned" %}
+{% image @_src/guides/hugin/quick_start/02_aligned.png figure center width=800px title="Главное окно после выравнивания" id="scr_aligned" %}
 
 Теперь мы видим уже собранную картинку, правда, немного кривоватую. Кроме того, она темная, но с этим ничего не по­де­лать — сведение
 экспозиций будет выполнено только на фи­наль­ном этапе, в про­цес­се же работы имеем то, что имеем.
@@ -84,7 +81,7 @@ image: /assets/img/quick_start/01_loaded.png
 художественным вкусом и прочими субъективными факторами. Так или иначе, тут можно и поэкспериментировать. В прин­ци­пе, рекомендованная нам
 в на­ча­ле [цилиндрическая проекция][cylinrical] тоже подходит, но, чтобы облака не бы­ли неестественно растянуты, выберем [эквидистантную][equirectangular].
 
-{% include image.liquid place="center" width=800 src="/assets/img/quick_start/03_projection.png" title="Главное окно с выбором проекции" id="scr_projection" %}
+{% image @_src/guides/hugin/quick_start/03_projection.png figure center width=800px title="Главное окно с выбором проекции" id="scr_projection" %}
 
 ## Выравнивание и обрезка
 
@@ -92,7 +89,7 @@ image: /assets/img/quick_start/01_loaded.png
 последняя — она пытается автоматически выровнять горизонтали и вертикали в кадре. Получилось не очень, поэтому подтягиваем немного мышкой ту­да-сю­да, ориентируясь
 на чув­с­т­во композиции и память о том, как этот пейзаж выглядит вживую.
 
-{% include image.liquid place="center" width=800 src="/assets/img/quick_start/04_moved.png" title="Главное окно со смещениями и выравниванием" id="scr_moved" %}
+{% image @_src/guides/hugin/quick_start/04_moved.png figure center width=800px title="Главное окно со смещениями и выравниванием" id="scr_moved" %}
 
 Если на этом этапе ничего хорошего не по­лу­ча­ет­ся, имеет смысл вернуться на шаг назад и выбрать другую проекцию.
 
@@ -101,7 +98,7 @@ image: /assets/img/quick_start/01_loaded.png
 так же выбирает максимальный прямоугольник, но смотрит на лю­бое заполнение, т.е. просто сплошную картинку. Если у нас нет большого диапазона яркостей,
 т.е. снимали мы без бре­ке­тин­га, то «HDR Автообрезка» будет работать так же.
 
-{% include image.liquid place="center" width=800 src="/assets/img/quick_start/05_crop.png" title="Главное окно: обрезка" id="scr_crop" %}
+{% image @_src/guides/hugin/quick_start/05_crop.png figure center width=800px title="Главное окно: обрезка" id="scr_crop" %}
 
 Сто­ит ли здесь вручную выбрать другую обрезку? Тут два момента:
 
@@ -121,7 +118,7 @@ image: /assets/img/quick_start/01_loaded.png
 
 Открывается диалог:
 
-{% include image.liquid place="center" width=600 src="/assets/img/quick_start/06_dialog.png" title="Диалог сшивки панорамы" id="scr_dialog" %}
+{% image @_src/guides/hugin/quick_start/06_dialog.png figure center width=600px title="Диалог сшивки панорамы" id="scr_dialog" %}
 
 Что мы здесь видим?
 
@@ -142,7 +139,7 @@ image: /assets/img/quick_start/01_loaded.png
 И ждем. Дальнейший процесс не очень быстрый, а для боль­ших и сложных панорам может занимать и часы (конечно, все зависит и от ва­ше­го
 аппаратного обеспечения).
 
-{% include image.liquid place="center" src="/assets/img/quick_start/07_stitching.png" title="Процесс сшивки" id="scr_stitching" %}
+{% image @_src/guides/hugin/quick_start/07_stitching.png figure center width=800px title="Процесс сшивки" id="scr_stitching" %}
 
 На скриншоте слева мы видим собственно процесс, а справа менеджер заданий — после того, как мы сохранили проект и передали его на обработку,
 можем создать новый проект с дру­гой панорамой, пройти все вышеописанные шаги и в спис­ке справа будут два проекта. Там их можно
@@ -158,11 +155,11 @@ image: /assets/img/quick_start/01_loaded.png
 
 - Файл без каких либо корректировок, только изменение размера и конвертация в JPEG.
 
-{% include image.liquid place="center" width=640 src="/assets/img/quick_start/fused.jpg" title="Результат склейки панорамы" %}
+{% image @_src/guides/hugin/quick_start/fused.jpg figure center width=640px title="Результат склейки панорамы" %}
 
 - Файл после обработки <s>напильником</s> в Darktable.
 
-{% include image.liquid place="center" width=800 src="/assets/img/quick_start/fused_darktable.jpg" title="Финальная панорама после Darktable" %}
+{% image @_src/guides/hugin/quick_start/fused_darktable.jpg figure center width=800px title="Финальная панорама после Darktable" %}
 
 Ну, собственно, последний файл и является нашей целью и итогом настоящей статьи. *Проблемные* ситуации и сложные случаи не рассмотрены намеренно,
 как и подробности различных проекций — это все отдельные и весьма обширные темы.
