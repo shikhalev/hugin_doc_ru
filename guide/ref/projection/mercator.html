@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" title="CC BY-SA 4.0">
+  <meta name="license" content="CC BY-SA 4.0">
+  <link rel="icon" href="https://hugin.shikhalev.org/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+  
+  <link rel="stylesheet" href="/assets/local.css" type="text/css">
+  
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Проекция Меркатора | Hugin по-русски</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Проекция Меркатора" />
+<meta name="author" content="Иван Шихалев" />
+<meta property="og:locale" content="ru" />
+<meta name="description" content="Проект перевода/переложения документации по редактору панорам Hugin на русский язык" />
+<meta property="og:description" content="Проект перевода/переложения документации по редактору панорам Hugin на русский язык" />
+<link rel="canonical" href="https://hugin.shikhalev.org/guide/ref/projection/mercator.html" />
+<meta property="og:url" content="https://hugin.shikhalev.org/guide/ref/projection/mercator.html" />
+<meta property="og:site_name" content="Hugin по-русски" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Проекция Меркатора" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Иван Шихалев"},"dateModified":"2022-01-01T00:00:00+00:00","datePublished":"2022-01-01T00:00:00+00:00","description":"Проект перевода/переложения документации по редактору панорам Hugin на русский язык","headline":"Проекция Меркатора","mainEntityOfPage":{"@type":"WebPage","@id":"https://hugin.shikhalev.org/guide/ref/projection/mercator.html"},"url":"https://hugin.shikhalev.org/guide/ref/projection/mercator.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JBR18FLSCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JBR18FLSCW');
+</script>
+
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+   ym(91267624, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/91267624" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --></head>
+
+<body>
+
+<div id="global-box">
+
+<div id="watermark-container">
+  <div id="watermark">shikhalev.org</div>
+</div>
+
+<div id="grid">
+
+<header id="site-header"><p class="logo"><a href="/">Hugin по-русски</a></p></header>
+
+<nav id="navy"><div class="wrapper">
+  <input type="checkbox" id="navy-check">
+  <label for="navy-check">
+    <span id="menu-icon" class="fas">&#xf0c9;</span>
+  </label>
+  <div id="navy-menu"><a class="navy-item fa-icon-book-open" href="/guide/">Руководство</a><a class="navy-item fa-icon-language" href="/tr/">Перевод</a><a class="navy-item fa-icon-id-card" href="/about/">О проекте</a></div>
+</div></nav>
+
+<main id="main"><aside class="categories">
+  <a class="fa-icon-home" href="/" title="Главная страница сайта"></a>​<a class="fa-icon-book-open" href="/guide/" title="Руководство">Руководство</a>​<a class="fa-icon-folder-open-black" href="/guide/ref/" title="Справочная информация">Справочная</a>​<a class="fa-icon-folder-open-black" href="/guide/ref/projection/" title="Проекции">Проекции</a></aside>
+<article class="layout-page"><header class="page-header"><h1 class="title-page" itemprop="name headline">Проекция Меркатора</h1><aside class="share">
+  <a class="fab" target="_blank" title="Поделиться во ВКонтакте" href="https://vk.com/share.php?url=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2Fref%2Fprojection%2Fmercator.html">&#xf189;</a>
+  <a class="fab" target="_blank" title="Поделиться в Фейсбуке" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2Fref%2Fprojection%2Fmercator.html">&#xf39e;</a>
+  <a class="fab" target="_blank" title="Поделиться в Телеграме" href="https://t.me/share/url?url=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2Fref%2Fprojection%2Fmercator.html">&#xf3fe;</a>
+  <a class="fab" target="_blank" title="Поделиться в Твиттере" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2Fref%2Fprojection%2Fmercator.html&text=%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%86%D0%B8%D1%8F+%D0%9C%D0%B5%D1%80%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D0%B0">&#xf099;</a>
+  <a class="fab" target="_blank" title="Сохранить ссылку в Evernote" href="https://www.evernote.com/clip.action?title=%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%86%D0%B8%D1%8F+%D0%9C%D0%B5%D1%80%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D0%B0&url=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2Fref%2Fprojection%2Fmercator.html">&#xf839;</a>
+</aside>
+</header><hr style="clear: both;">
+
+
+
+<div class="sticker" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+  <p>Это заглушка страницы, следует заполнить ее контентом и сменить статус.</p>
+  
+  <p style="text-align: right;"><a href="https://github.com/shikhalev/hugin_doc_ru/edit/master/_guide/ref/projection/mercator.md" class="img-icon-github" style="font-weight: bold;">Редактировать на GitHub »</a></p>
+</div>
+<hr>
+
+
+
+
+
+
+<hr style="clear: both;">
+
+<script src="https://giscus.app/client.js" data-repo="shikhalev/hugin_doc_ru" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTkyMTM5NjU=" data-category="General" data-category-id="DIC_kwDOD3NKjc4B_XvC" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="ru" data-loading="lazy" crossorigin="anonymous" async>
+</script>
+
+</article>
+
+</main><aside id="search">
+<script async src="https://cse.google.com/cse.js?cx=b2790c4aaf6b24d8c"></script>
+<div class="gcse-search"></div>
+
+</aside><aside id="toc" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><aside id="backs" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><aside id="donate" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><!-- скрываем через style, чтоб не менять макет полностью -->
+<aside id="ga" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><aside id="feeds" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><aside id="contacts"><h4>Обратная связь</h4>
+
+<ul>
+  <li class="fa-icon-li-github">
+    <a href="https://github.com/shikhalev/hugin_doc_ru" style="font-weight: bold;">shikhalev/hugin_doc_ru</a>
+    <ul>
+      <li class="fa-icon-li-comments"><a href="https://github.com/shikhalev/hugin_doc_ru/discussions">Обсуждения</a></li>
+      <li class="fa-icon-li-comment-dots"><a href="https://github.com/shikhalev/hugin_doc_ru/issues">Проблемы и задачи</a></li>
+    </ul>
+  </li>
+  <li class="fa-icon-li-envelope">
+    <a href="mailto:hugin-doc-ru@shikhalev.org">hugin-doc-ru@shikhalev.org</a>
+  </li>
+  <li class="fa-icon-li-home">
+    <a href="https://shikhalev.org/" style="font-weight: bold;">https://shikhalev.org/</a>
+  </li>
+</ul>
+</aside><aside id="sidebar" style="border:none;box-shadow:none;"></aside><footer id="site-footer"><!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=91267624&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://metrika-informer.com/informer/91267624/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;float:right;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="91267624" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<p style="font-weight: bold;">© 2022 <a href="/about/">Иван Шихалев</a></p>
+
+<p>Материалы сайта опубликованы под лицензией
+<a style="font-weight: bold;" href="https://www.gnu.org/licenses/fdl-1.3.ru.html">GNU FDL 1.3</a>,
+если не оговорено иное. <a href="https://github.com/shikhalev/jekyll-theme">Программный код</a> непосредственно сайта — под лицензией
+<a style="font-weight: bold;" href="https://opensource.org/licenses/MIT">MIT</a>.</p>
+
+<p>Сайт сформирован статическим генератором <a style="font-weight: bold;" href="https://jekyllrb.com/">Jekyll</a>. Отдельная благодарность автору <a style="font-weight: bold;" href="https://github.com/allejo/jekyll-toc">allejo/jekyll-toc</a>.</p>
+</footer>
+
+<div id="hl"></div>
+<div id="hr"></div>
+<div id="hb"></div>
+<div id="fl"></div>
+<div id="fr"></div>
+
+</div> <!-- #grid -->
+
+<div id="topper" title="Вернуться наверх страницы"><span class="fas">&#xf35b;</span></div>
+<script async src="/assets/js/topper.js"></script>
+
+</div> <!-- #global-box -->
+
+</body>
+
+</html>

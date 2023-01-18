@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" title="CC BY-SA 4.0">
+  <meta name="license" content="CC BY-SA 4.0">
+  <link rel="icon" href="https://hugin.shikhalev.org/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+  
+  <link rel="stylesheet" href="/assets/local.css" type="text/css">
+  
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Enblend | Hugin по-русски</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Enblend" />
+<meta name="author" content="Иван Шихалев" />
+<meta property="og:locale" content="ru" />
+<meta name="description" content="Обзор Enblend накладывает несколько изображений друг на друга так, чтобы сделать стыки невидимыми. Он работает с широким спектром форматов файлов изображений и поддерживает изображения с разрядностью 8, 16 или 32 бита (HDR с пла­ва­ю­щей точкой) на канал. Enblend используется как плагин для PTGui, Hugin и PTAssembler, отдельно из ко­ман­д­ной строки, или с помощью Enblend Front End1. Некоторые основные функции включают в себя: Корректирует изображения по ли­нии стыка, чтобы избежать несоответствий между исходными изображениями, таких как ошибки параллакса. Поддерживает сохранение и загрузку масок. Enblend и полная документация (руководства для каждой версии и ссылка «NEWS» для примечаний к выпуску) доступны на сай­те проекта. Использование из командной строки Аргументы и параметры могут меняться между версиями, а также зависеть от про­цес­са сборки. Рекомендуется полагаться на ру­ко­вод­с­т­во для конкретной версии Enblend, доступное на до­маш­ней странице Enblend. Enblend поддерживает входные файлы Cropped TIFF, а также другие форматы файлов и разрядность. Пожалуйста, обратитесь к ру­ко­вод­с­т­ву. Справочное руководство Enblend2 основано на ин­фор­ма­ции об ус­та­рев­шей версии Enblend. Где взять? Enblend имеет открытый исходный код. Таким образом, вы можете скачать его бесплатно со страницы проекта, ссылка на ко­то­рую приведена ниже. Enblend входит в со­с­тав основных дистрибутивов Linux. Вы можете получить последнюю версию, используя систему управления программными пакетами дистрибутива. Для Ubuntu Linux откройте терминал и введите: $ sudo apt-get install enblend Вот и все! Enblend находится в постоянном развитии. Если вы хотите получить передний край, прочитайте раздел о разработке ниже. Разработка Enblend — это проект с от­кры­тым исходным кодом и поэтому очень сильно зависит участия добровольцев. Если у вас есть навыки программирования, вы можете посмотреть исходный код и внести свой вклад в него. Даже если у вас нет навыков кодирования, у вас, скорее всего, есть некоторые навыки, которые могли бы пригодиться проекту, и вы всегда можете поделиться своим временем. Задачи, требующие внимания, часто меняются, как и необходимый набор навыков и ресурсов. При­со­е­ди­няй­тесь к списку рассылки Hugin-ptx, чтобы узнать, что происходит в данный момент и как вы можете помочь. Даже просто тестирование и обратная связь помогают. Чтобы быть на переднем крае, следуйте процессу разработки/сборки Hugin3. Ubuntu Linux Fedora Linux Mac OSX Windows Смотрите также Руководства с Enblend: Использование enblend для заполнения «дыры в полу» Как использовать enblend для исправления изображений зенита и надира Как удалить ошибки смешивания, сделанные enblend и enfuse, в зените и надире (автоматически) Ссылки Страница проекта Enblend xblend4 ПО недоступно, перевод заглушки не требуется. &#8617; На Panotools Wiki стоит заглушка со ссылкой на историческую страницу, которую я тут и использовал. Переводить заглушку смысла нет. &#8617; Вообще не понял, почему тут произошел такой переход к процессу разработки Hugin… &#8617; Ссылка не работает. &#8617;" />
+<meta property="og:description" content="Обзор Enblend накладывает несколько изображений друг на друга так, чтобы сделать стыки невидимыми. Он работает с широким спектром форматов файлов изображений и поддерживает изображения с разрядностью 8, 16 или 32 бита (HDR с пла­ва­ю­щей точкой) на канал. Enblend используется как плагин для PTGui, Hugin и PTAssembler, отдельно из ко­ман­д­ной строки, или с помощью Enblend Front End1. Некоторые основные функции включают в себя: Корректирует изображения по ли­нии стыка, чтобы избежать несоответствий между исходными изображениями, таких как ошибки параллакса. Поддерживает сохранение и загрузку масок. Enblend и полная документация (руководства для каждой версии и ссылка «NEWS» для примечаний к выпуску) доступны на сай­те проекта. Использование из командной строки Аргументы и параметры могут меняться между версиями, а также зависеть от про­цес­са сборки. Рекомендуется полагаться на ру­ко­вод­с­т­во для конкретной версии Enblend, доступное на до­маш­ней странице Enblend. Enblend поддерживает входные файлы Cropped TIFF, а также другие форматы файлов и разрядность. Пожалуйста, обратитесь к ру­ко­вод­с­т­ву. Справочное руководство Enblend2 основано на ин­фор­ма­ции об ус­та­рев­шей версии Enblend. Где взять? Enblend имеет открытый исходный код. Таким образом, вы можете скачать его бесплатно со страницы проекта, ссылка на ко­то­рую приведена ниже. Enblend входит в со­с­тав основных дистрибутивов Linux. Вы можете получить последнюю версию, используя систему управления программными пакетами дистрибутива. Для Ubuntu Linux откройте терминал и введите: $ sudo apt-get install enblend Вот и все! Enblend находится в постоянном развитии. Если вы хотите получить передний край, прочитайте раздел о разработке ниже. Разработка Enblend — это проект с от­кры­тым исходным кодом и поэтому очень сильно зависит участия добровольцев. Если у вас есть навыки программирования, вы можете посмотреть исходный код и внести свой вклад в него. Даже если у вас нет навыков кодирования, у вас, скорее всего, есть некоторые навыки, которые могли бы пригодиться проекту, и вы всегда можете поделиться своим временем. Задачи, требующие внимания, часто меняются, как и необходимый набор навыков и ресурсов. При­со­е­ди­няй­тесь к списку рассылки Hugin-ptx, чтобы узнать, что происходит в данный момент и как вы можете помочь. Даже просто тестирование и обратная связь помогают. Чтобы быть на переднем крае, следуйте процессу разработки/сборки Hugin3. Ubuntu Linux Fedora Linux Mac OSX Windows Смотрите также Руководства с Enblend: Использование enblend для заполнения «дыры в полу» Как использовать enblend для исправления изображений зенита и надира Как удалить ошибки смешивания, сделанные enblend и enfuse, в зените и надире (автоматически) Ссылки Страница проекта Enblend xblend4 ПО недоступно, перевод заглушки не требуется. &#8617; На Panotools Wiki стоит заглушка со ссылкой на историческую страницу, которую я тут и использовал. Переводить заглушку смысла нет. &#8617; Вообще не понял, почему тут произошел такой переход к процессу разработки Hugin… &#8617; Ссылка не работает. &#8617;" />
+<link rel="canonical" href="https://hugin.shikhalev.org/tr/tools/enblend.html" />
+<meta property="og:url" content="https://hugin.shikhalev.org/tr/tools/enblend.html" />
+<meta property="og:site_name" content="Hugin по-русски" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Enblend" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Иван Шихалев"},"dateModified":"2022-11-25T00:00:00+00:00","datePublished":"2022-01-01T00:00:00+00:00","description":"Обзор Enblend накладывает несколько изображений друг на друга так, чтобы сделать стыки невидимыми. Он работает с широким спектром форматов файлов изображений и поддерживает изображения с разрядностью 8, 16 или 32 бита (HDR с пла­ва­ю­щей точкой) на канал. Enblend используется как плагин для PTGui, Hugin и PTAssembler, отдельно из ко­ман­д­ной строки, или с помощью Enblend Front End1. Некоторые основные функции включают в себя: Корректирует изображения по ли­нии стыка, чтобы избежать несоответствий между исходными изображениями, таких как ошибки параллакса. Поддерживает сохранение и загрузку масок. Enblend и полная документация (руководства для каждой версии и ссылка «NEWS» для примечаний к выпуску) доступны на сай­те проекта. Использование из командной строки Аргументы и параметры могут меняться между версиями, а также зависеть от про­цес­са сборки. Рекомендуется полагаться на ру­ко­вод­с­т­во для конкретной версии Enblend, доступное на до­маш­ней странице Enblend. Enblend поддерживает входные файлы Cropped TIFF, а также другие форматы файлов и разрядность. Пожалуйста, обратитесь к ру­ко­вод­с­т­ву. Справочное руководство Enblend2 основано на ин­фор­ма­ции об ус­та­рев­шей версии Enblend. Где взять? Enblend имеет открытый исходный код. Таким образом, вы можете скачать его бесплатно со страницы проекта, ссылка на ко­то­рую приведена ниже. Enblend входит в со­с­тав основных дистрибутивов Linux. Вы можете получить последнюю версию, используя систему управления программными пакетами дистрибутива. Для Ubuntu Linux откройте терминал и введите: $ sudo apt-get install enblend Вот и все! Enblend находится в постоянном развитии. Если вы хотите получить передний край, прочитайте раздел о разработке ниже. Разработка Enblend — это проект с от­кры­тым исходным кодом и поэтому очень сильно зависит участия добровольцев. Если у вас есть навыки программирования, вы можете посмотреть исходный код и внести свой вклад в него. Даже если у вас нет навыков кодирования, у вас, скорее всего, есть некоторые навыки, которые могли бы пригодиться проекту, и вы всегда можете поделиться своим временем. Задачи, требующие внимания, часто меняются, как и необходимый набор навыков и ресурсов. При­со­е­ди­няй­тесь к списку рассылки Hugin-ptx, чтобы узнать, что происходит в данный момент и как вы можете помочь. Даже просто тестирование и обратная связь помогают. Чтобы быть на переднем крае, следуйте процессу разработки/сборки Hugin3. Ubuntu Linux Fedora Linux Mac OSX Windows Смотрите также Руководства с Enblend: Использование enblend для заполнения «дыры в полу» Как использовать enblend для исправления изображений зенита и надира Как удалить ошибки смешивания, сделанные enblend и enfuse, в зените и надире (автоматически) Ссылки Страница проекта Enblend xblend4 ПО недоступно, перевод заглушки не требуется. &#8617; На Panotools Wiki стоит заглушка со ссылкой на историческую страницу, которую я тут и использовал. Переводить заглушку смысла нет. &#8617; Вообще не понял, почему тут произошел такой переход к процессу разработки Hugin… &#8617; Ссылка не работает. &#8617;","headline":"Enblend","mainEntityOfPage":{"@type":"WebPage","@id":"https://hugin.shikhalev.org/tr/tools/enblend.html"},"url":"https://hugin.shikhalev.org/tr/tools/enblend.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JBR18FLSCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JBR18FLSCW');
+</script>
+
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+   ym(91267624, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/91267624" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --></head>
+
+<body>
+
+<div id="global-box">
+
+<div id="watermark-container">
+  <div id="watermark">shikhalev.org</div>
+</div>
+
+<div id="grid">
+
+<header id="site-header"><p class="logo"><a href="/">Hugin по-русски</a></p></header>
+
+<nav id="navy"><div class="wrapper">
+  <input type="checkbox" id="navy-check">
+  <label for="navy-check">
+    <span id="menu-icon" class="fas">&#xf0c9;</span>
+  </label>
+  <div id="navy-menu"><a class="navy-item fa-icon-book-open" href="/guide/">Руководство</a><a class="navy-item fa-icon-language" href="/tr/">Перевод</a><a class="navy-item fa-icon-id-card" href="/about/">О проекте</a></div>
+</div></nav>
+
+<main id="main"><aside class="categories">
+  <a class="fa-icon-home" href="/" title="Главная страница сайта"></a>​<a class="fa-icon-language" href="/tr/" title="Перевод">Перевод</a></aside>
+<article class="layout-page"><header class="page-header"><h1 class="title-page" itemprop="name headline">Enblend</h1><aside class="share">
+  <a class="fab" target="_blank" title="Поделиться во ВКонтакте" href="https://vk.com/share.php?url=https%3A%2F%2Fhugin.shikhalev.org%2Ftr%2Ftools%2Fenblend.html">&#xf189;</a>
+  <a class="fab" target="_blank" title="Поделиться в Фейсбуке" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhugin.shikhalev.org%2Ftr%2Ftools%2Fenblend.html">&#xf39e;</a>
+  <a class="fab" target="_blank" title="Поделиться в Телеграме" href="https://t.me/share/url?url=https%3A%2F%2Fhugin.shikhalev.org%2Ftr%2Ftools%2Fenblend.html">&#xf3fe;</a>
+  <a class="fab" target="_blank" title="Поделиться в Твиттере" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhugin.shikhalev.org%2Ftr%2Ftools%2Fenblend.html&text=Enblend">&#xf099;</a>
+  <a class="fab" target="_blank" title="Сохранить ссылку в Evernote" href="https://www.evernote.com/clip.action?title=Enblend&url=https%3A%2F%2Fhugin.shikhalev.org%2Ftr%2Ftools%2Fenblend.html">&#xf839;</a>
+</aside>
+</header><p class="meta">Источник: <a href="https://wiki.panotools.org/Enblend">https://wiki.panotools.org/Enblend</a></p><hr style="clear: both;">
+
+
+
+
+
+
+<h2 id="обзор">
+<a class="anchor" href="#%D0%BE%D0%B1%D0%B7%D0%BE%D1%80" aria-hidden="true"><span class="octicon octicon-link"></span></a>Обзор</h2>
+
+<p><strong>Enblend</strong> накладывает несколько изображений друг на друга так, чтобы сделать стыки невидимыми.
+Он работает с широким спектром форматов файлов изображений и поддерживает изображения с разрядностью
+8, 16 или 32 бита (HDR с пла­ва­ю­щей точкой) на канал.</p>
+
+<p>Enblend используется как плагин для <a href="/tr/panotools/ptgui.html">PTGui</a>, <a href="/tr/hugin/">Hugin</a> и <a href="/tr/panotools/ptassembler.html">PTAssembler</a>, отдельно
+из ко­ман­д­ной строки, или с помощью <a href="https://wiki.panotools.org/Historical:Enblend_Front_End">Enblend Front End</a><sup id="fnref:front" role="doc-noteref"><a href="#fn:front" class="footnote" rel="footnote">1</a></sup>.</p>
+
+<p>Некоторые основные функции включают в себя:</p>
+
+<ul>
+  <li>
+    <p>Корректирует изображения по ли­нии стыка, чтобы избежать несоответствий между исходными изображениями,
+таких как ошибки <a href="/tr/glossary/parallax.html">параллакса</a>.</p>
+  </li>
+  <li>
+    <p>Поддерживает сохранение и загрузку масок.</p>
+  </li>
+</ul>
+
+<p>Enblend и полная документация (руководства для каждой версии и ссылка «NEWS» для примечаний к выпуску)
+доступны на <a href="https://enblend.sourceforge.net/">сай­те проекта</a>.</p>
+
+<h2 id="использование-изкомандной-строки">
+<a class="anchor" href="#%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8%D0%B7%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Использование из командной строки</h2>
+
+<p>Аргументы и параметры могут меняться между версиями, а также зависеть от про­цес­са сборки. Рекомендуется
+полагаться на ру­ко­вод­с­т­во для конкретной версии Enblend, доступное на <a href="https://enblend.sourceforge.net/">до­маш­ней странице Enblend</a>.</p>
+
+<p>Enblend поддерживает входные файлы <a href="/tr/glossary/cropped_tiff.html">Cropped TIFF</a>, а также другие форматы файлов и разрядность.
+Пожалуйста, обратитесь к ру­ко­вод­с­т­ву.</p>
+
+<p><a href="https://wiki.panotools.org/index.php?title=Enblend_reference_manual&amp;oldid=13483">Справочное руководство Enblend</a><sup id="fnref:refm" role="doc-noteref"><a href="#fn:refm" class="footnote" rel="footnote">2</a></sup> основано на ин­фор­ма­ции об ус­та­рев­шей версии Enblend.</p>
+
+<h2 id="где-взять">
+<a class="anchor" href="#%D0%B3%D0%B4%D0%B5-%D0%B2%D0%B7%D1%8F%D1%82%D1%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>Где взять?</h2>
+
+<p>Enblend имеет открытый исходный код. Таким образом, вы можете скачать его бесплатно со страницы проекта,
+ссылка на ко­то­рую приведена ниже. Enblend входит в со­с­тав основных дистрибутивов Linux. Вы можете получить
+последнюю версию, используя систему управления программными пакетами дистрибутива. Для Ubuntu Linux откройте
+терминал и введите:</p>
+
+<figure class="highlight">
+  <pre><code class="language-console" data-lang="console"><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>enblend</code></pre>
+</figure>
+
+<p>Вот и все!</p>
+
+<p>Enblend находится в постоянном развитии. Если вы хотите получить передний край, прочитайте раздел о разработке ниже.</p>
+
+<h2 id="разработка">
+<a class="anchor" href="#%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>Разработка</h2>
+
+<p>Enblend — это проект с от­кры­тым исходным кодом и поэтому очень сильно зависит участия добровольцев. Если у вас есть
+навыки программирования, вы можете посмотреть исходный код и внести свой вклад в него. Даже если у вас нет навыков
+кодирования, у вас, скорее всего, есть некоторые навыки, которые могли бы пригодиться проекту, и вы всегда можете
+поделиться своим временем. Задачи, требующие внимания, часто меняются, как и необходимый набор навыков и ресурсов.
+При­со­е­ди­няй­тесь к списку рассылки Hugin-ptx, чтобы узнать, что происходит в данный момент и как вы можете помочь.
+Даже просто тестирование и обратная связь помогают.</p>
+
+<p>Чтобы быть на переднем крае, следуйте процессу разработки/сборки Hugin<sup id="fnref:hugin" role="doc-noteref"><a href="#fn:hugin" class="footnote" rel="footnote">3</a></sup>.</p>
+
+<ul>
+  <li>
+    <p><a href="/tr/tutorials/hugin_compiling_ubuntu.html">Ubuntu Linux</a></p>
+  </li>
+  <li>
+    <p><a href="/tr/tutorials/hugin_compiling_fedora.html">Fedora Linux</a></p>
+  </li>
+  <li>
+    <p><a href="/tr/tutorials/hugin_compiling_osx.html">Mac OSX</a></p>
+  </li>
+  <li>
+    <p><a href="/tr/tutorials/hugin_compiling_windows.html">Windows</a></p>
+  </li>
+</ul>
+
+<h2 id="смотрите-также">
+<a class="anchor" href="#%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8%D1%82%D0%B5-%D1%82%D0%B0%D0%BA%D0%B6%D0%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Смотрите также</h2>
+
+<p>Руководства с Enblend:</p>
+
+<ul>
+  <li>
+    <p><a href="/tr/tutorials/using_enblend_to_fill_the_Hole_in_the_floor.html">Использование enblend для заполнения «дыры в полу»</a></p>
+  </li>
+  <li>
+    <p><a href="/tr/tutorials/how_to_use_enblend_for_patching_zenith_and_nadir_images.html">Как использовать enblend для исправления изображений зенита и надира</a></p>
+  </li>
+  <li>
+    <p><a href="/tr/tutorials/how_to_remove_blending_error_caused_by_enblend_and_enfuse_at_zenith_and_nadir_automatic.html">Как удалить ошибки смешивания, сделанные enblend и enfuse, в зените и надире (автоматически)</a></p>
+  </li>
+</ul>
+
+<h2 id="ссылки">
+<a class="anchor" href="#%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ссылки</h2>
+
+<ul>
+  <li>
+    <p><a href="https://enblend.sourceforge.net/">Страница проекта Enblend</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.kekus.com/xblend">xblend</a><sup id="fnref:xblend" role="doc-noteref"><a href="#fn:xblend" class="footnote" rel="footnote">4</a></sup></p>
+  </li>
+</ul>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:front" role="doc-endnote">
+      <p>ПО недоступно, перевод заглушки не требуется. <a href="#fnref:front" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:refm" role="doc-endnote">
+      <p>На Panotools Wiki стоит заглушка со ссылкой на историческую страницу, которую я тут и использовал.
+     Переводить заглушку смысла нет. <a href="#fnref:refm" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:hugin" role="doc-endnote">
+      <p>Вообще не понял, почему тут произошел такой переход к процессу разработки Hugin… <a href="#fnref:hugin" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:xblend" role="doc-endnote">
+      <p>Ссылка не работает. <a href="#fnref:xblend" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+
+<hr style="clear: both;">
+
+<script src="https://giscus.app/client.js" data-repo="shikhalev/hugin_doc_ru" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTkyMTM5NjU=" data-category="General" data-category-id="DIC_kwDOD3NKjc4B_XvC" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="ru" data-loading="lazy" crossorigin="anonymous" async>
+</script>
+
+</article>
+
+</main><aside id="search">
+<script async src="https://cse.google.com/cse.js?cx=b2790c4aaf6b24d8c"></script>
+<div class="gcse-search"></div>
+
+</aside><aside id="toc" class="toc toc-page">
+  <h4>Содержание</h4>
+  <ul id="toc_list" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#обзор">Обзор</a></li>
+<li class="toc-entry toc-h2"><a href="#использование-изкомандной-строки">Использование из командной строки</a></li>
+<li class="toc-entry toc-h2"><a href="#где-взять">Где взять?</a></li>
+<li class="toc-entry toc-h2"><a href="#разработка">Разработка</a></li>
+<li class="toc-entry toc-h2"><a href="#смотрите-также">Смотрите также</a></li>
+<li class="toc-entry toc-h2"><a href="#ссылки">Ссылки</a></li>
+</ul>
+</aside><aside class="backlinks" id="backs"><h4>Ссылки сюда</h4><ul><li class="fa-icon-li-file-alt"><a href="/2022/11/29/start.html" title="Уже переведено">Уже переведено</a></li><li class="fa-icon-li-file"><a href="/tr/glossary/alpha_channel.html" title="Альфа-канал">Альфа-канал</a></li><li class="fa-icon-li-file"><a href="/tr/glossary/bracketing.html" title="Брекетинг">Брекетинг</a></li><li class="fa-icon-li-file"><a href="/tr/glossary/hdr.html" title="Расширенный динамический диапазон (High Dynamic Range)">HDR</a></li><li class="fa-icon-li-file"><a href="/tr/hugin/" title="Hugin">Hugin</a></li><li class="fa-icon-li-file"><a href="/tr/tutorials/full_16_bit_workflow.html" title="Полностью 16-битный процесс">Полностью 16-битный процесс</a></li></ul>
+    </aside><aside id="donate" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><!-- скрываем через style, чтоб не менять макет полностью -->
+<aside id="ga" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><aside id="feeds" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><aside id="contacts"><h4>Обратная связь</h4>
+
+<ul>
+  <li class="fa-icon-li-github">
+    <a href="https://github.com/shikhalev/hugin_doc_ru" style="font-weight: bold;">shikhalev/hugin_doc_ru</a>
+    <ul>
+      <li class="fa-icon-li-comments"><a href="https://github.com/shikhalev/hugin_doc_ru/discussions">Обсуждения</a></li>
+      <li class="fa-icon-li-comment-dots"><a href="https://github.com/shikhalev/hugin_doc_ru/issues">Проблемы и задачи</a></li>
+    </ul>
+  </li>
+  <li class="fa-icon-li-envelope">
+    <a href="mailto:hugin-doc-ru@shikhalev.org">hugin-doc-ru@shikhalev.org</a>
+  </li>
+  <li class="fa-icon-li-home">
+    <a href="https://shikhalev.org/" style="font-weight: bold;">https://shikhalev.org/</a>
+  </li>
+</ul>
+</aside><aside id="sidebar" style="border:none;box-shadow:none;"></aside><footer id="site-footer"><!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=91267624&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://metrika-informer.com/informer/91267624/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;float:right;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="91267624" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<p style="font-weight: bold;">© 2022 <a href="/about/">Иван Шихалев</a></p>
+
+<p>Материалы сайта опубликованы под лицензией
+<a style="font-weight: bold;" href="https://www.gnu.org/licenses/fdl-1.3.ru.html">GNU FDL 1.3</a>,
+если не оговорено иное. <a href="https://github.com/shikhalev/jekyll-theme">Программный код</a> непосредственно сайта — под лицензией
+<a style="font-weight: bold;" href="https://opensource.org/licenses/MIT">MIT</a>.</p>
+
+<p>Сайт сформирован статическим генератором <a style="font-weight: bold;" href="https://jekyllrb.com/">Jekyll</a>. Отдельная благодарность автору <a style="font-weight: bold;" href="https://github.com/allejo/jekyll-toc">allejo/jekyll-toc</a>.</p>
+</footer>
+
+<div id="hl"></div>
+<div id="hr"></div>
+<div id="hb"></div>
+<div id="fl"></div>
+<div id="fr"></div>
+
+</div> <!-- #grid -->
+
+<div id="topper" title="Вернуться наверх страницы"><span class="fas">&#xf35b;</span></div>
+<script async src="/assets/js/topper.js"></script>
+
+</div> <!-- #global-box -->
+
+</body>
+
+</html>

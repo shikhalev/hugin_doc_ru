@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" title="CC BY-SA 4.0">
+  <meta name="license" content="CC BY-SA 4.0">
+  <link rel="icon" href="https://hugin.shikhalev.org/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+  
+  <link rel="stylesheet" href="/assets/local.css" type="text/css">
+  
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Вкладка «Сдвиг/Смещение» | Hugin по-русски</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Вкладка «Сдвиг/Смещение»" />
+<meta name="author" content="Иван Шихалев" />
+<meta property="og:locale" content="ru" />
+<meta name="description" content="С помощью этого инструмента вы можете изменять панораму в интерактивном режиме. Попробуйте следующее: Перетащите панораму левой кнопкой мыши, чтобы повернуть изображения панорамы. Центр вращения — это точка, в которой вы нажали кнопку мыши. Удерживайте [Shift] при выполнении вышеупомянутого, чтобы изменять смещение вокруг вертикали и наклон горизонта по отдельности. Обратите внимание, что на наклон влияет центр вращения. Перетащите панораму правой кнопкой мыши или левой с [Ctrl], чтобы вращать панораму вокруг центра. Если панорама содержит неподключенные компоненты (т.е. не связанные контрольными точками), они будут перемещаться по отдельности. Существует также настраиваемый режим перетаскивания (см. ниже). Режим перетаскивания Этот выбор определяет, какие параметры изменяются при перетаскивании изображений. Нормальный: при перетаскивании влево-вправо изменяется угол вокруг вертикали, а при перетаскивании вверх-вниз — наклон горизонта (т.е. камера поворачивается по углам рысканья и тангажа). Нормальный, настраиваемый: добавляет флажки к кнопкам отображаемых кадров; здесь вы можете выбрать, какие изображения перетаскивать, по отдельности или вместе. При выборе этого режима соединения контрольных точек между фотографиями игнорируются. В настраиваемом режиме вы можете выбрать галочками изображения для перетаскивания. Вы также можете добавить изображения в группу, нажав на изображение на панораме, одновременно нажимая клавишу [Ctrl]. При нажатии на изображение с клавишами [Ctrl] и [Shift] изображение удаляется из группы. В экспертном режиме также можно изменить параметры преобразования X и Y перетаскиванием. Мозаика: при перетаскивании влево-вправо изменяется параметр X, а при перетаскивании вверх-вниз изменяется параметр Y (т.е. камера перемещается в измерениях X и Y). Мозаика, настраиваемая: то же самое, но с возможностью выбора отдельных кадров. По центру Эта кнопка горизонтально выравнивает выходные данные, изменяя отклонение собранных изображений, чтобы они соответствовали центру выходного кадра. Это полезно, если слева или справа от выходных данных много черного пространства. Она также выполняет подгонку, эквивалентную следующей кнопке. Обратите внимание, что центрирование панорамы в проекциях «Прямолинейная» или «Рыбий глаз» изменит перспективу, что может быть нежелательным. Уместить Эта кнопка не меняет никаких параметров входного изображения; она просто перенастраивает отображаемое поле зрения так, чтобы все входные изображения были видны. Если все изображения смещены от центра, будет много черного пространства. Выпрямить Выпрямление панорамы оптимизирует крен и тангаж входных изображений без изменения их относительного положения, выравнивая панораму в процессе. Это обычно дает хорошие результаты; если вам нужно более точное позиционирование, попробуйте добавить вертикальные контрольные точки на соответствующей вкладке редактора и повторить оптимизацию." />
+<meta property="og:description" content="С помощью этого инструмента вы можете изменять панораму в интерактивном режиме. Попробуйте следующее: Перетащите панораму левой кнопкой мыши, чтобы повернуть изображения панорамы. Центр вращения — это точка, в которой вы нажали кнопку мыши. Удерживайте [Shift] при выполнении вышеупомянутого, чтобы изменять смещение вокруг вертикали и наклон горизонта по отдельности. Обратите внимание, что на наклон влияет центр вращения. Перетащите панораму правой кнопкой мыши или левой с [Ctrl], чтобы вращать панораму вокруг центра. Если панорама содержит неподключенные компоненты (т.е. не связанные контрольными точками), они будут перемещаться по отдельности. Существует также настраиваемый режим перетаскивания (см. ниже). Режим перетаскивания Этот выбор определяет, какие параметры изменяются при перетаскивании изображений. Нормальный: при перетаскивании влево-вправо изменяется угол вокруг вертикали, а при перетаскивании вверх-вниз — наклон горизонта (т.е. камера поворачивается по углам рысканья и тангажа). Нормальный, настраиваемый: добавляет флажки к кнопкам отображаемых кадров; здесь вы можете выбрать, какие изображения перетаскивать, по отдельности или вместе. При выборе этого режима соединения контрольных точек между фотографиями игнорируются. В настраиваемом режиме вы можете выбрать галочками изображения для перетаскивания. Вы также можете добавить изображения в группу, нажав на изображение на панораме, одновременно нажимая клавишу [Ctrl]. При нажатии на изображение с клавишами [Ctrl] и [Shift] изображение удаляется из группы. В экспертном режиме также можно изменить параметры преобразования X и Y перетаскиванием. Мозаика: при перетаскивании влево-вправо изменяется параметр X, а при перетаскивании вверх-вниз изменяется параметр Y (т.е. камера перемещается в измерениях X и Y). Мозаика, настраиваемая: то же самое, но с возможностью выбора отдельных кадров. По центру Эта кнопка горизонтально выравнивает выходные данные, изменяя отклонение собранных изображений, чтобы они соответствовали центру выходного кадра. Это полезно, если слева или справа от выходных данных много черного пространства. Она также выполняет подгонку, эквивалентную следующей кнопке. Обратите внимание, что центрирование панорамы в проекциях «Прямолинейная» или «Рыбий глаз» изменит перспективу, что может быть нежелательным. Уместить Эта кнопка не меняет никаких параметров входного изображения; она просто перенастраивает отображаемое поле зрения так, чтобы все входные изображения были видны. Если все изображения смещены от центра, будет много черного пространства. Выпрямить Выпрямление панорамы оптимизирует крен и тангаж входных изображений без изменения их относительного положения, выравнивая панораму в процессе. Это обычно дает хорошие результаты; если вам нужно более точное позиционирование, попробуйте добавить вертикальные контрольные точки на соответствующей вкладке редактора и повторить оптимизацию." />
+<link rel="canonical" href="https://hugin.shikhalev.org/tr/hugin/main/move_drag_tab.html" />
+<meta property="og:url" content="https://hugin.shikhalev.org/tr/hugin/main/move_drag_tab.html" />
+<meta property="og:site_name" content="Hugin по-русски" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Вкладка «Сдвиг/Смещение»" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Иван Шихалев"},"dateModified":"2022-11-22T00:00:00+00:00","datePublished":"2022-01-01T00:00:00+00:00","description":"С помощью этого инструмента вы можете изменять панораму в интерактивном режиме. Попробуйте следующее: Перетащите панораму левой кнопкой мыши, чтобы повернуть изображения панорамы. Центр вращения — это точка, в которой вы нажали кнопку мыши. Удерживайте [Shift] при выполнении вышеупомянутого, чтобы изменять смещение вокруг вертикали и наклон горизонта по отдельности. Обратите внимание, что на наклон влияет центр вращения. Перетащите панораму правой кнопкой мыши или левой с [Ctrl], чтобы вращать панораму вокруг центра. Если панорама содержит неподключенные компоненты (т.е. не связанные контрольными точками), они будут перемещаться по отдельности. Существует также настраиваемый режим перетаскивания (см. ниже). Режим перетаскивания Этот выбор определяет, какие параметры изменяются при перетаскивании изображений. Нормальный: при перетаскивании влево-вправо изменяется угол вокруг вертикали, а при перетаскивании вверх-вниз — наклон горизонта (т.е. камера поворачивается по углам рысканья и тангажа). Нормальный, настраиваемый: добавляет флажки к кнопкам отображаемых кадров; здесь вы можете выбрать, какие изображения перетаскивать, по отдельности или вместе. При выборе этого режима соединения контрольных точек между фотографиями игнорируются. В настраиваемом режиме вы можете выбрать галочками изображения для перетаскивания. Вы также можете добавить изображения в группу, нажав на изображение на панораме, одновременно нажимая клавишу [Ctrl]. При нажатии на изображение с клавишами [Ctrl] и [Shift] изображение удаляется из группы. В экспертном режиме также можно изменить параметры преобразования X и Y перетаскиванием. Мозаика: при перетаскивании влево-вправо изменяется параметр X, а при перетаскивании вверх-вниз изменяется параметр Y (т.е. камера перемещается в измерениях X и Y). Мозаика, настраиваемая: то же самое, но с возможностью выбора отдельных кадров. По центру Эта кнопка горизонтально выравнивает выходные данные, изменяя отклонение собранных изображений, чтобы они соответствовали центру выходного кадра. Это полезно, если слева или справа от выходных данных много черного пространства. Она также выполняет подгонку, эквивалентную следующей кнопке. Обратите внимание, что центрирование панорамы в проекциях «Прямолинейная» или «Рыбий глаз» изменит перспективу, что может быть нежелательным. Уместить Эта кнопка не меняет никаких параметров входного изображения; она просто перенастраивает отображаемое поле зрения так, чтобы все входные изображения были видны. Если все изображения смещены от центра, будет много черного пространства. Выпрямить Выпрямление панорамы оптимизирует крен и тангаж входных изображений без изменения их относительного положения, выравнивая панораму в процессе. Это обычно дает хорошие результаты; если вам нужно более точное позиционирование, попробуйте добавить вертикальные контрольные точки на соответствующей вкладке редактора и повторить оптимизацию.","headline":"Вкладка «Сдвиг/Смещение»","mainEntityOfPage":{"@type":"WebPage","@id":"https://hugin.shikhalev.org/tr/hugin/main/move_drag_tab.html"},"url":"https://hugin.shikhalev.org/tr/hugin/main/move_drag_tab.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JBR18FLSCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JBR18FLSCW');
+</script>
+
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+   ym(91267624, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/91267624" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --></head>
+
+<body>
+
+<div id="global-box">
+
+<div id="watermark-container">
+  <div id="watermark">shikhalev.org</div>
+</div>
+
+<div id="grid">
+
+<header id="site-header"><p class="logo"><a href="/">Hugin по-русски</a></p></header>
+
+<nav id="navy"><div class="wrapper">
+  <input type="checkbox" id="navy-check">
+  <label for="navy-check">
+    <span id="menu-icon" class="fas">&#xf0c9;</span>
+  </label>
+  <div id="navy-menu"><a class="navy-item fa-icon-book-open" href="/guide/">Руководство</a><a class="navy-item fa-icon-language" href="/tr/">Перевод</a><a class="navy-item fa-icon-id-card" href="/about/">О проекте</a></div>
+</div></nav>
+
+<main id="main"><aside class="categories">
+  <a class="fa-icon-home" href="/" title="Главная страница сайта"></a>​<a class="fa-icon-language" href="/tr/" title="Перевод">Перевод</a>​<a class="fa-icon-folder-open-black" href="/tr/hugin/" title="Hugin">Hugin</a>​<a class="fa-icon-folder-open-black" href="/tr/hugin/main/" title="Главное окно">Главное окно</a></aside>
+<article class="layout-page"><header class="page-header"><h1 class="title-page" itemprop="name headline">Вкладка «Сдвиг/Смещение»</h1><aside class="share">
+  <a class="fab" target="_blank" title="Поделиться во ВКонтакте" href="https://vk.com/share.php?url=https%3A%2F%2Fhugin.shikhalev.org%2Ftr%2Fhugin%2Fmain%2Fmove_drag_tab.html">&#xf189;</a>
+  <a class="fab" target="_blank" title="Поделиться в Фейсбуке" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhugin.shikhalev.org%2Ftr%2Fhugin%2Fmain%2Fmove_drag_tab.html">&#xf39e;</a>
+  <a class="fab" target="_blank" title="Поделиться в Телеграме" href="https://t.me/share/url?url=https%3A%2F%2Fhugin.shikhalev.org%2Ftr%2Fhugin%2Fmain%2Fmove_drag_tab.html">&#xf3fe;</a>
+  <a class="fab" target="_blank" title="Поделиться в Твиттере" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhugin.shikhalev.org%2Ftr%2Fhugin%2Fmain%2Fmove_drag_tab.html&text=%D0%92%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0+%C2%AB%D0%A1%D0%B4%D0%B2%D0%B8%D0%B3%2F%D0%A1%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%C2%BB">&#xf099;</a>
+  <a class="fab" target="_blank" title="Сохранить ссылку в Evernote" href="https://www.evernote.com/clip.action?title=%D0%92%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0+%C2%AB%D0%A1%D0%B4%D0%B2%D0%B8%D0%B3%2F%D0%A1%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%C2%BB&url=https%3A%2F%2Fhugin.shikhalev.org%2Ftr%2Fhugin%2Fmain%2Fmove_drag_tab.html">&#xf839;</a>
+</aside>
+</header><p class="meta">Источник: <a href="https://wiki.panotools.org/Hugin_move_drag_tab">https://wiki.panotools.org/Hugin​_move​_drag​_tab</a></p><hr style="clear: both;">
+
+
+
+
+
+
+<p><img src="/assets/img/tr/move-drag-tab.png" alt="Вкладка «Сдвиг/Смещение»"></p>
+
+<p>С помощью этого инструмента вы можете изменять панораму в интерактивном режиме. Попробуйте следующее:</p>
+
+<ul>
+  <li>Перетащите панораму левой кнопкой мыши, чтобы повернуть изображения панорамы. Центр вращения — это точка,
+в которой вы нажали кнопку мыши.</li>
+  <li>Удерживайте <code class="language-plaintext highlighter-rouge">[Shift]</code> при выполнении вышеупомянутого, чтобы изменять смещение вокруг вертикали и наклон горизонта
+по отдельности. Обратите внимание, что на наклон влияет центр вращения.</li>
+  <li>Перетащите панораму правой кнопкой мыши или левой с <code class="language-plaintext highlighter-rouge">[Ctrl]</code>, чтобы вращать панораму вокруг центра.</li>
+</ul>
+
+<p>Если панорама содержит неподключенные компоненты (т.е. не связанные <a href="/tr/glossary/control_points.html">контрольными точками</a>), они будут
+перемещаться по отдельности. Существует также <strong>настраиваемый</strong> режим перетаскивания (см. ниже).</p>
+
+<h2 id="режим-перетаскивания">
+<a class="anchor" href="#%D1%80%D0%B5%D0%B6%D0%B8%D0%BC-%D0%BF%D0%B5%D1%80%D0%B5%D1%82%D0%B0%D1%81%D0%BA%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>Режим перетаскивания</h2>
+
+<p>Этот выбор определяет, какие параметры изменяются при перетаскивании изображений.</p>
+
+<ul>
+  <li>
+<strong>Нормальный:</strong> при перетаскивании влево-вправо изменяется угол вокруг вертикали, а при перетаскивании вверх-вниз —
+наклон горизонта (т.е. камера поворачивается по углам рысканья и тангажа).</li>
+  <li>
+<strong>Нормальный, настраиваемый:</strong> добавляет флажки к кнопкам <strong>отображаемых кадров</strong>; здесь вы можете выбрать, какие
+изображения перетаскивать, по отдельности или вместе. При выборе этого режима соединения контрольных точек между
+фотографиями игнорируются.</li>
+</ul>
+
+<p>В настраиваемом режиме вы можете выбрать галочками изображения для перетаскивания. Вы также можете добавить изображения
+в группу, нажав на изображение на панораме, одновременно нажимая клавишу <code class="language-plaintext highlighter-rouge">[Ctrl]</code>. При нажатии на изображение с клавишами
+<code class="language-plaintext highlighter-rouge">[Ctrl]</code> и <code class="language-plaintext highlighter-rouge">[Shift]</code> изображение удаляется из группы.</p>
+
+<p>В экспертном режиме также можно изменить <a href="/tr/tutorials/stitching_a_photo_mosaic.html">параметры преобразования X и Y</a> перетаскиванием.</p>
+
+<ul>
+  <li>
+<strong>Мозаика:</strong> при перетаскивании влево-вправо изменяется параметр X, а при перетаскивании вверх-вниз изменяется параметр Y
+(т.е. камера перемещается в измерениях X и Y).</li>
+  <li>
+<strong>Мозаика, настраиваемая:</strong> то же самое, но с возможностью выбора отдельных кадров.</li>
+</ul>
+
+<h2 id="-по-центру">
+<a class="anchor" href="#-%D0%BF%D0%BE-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D1%83" aria-hidden="true"><span class="octicon octicon-link"></span></a><img src="/assets/img/tr/md-center.png" alt="Центрирование"> По центру</h2>
+
+<p>Эта кнопка горизонтально выравнивает выходные данные, изменяя <a href="/tr/glossary/yaw.html">отклонение</a> собранных изображений, чтобы они соответствовали
+центру выходного кадра. Это полезно, если слева или справа от выходных данных много черного пространства. Она также выполняет
+подгонку, эквивалентную следующей кнопке.</p>
+
+<p>Обратите внимание, что центрирование панорамы в проекциях «<a href="/tr/projections/rectilinear.html">Прямолинейная</a>» или «<a href="/tr/projections/fisheye.html">Рыбий глаз</a>» изменит перспективу,
+что может быть нежелательным.</p>
+
+<h2 id="-уместить">
+<a class="anchor" href="#-%D1%83%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D1%82%D1%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a><img src="/assets/img/tr/fit.png" alt="Уместить"> Уместить</h2>
+
+<p>Эта кнопка не меняет никаких параметров входного изображения; она просто перенастраивает отображаемое <a href="/tr/glossary/field_of_view.html">поле зрения</a> так,
+чтобы все входные изображения были видны. Если все изображения смещены от центра, будет много черного пространства.</p>
+
+<h2 id="-выпрямить">
+<a class="anchor" href="#-%D0%B2%D1%8B%D0%BF%D1%80%D1%8F%D0%BC%D0%B8%D1%82%D1%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a><img src="/assets/img/tr/straighten.png" alt="Выпрямить"> Выпрямить</h2>
+
+<p>Выпрямление панорамы оптимизирует <a href="/tr/glossary/roll.html">крен</a> и <a href="/tr/glossary/pitch.html">тангаж</a> входных изображений без изменения их относительного положения,
+выравнивая панораму в процессе. Это обычно дает хорошие результаты; если вам нужно более точное позиционирование, попробуйте
+добавить <a href="/tr/glossary/vertical_control_points.html">вертикальные контрольные точки</a> на <a href="/tr/hugin/panoed/control_points_tab.html">соответствующей вкладке редактора</a>
+и повторить оптимизацию.</p>
+
+
+
+<hr style="clear: both;">
+
+<script src="https://giscus.app/client.js" data-repo="shikhalev/hugin_doc_ru" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTkyMTM5NjU=" data-category="General" data-category-id="DIC_kwDOD3NKjc4B_XvC" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="ru" data-loading="lazy" crossorigin="anonymous" async>
+</script>
+
+</article>
+
+</main><aside id="search">
+<script async src="https://cse.google.com/cse.js?cx=b2790c4aaf6b24d8c"></script>
+<div class="gcse-search"></div>
+
+</aside><aside id="toc" class="toc toc-page">
+  <h4>Содержание</h4>
+  <ul id="toc_list" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#режим-перетаскивания">Режим перетаскивания</a></li>
+<li class="toc-entry toc-h2"><a href="#-по-центру"> По центру</a></li>
+<li class="toc-entry toc-h2"><a href="#-уместить"> Уместить</a></li>
+<li class="toc-entry toc-h2"><a href="#-выпрямить"> Выпрямить</a></li>
+</ul>
+</aside><aside class="backlinks" id="backs"><h4>Ссылки сюда</h4><ul><li class="fa-icon-li-file-alt"><a href="/2022/11/29/start.html" title="Уже переведено">Уже переведено</a></li><li class="fa-icon-li-file"><a href="/tr/hugin/" title="Hugin">Hugin</a></li><li class="fa-icon-li-file"><a href="/tr/hugin/main/assistant_tab.html" title="Вкладка «Ассистент»">Вкладка «Ассистент»</a></li><li class="fa-icon-li-file"><a href="/tr/hugin/main/" title="Главное окно">Главное окно</a></li><li class="fa-icon-li-file"><a href="/tr/hugin/panoed/photos_tab.html" title="Вкладка «Фотоснимки»">Вкладка «Фотоснимки»</a></li></ul>
+    </aside><aside id="donate" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><!-- скрываем через style, чтоб не менять макет полностью -->
+<aside id="ga" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><aside id="feeds" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><aside id="contacts"><h4>Обратная связь</h4>
+
+<ul>
+  <li class="fa-icon-li-github">
+    <a href="https://github.com/shikhalev/hugin_doc_ru" style="font-weight: bold;">shikhalev/hugin_doc_ru</a>
+    <ul>
+      <li class="fa-icon-li-comments"><a href="https://github.com/shikhalev/hugin_doc_ru/discussions">Обсуждения</a></li>
+      <li class="fa-icon-li-comment-dots"><a href="https://github.com/shikhalev/hugin_doc_ru/issues">Проблемы и задачи</a></li>
+    </ul>
+  </li>
+  <li class="fa-icon-li-envelope">
+    <a href="mailto:hugin-doc-ru@shikhalev.org">hugin-doc-ru@shikhalev.org</a>
+  </li>
+  <li class="fa-icon-li-home">
+    <a href="https://shikhalev.org/" style="font-weight: bold;">https://shikhalev.org/</a>
+  </li>
+</ul>
+</aside><aside id="sidebar" style="border:none;box-shadow:none;"></aside><footer id="site-footer"><!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=91267624&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://metrika-informer.com/informer/91267624/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;float:right;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="91267624" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<p style="font-weight: bold;">© 2022 <a href="/about/">Иван Шихалев</a></p>
+
+<p>Материалы сайта опубликованы под лицензией
+<a style="font-weight: bold;" href="https://www.gnu.org/licenses/fdl-1.3.ru.html">GNU FDL 1.3</a>,
+если не оговорено иное. <a href="https://github.com/shikhalev/jekyll-theme">Программный код</a> непосредственно сайта — под лицензией
+<a style="font-weight: bold;" href="https://opensource.org/licenses/MIT">MIT</a>.</p>
+
+<p>Сайт сформирован статическим генератором <a style="font-weight: bold;" href="https://jekyllrb.com/">Jekyll</a>. Отдельная благодарность автору <a style="font-weight: bold;" href="https://github.com/allejo/jekyll-toc">allejo/jekyll-toc</a>.</p>
+</footer>
+
+<div id="hl"></div>
+<div id="hr"></div>
+<div id="hb"></div>
+<div id="fl"></div>
+<div id="fr"></div>
+
+</div> <!-- #grid -->
+
+<div id="topper" title="Вернуться наверх страницы"><span class="fas">&#xf35b;</span></div>
+<script async src="/assets/js/topper.js"></script>
+
+</div> <!-- #global-box -->
+
+</body>
+
+</html>

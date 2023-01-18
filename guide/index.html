@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" title="CC BY-SA 4.0">
+  <meta name="license" content="CC BY-SA 4.0">
+  <link rel="icon" href="https://hugin.shikhalev.org/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+  
+  <link rel="stylesheet" href="/assets/local.css" type="text/css">
+  
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Руководство | Hugin по-русски</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Руководство" />
+<meta name="author" content="Иван Шихалев" />
+<meta property="og:locale" content="ru" />
+<meta name="description" content="Содержание (план) Руководство по Hugin Быстрый старт Интерфейс Простой интерфейс Редактор панорамы Экспертный режим Настройки Утилиты Hugin Обзор командной строки align_image_stack autooptimiser calibrate_lens_gui celeste_standalone checkpto cpclean cpfind deghosting_mask fulla geocpset hugin_executor hugin_hdrmerge hugin_lensdb hugin_stacker hugin_stitch_project icpfind linefind nona pano_modify pano_trafo PTBatcherGUI pto_gen pto_lensstack pto_mask pto_merge pto_move pto_template pto_var tca_correct verdandi vig_optimize Внешние утилиты Enblend/Enfuse enblend enfuse Panorama Tools (libpano13) panoinfo PTblender PTcrop PTinfo PTmasker PTmender PToptimizer PTroller PTtiff2psd PTtiffdump PTuncrop exiv2 exiftool dcraw Дополнительно ImageMagick Darktable &amp; RawTherapee GIMP HOWTOs Заметки Размер холста в TIFF Справочная информация Форматы данных TIFF JPEG Raw-форматы DNG OpenEXR Метаданные (EXIF) XMP Проекции Прямолинейная Цилиндрическая Эквидистантная Рыбий глаз Стереографическая Меркатора Поперечная Меркатора Синусоидальная Равновеликая цилиндрическая Ламберта Равновеликая азимутальная Ламберта Равновеликая коническая Альберса Цилиндрическая Миллера Панини Ахитектурная Ортографическая Равноцельная Эквидистантная Панини Двухплоскостная Трехплоскостная Общая Панини Тоби (Thoby) Равновеликая Хаммера-Аитова Глоссарий О съемке Панорамные головки Немного об объективах Съемка с рук" />
+<meta property="og:description" content="Содержание (план) Руководство по Hugin Быстрый старт Интерфейс Простой интерфейс Редактор панорамы Экспертный режим Настройки Утилиты Hugin Обзор командной строки align_image_stack autooptimiser calibrate_lens_gui celeste_standalone checkpto cpclean cpfind deghosting_mask fulla geocpset hugin_executor hugin_hdrmerge hugin_lensdb hugin_stacker hugin_stitch_project icpfind linefind nona pano_modify pano_trafo PTBatcherGUI pto_gen pto_lensstack pto_mask pto_merge pto_move pto_template pto_var tca_correct verdandi vig_optimize Внешние утилиты Enblend/Enfuse enblend enfuse Panorama Tools (libpano13) panoinfo PTblender PTcrop PTinfo PTmasker PTmender PToptimizer PTroller PTtiff2psd PTtiffdump PTuncrop exiv2 exiftool dcraw Дополнительно ImageMagick Darktable &amp; RawTherapee GIMP HOWTOs Заметки Размер холста в TIFF Справочная информация Форматы данных TIFF JPEG Raw-форматы DNG OpenEXR Метаданные (EXIF) XMP Проекции Прямолинейная Цилиндрическая Эквидистантная Рыбий глаз Стереографическая Меркатора Поперечная Меркатора Синусоидальная Равновеликая цилиндрическая Ламберта Равновеликая азимутальная Ламберта Равновеликая коническая Альберса Цилиндрическая Миллера Панини Ахитектурная Ортографическая Равноцельная Эквидистантная Панини Двухплоскостная Трехплоскостная Общая Панини Тоби (Thoby) Равновеликая Хаммера-Аитова Глоссарий О съемке Панорамные головки Немного об объективах Съемка с рук" />
+<link rel="canonical" href="https://hugin.shikhalev.org/guide/" />
+<meta property="og:url" content="https://hugin.shikhalev.org/guide/" />
+<meta property="og:site_name" content="Hugin по-русски" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Руководство" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Иван Шихалев"},"dateModified":"2022-01-01T00:00:00+00:00","datePublished":"2022-01-01T00:00:00+00:00","description":"Содержание (план) Руководство по Hugin Быстрый старт Интерфейс Простой интерфейс Редактор панорамы Экспертный режим Настройки Утилиты Hugin Обзор командной строки align_image_stack autooptimiser calibrate_lens_gui celeste_standalone checkpto cpclean cpfind deghosting_mask fulla geocpset hugin_executor hugin_hdrmerge hugin_lensdb hugin_stacker hugin_stitch_project icpfind linefind nona pano_modify pano_trafo PTBatcherGUI pto_gen pto_lensstack pto_mask pto_merge pto_move pto_template pto_var tca_correct verdandi vig_optimize Внешние утилиты Enblend/Enfuse enblend enfuse Panorama Tools (libpano13) panoinfo PTblender PTcrop PTinfo PTmasker PTmender PToptimizer PTroller PTtiff2psd PTtiffdump PTuncrop exiv2 exiftool dcraw Дополнительно ImageMagick Darktable &amp; RawTherapee GIMP HOWTOs Заметки Размер холста в TIFF Справочная информация Форматы данных TIFF JPEG Raw-форматы DNG OpenEXR Метаданные (EXIF) XMP Проекции Прямолинейная Цилиндрическая Эквидистантная Рыбий глаз Стереографическая Меркатора Поперечная Меркатора Синусоидальная Равновеликая цилиндрическая Ламберта Равновеликая азимутальная Ламберта Равновеликая коническая Альберса Цилиндрическая Миллера Панини Ахитектурная Ортографическая Равноцельная Эквидистантная Панини Двухплоскостная Трехплоскостная Общая Панини Тоби (Thoby) Равновеликая Хаммера-Аитова Глоссарий О съемке Панорамные головки Немного об объективах Съемка с рук","headline":"Руководство","mainEntityOfPage":{"@type":"WebPage","@id":"https://hugin.shikhalev.org/guide/"},"url":"https://hugin.shikhalev.org/guide/"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JBR18FLSCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JBR18FLSCW');
+</script>
+
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+   ym(91267624, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/91267624" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --></head>
+
+<body>
+
+<div id="global-box">
+
+<div id="watermark-container">
+  <div id="watermark">shikhalev.org</div>
+</div>
+
+<div id="grid">
+
+<header id="site-header"><p class="logo"><a href="/">Hugin по-русски</a></p></header>
+
+<nav id="navy"><div class="wrapper">
+  <input type="checkbox" id="navy-check">
+  <label for="navy-check">
+    <span id="menu-icon" class="fas">&#xf0c9;</span>
+  </label>
+  <div id="navy-menu"><a class="navy-item fa-icon-book-open" href="/guide/">Руководство</a><a class="navy-item fa-icon-language" href="/tr/">Перевод</a><a class="navy-item fa-icon-id-card" href="/about/">О проекте</a></div>
+</div></nav>
+
+<main id="main"><aside class="categories">
+  <a class="fa-icon-home" href="/" title="Главная страница сайта"></a></aside>
+<article class="layout-page"><header class="page-header"><h1 class="title-page" itemprop="name headline">Руководство</h1><aside class="share">
+  <a class="fab" target="_blank" title="Поделиться во ВКонтакте" href="https://vk.com/share.php?url=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2F">&#xf189;</a>
+  <a class="fab" target="_blank" title="Поделиться в Фейсбуке" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2F">&#xf39e;</a>
+  <a class="fab" target="_blank" title="Поделиться в Телеграме" href="https://t.me/share/url?url=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2F">&#xf3fe;</a>
+  <a class="fab" target="_blank" title="Поделиться в Твиттере" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2F&text=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE">&#xf099;</a>
+  <a class="fab" target="_blank" title="Сохранить ссылку в Evernote" href="https://www.evernote.com/clip.action?title=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE&url=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2F">&#xf839;</a>
+</aside>
+</header><hr style="clear: both;">
+
+
+
+<div class="sticker" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+ <p>Эта страница находится в процессе наполнения ее содержанием.</p>
+ 
+</div>
+<hr>
+
+
+
+<h2 id="содержание-план">
+<a class="anchor" href="#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BB%D0%B0%D0%BD" aria-hidden="true"><span class="octicon octicon-link"></span></a>Содержание (план)</h2>
+
+<ul class="caption">
+  <li class="fa-icon-li-folder-open">
+    <a class="stub" href="/guide/hugin/">Руководство по Hugin</a>
+    <ul>
+      <li class="fa-icon-li-file"><a class="done" href="/guide/hugin/quick_start.html">Быстрый старт</a></li>
+      <li class="fa-icon-li-folder-open">
+        <a class="stub" href="/guide/hugin/gui/">Интерфейс</a>
+        <ul>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/gui/simple.html">Простой интерфейс</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/gui/advanced.html">Редактор панорамы</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/gui/expert.html">Экспертный режим</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/gui/preferences.html">Настройки</a></li>
+        </ul>
+      </li>
+      <li class="fa-icon-li-folder-open">
+        <a class="stub" href="/guide/hugin/tools/">Утилиты Hugin</a>
+        <ul>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/command_line.html">Обзор командной строки</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/align_image_stack.html"><code>align_image_stack</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/autooptimiser.html"><code>autooptimiser</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/calibrate_lens_gui.html"><code>calibrate_lens_gui</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/celeste_standalone.html"><code>celeste_standalone</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/checkpto.html"><code>checkpto</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/cpclean.html"><code>cpclean</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/cpfind.html"><code>cpfind</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/deghosting_mask.html"><code>deghosting_mask</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/fulla.html"><code>fulla</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/geocpset.html"><code>geocpset</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/hugin_executor.html"><code>hugin_executor</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/hugin_hdrmerge.html"><code>hugin_hdrmerge</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/hugin_lensdb.html"><code>hugin_lensdb</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/hugin_stacker.html"><code>hugin_stacker</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/hugin_stitch_project.html"><code>hugin_stitch_project</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/icpfind.html"><code>icpfind</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/linefind.html"><code>linefind</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/nona.html"><code>nona</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/pano_modify.html"><code>pano_modify</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/pano_trafo.html"><code>pano_trafo</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/PTBatcherGUI.html"><code>PTBatcherGUI</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/pto_gen.html"><code>pto_gen</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/pto_lensstack.html"><code>pto_lensstack</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/pto_mask.html"><code>pto_mask</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/pto_merge.html"><code>pto_merge</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/pto_move.html"><code>pto_move</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/pto_template.html"><code>pto_template</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/pto_var.html"><code>pto_var</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/tca_correct.html"><code>tca_correct</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/verdandi.html"><code>verdandi</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/hugin/tools/vig_optimize.html"><code>vig_optimize</code></a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="fa-icon-li-folder-open">
+    <a class="stub" href="/guide/tools/">Внешние утилиты</a>
+    <ul>
+      <li class="fa-icon-li-folder-open">
+        <a class="stub" href="/guide/tools/enblend/">Enblend/Enfuse</a>
+        <ul>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/enblend/enblend.html"><code>enblend</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/enblend/enfuse.html"><code>enfuse</code></a></li>
+        </ul>
+      </li>
+      <li class="fa-icon-li-folder-open">
+        <a class="stub" href="/guide/tools/libpano13/">Panorama Tools (libpano13)</a>
+        <ul>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/libpano13/panoinfo.html"><code>panoinfo</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/libpano13/PTblender.html"><code>PTblender</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/libpano13/PTcrop.html"><code>PTcrop</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/libpano13/PTinfo.html"><code>PTinfo</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/libpano13/PTmasker.html"><code>PTmasker</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/libpano13/PTmender.html"><code>PTmender</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/libpano13/PToptimizer.html"><code>PToptimizer</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/libpano13/PTroller.html"><code>PTroller</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/libpano13/PTtiff2psd.html"><code>PTtiff2psd</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/libpano13/PTtiffdump.html"><code>PTtiffdump</code></a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/libpano13/PTuncrop.html"><code>PTuncrop</code></a></li>
+        </ul>
+      </li>
+      <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/exiv2.html"><code>exiv2</code></a></li>
+      <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/exiftool.html"><code>exiftool</code></a></li>
+      <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/dcraw.html"><code>dcraw</code></a></li>
+      <li class="fa-icon-li-folder-open">
+        <a class="stub" href="/guide/tools/other/">Дополнительно</a>
+        <ul>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/other/magick.html">ImageMagick</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/other/raw_converters.html">Darktable &amp; RawTherapee</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/tools/other/gimp.html">GIMP</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="fa-icon-li-folder-open">
+    <a class="stub" href="/guide/howto/">HOWTOs</a>
+  </li>
+  <li class="fa-icon-li-folder-open">
+    <a class="stub" href="/guide/notes/">Заметки</a>
+    <ul>
+      <li class="fa-icon-li-file"><a class="done" href="/guide/notes/tiff_canvas.html">Размер холста в TIFF</a></li>
+    </ul>
+  </li>
+  <li class="fa-icon-li-folder-open">
+    <a class="stub" href="/guide/ref/">Справочная информация</a>
+    <ul>
+      <li class="fa-icon-li-folder-open">
+        <a class="stub" href="/guide/ref/format/">Форматы данных</a>
+        <ul>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/format/tiff.html">TIFF</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/format/jpeg.html">JPEG</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/format/raw.html">Raw-форматы</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/format/dng.html">DNG</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/format/openexr.html">OpenEXR</a></li>
+          <li class="fa-icon-li-file">
+            <a class="stub" href="/guide/ref/format/exif.html">Метаданные (EXIF)</a>
+            <ul>
+              <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/format/xmp.html">XMP</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="fa-icon-li-folder-open">
+        <a class="stub" href="/guide/ref/projection/">Проекции</a>
+        <ul>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/rectilinear.html">Прямолинейная</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/cylindrical.html">Цилиндрическая</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/equirectangular.html">Эквидистантная</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/fisheye.html">Рыбий глаз</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/stereographic.html">Стереографическая</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/mercator.html">Меркатора</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/trans_mercator.html">Поперечная Меркатора</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/sinusoidal.html">Синусоидальная</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/lambert_cylindrical_equal_area.html">Равновеликая цилиндрическая Ламберта</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/lambert_equal_area_azimuthal.html">Равновеликая азимутальная Ламберта</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/albers_equal_area_conic.html">Равновеликая коническая Альберса</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/miller_cylindrical.html">Цилиндрическая Миллера</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/panini.html">Панини</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/architectural.html">Ахитектурная</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/orthographic.html">Ортографическая</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/equisolid.html">Равноцельная</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/equirectangular_panini.html">Эквидистантная Панини</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/biplane.html">Двухплоскостная</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/triplane.html">Трехплоскостная</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/panini_general.html">Общая Панини</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/thoby.html">Тоби (Thoby)</a></li>
+          <li class="fa-icon-li-file"><a class="stub" href="/guide/ref/projection/hammer_aitoff_equal_area.html">Равновеликая Хаммера-Аитова</a></li>
+        </ul>
+      </li>
+      <li class="fa-icon-li-file">
+        <a class="stub" href="/guide/ref/glossary.html">Глоссарий</a>
+      </li>
+    </ul>
+  </li>
+  <li class="fa-icon-li-folder-open">
+    <a class="stub" href="/guide/shoot/">О съемке</a>
+    <ul>
+      <li class="fa-icon-li-file"><a class="stub" href="/guide/shoot/heads.html">Панорамные головки</a></li>
+      <li class="fa-icon-li-file"><a class="stub" href="/guide/shoot/lens.html">Немного об объективах</a></li>
+      <li class="fa-icon-li-file"><a class="stub" href="/guide/shoot/hands.html">Съемка с рук</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+<hr style="clear: both;">
+
+<script src="https://giscus.app/client.js" data-repo="shikhalev/hugin_doc_ru" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTkyMTM5NjU=" data-category="General" data-category-id="DIC_kwDOD3NKjc4B_XvC" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="ru" data-loading="lazy" crossorigin="anonymous" async>
+</script>
+
+</article>
+
+</main><aside id="search">
+<script async src="https://cse.google.com/cse.js?cx=b2790c4aaf6b24d8c"></script>
+<div class="gcse-search"></div>
+
+</aside><aside id="toc" class="toc toc-page">
+  <h4>Содержание</h4>
+  <ul id="toc_list" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#содержание-план">Содержание (план)</a></li>
+</ul>
+</aside><aside id="backs" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><aside id="donate" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><!-- скрываем через style, чтоб не менять макет полностью -->
+<aside id="ga" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><aside id="feeds" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><aside id="contacts"><h4>Обратная связь</h4>
+
+<ul>
+  <li class="fa-icon-li-github">
+    <a href="https://github.com/shikhalev/hugin_doc_ru" style="font-weight: bold;">shikhalev/hugin_doc_ru</a>
+    <ul>
+      <li class="fa-icon-li-comments"><a href="https://github.com/shikhalev/hugin_doc_ru/discussions">Обсуждения</a></li>
+      <li class="fa-icon-li-comment-dots"><a href="https://github.com/shikhalev/hugin_doc_ru/issues">Проблемы и задачи</a></li>
+    </ul>
+  </li>
+  <li class="fa-icon-li-envelope">
+    <a href="mailto:hugin-doc-ru@shikhalev.org">hugin-doc-ru@shikhalev.org</a>
+  </li>
+  <li class="fa-icon-li-home">
+    <a href="https://shikhalev.org/" style="font-weight: bold;">https://shikhalev.org/</a>
+  </li>
+</ul>
+</aside><aside id="sidebar" style="border:none;box-shadow:none;"></aside><footer id="site-footer"><!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=91267624&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://metrika-informer.com/informer/91267624/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;float:right;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="91267624" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<p style="font-weight: bold;">© 2022 <a href="/about/">Иван Шихалев</a></p>
+
+<p>Материалы сайта опубликованы под лицензией
+<a style="font-weight: bold;" href="https://www.gnu.org/licenses/fdl-1.3.ru.html">GNU FDL 1.3</a>,
+если не оговорено иное. <a href="https://github.com/shikhalev/jekyll-theme">Программный код</a> непосредственно сайта — под лицензией
+<a style="font-weight: bold;" href="https://opensource.org/licenses/MIT">MIT</a>.</p>
+
+<p>Сайт сформирован статическим генератором <a style="font-weight: bold;" href="https://jekyllrb.com/">Jekyll</a>. Отдельная благодарность автору <a style="font-weight: bold;" href="https://github.com/allejo/jekyll-toc">allejo/jekyll-toc</a>.</p>
+</footer>
+
+<div id="hl"></div>
+<div id="hr"></div>
+<div id="hb"></div>
+<div id="fl"></div>
+<div id="fr"></div>
+
+</div> <!-- #grid -->
+
+<div id="topper" title="Вернуться наверх страницы"><span class="fas">&#xf35b;</span></div>
+<script async src="/assets/js/topper.js"></script>
+
+</div> <!-- #global-box -->
+
+</body>
+
+</html>

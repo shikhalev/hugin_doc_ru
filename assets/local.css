@@ -1,0 +1,631 @@
+@charset "UTF-8";
+/*! Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */
+@font-face { font-family: "Font Awesome 5 Brands"; font-style: normal; font-weight: 400; font-display: block; src: url("/assets/fa/webfonts/fa-brands-400.eot"); src: url("/assets/fa/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/assets/fa/webfonts/fa-brands-400.woff2") format("woff2"), url("/assets/fa/webfonts/fa-brands-400.woff") format("woff"), url("/assets/fa/webfonts/fa-brands-400.ttf") format("truetype"), url("/assets/fa/webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab, li.fa-icon-li-rust::marker, .fa-icon-rust::before, .fa-li-include-rust, li.fa-icon-li-linux::marker, .fa-icon-linux::before, .fa-li-include-linux, li.fa-icon-li-linkedin::marker, .fa-icon-linkedin::before, .fa-li-include-linkedin, li.fa-icon-li-instagram::marker, .fa-icon-instagram::before, .fa-li-include-instagram, li.fa-icon-li-github::marker, .fa-icon-github::before, .fa-li-include-github, li.fa-icon-li-facebook-f::marker, .fa-icon-facebook-f::before, .fa-li-include-facebook-f, li.fa-icon-li-twitter::marker, .fa-icon-twitter::before, .fa-li-include-twitter, li.fa-icon-li-vk::marker, .fa-icon-vk::before, .fa-li-include-vk { font-family: "Font Awesome 5 Brands"; font-weight: 400; }
+
+/*! Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */
+@font-face { font-family: "Font Awesome 5 Free"; font-style: normal; font-weight: 400; font-display: block; src: url("/assets/fa/webfonts/fa-regular-400.eot"); src: url("/assets/fa/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("/assets/fa/webfonts/fa-regular-400.woff2") format("woff2"), url("/assets/fa/webfonts/fa-regular-400.woff") format("woff"), url("/assets/fa/webfonts/fa-regular-400.ttf") format("truetype"), url("/assets/fa/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far, li.fa-icon-li-check-square::marker, .fa-icon-check-square::before, .done::before, .fa-li-include-check-square, li.fa-icon-li-square::marker, .fa-icon-square::before, .stub::before, .fa-li-include-square, li.fa-icon-li-comment::marker, .fa-icon-comment::before, .fa-li-include-comment, li.fa-icon-li-comments::marker, .fa-icon-comments::before, .fa-li-include-comments, li.fa-icon-li-comment-dots::marker, .fa-icon-comment-dots::before, .fa-li-include-comment-dots, li.fa-icon-li-star::marker, .fa-icon-star::before, .fa-li-include-star, li.fa-icon-li-gem::marker, .fa-icon-gem::before, .fa-li-include-gem, li.fa-icon-li-keyboard::marker, .fa-icon-keyboard::before, .fa-li-include-keyboard, li.fa-icon-li-envelope::marker, .fa-icon-envelope::before, .fa-li-include-envelope, li.fa-icon-li-folder-open::marker, .fa-icon-folder-open::before, .fa-li-include-folder-open, li.fa-icon-li-calendar-alt::marker, .fa-icon-calendar-alt::before, .fa-li-include-calendar-alt, li.fa-icon-li-bookmark::marker, .fa-icon-bookmark::before, .fa-li-include-bookmark, li.fa-icon-li-file-alt::marker, .fa-icon-file-alt::before, .fa-li-include-file-alt, li.fa-icon-li-file::marker, .fa-icon-file::before, .fa-li-include-file, li.fa-icon-li-id-card::marker, .fa-icon-id-card::before, .fa-li-include-id-card, li.fa-icon-li-newspaper::marker, .fa-icon-newspaper::before, .fa-li-include-newspaper { font-family: "Font Awesome 5 Free"; font-weight: 400; }
+
+/*! Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */
+@font-face { font-family: "Font Awesome 5 Free"; font-style: normal; font-weight: 900; font-display: block; src: url("/assets/fa/webfonts/fa-solid-900.eot"); src: url("/assets/fa/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/assets/fa/webfonts/fa-solid-900.woff2") format("woff2"), url("/assets/fa/webfonts/fa-solid-900.woff") format("woff"), url("/assets/fa/webfonts/fa-solid-900.ttf") format("truetype"), url("/assets/fa/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fa, .fas, li.fa-icon-li-copy::marker, .fa-icon-copy::before, .fa-li-include-copy, li.fa-icon-li-language::marker, .fa-icon-language::before, .fa-li-include-language, li.fa-icon-li-share-alt::marker, .fa-icon-share-alt::before, .fa-li-include-share-alt, li.fa-icon-li-feather-alt::marker, .fa-icon-feather-alt::before, .fa-li-include-feather-alt, li.fa-icon-li-server::marker, .fa-icon-server::before, .fa-li-include-server, li.fa-icon-li-biohazard::marker, .fa-icon-biohazard::before, .fa-li-include-biohazard, li.fa-icon-li-university::marker, .fa-icon-university::before, .fa-li-include-university, li.fa-icon-li-book-open::marker, .fa-icon-book-open::before, .fa-li-include-book-open, li.fa-icon-li-book::marker, .fa-icon-book::before, .fa-li-include-book, li.fa-icon-li-microchip::marker, .fa-icon-microchip::before, .fa-li-include-microchip, li.fa-icon-li-photo-video::marker, .fa-icon-photo-video::before, .fa-li-include-photo-video, li.fa-icon-li-magic::marker, .fa-icon-magic::before, .fa-li-include-magic, li.fa-icon-li-brain::marker, .fa-icon-brain::before, .fa-li-include-brain, li.fa-icon-li-globe::marker, .fa-icon-globe::before, .fa-li-include-globe, li.fa-icon-li-yin-yang::marker, .fa-icon-yin-yang::before, .fa-li-include-yin-yang, li.fa-icon-li-dove::marker, .fa-icon-dove::before, .fa-li-include-dove, li.fa-icon-li-icons::marker, .fa-icon-icons::before, .fa-li-include-icons, li.fa-icon-li-bullhorn::marker, .fa-icon-bullhorn::before, .fa-li-include-bullhorn, li.fa-icon-li-map-marked-alt::marker, .fa-icon-map-marked-alt::before, .fa-li-include-map-marked-alt, li.fa-icon-li-rss-square::marker, .fa-icon-rss-square::before, .fa-li-include-rss-square, li.fa-icon-li-tag::marker, .fa-icon-tag::before, .fa-li-include-tag, li.fa-icon-li-star-of-life::marker, .fa-icon-star-of-life::before, .fa-li-include-star-of-life, li.fa-icon-li-folder-open-black::marker, .fa-icon-folder-open-black::before, .fa-li-include-folder-open-black, li.fa-icon-li-users::marker, .fa-icon-users::before, .fa-li-include-users, li.fa-icon-li-leaf::marker, .fa-icon-leaf::before, .fa-li-include-leaf, li.fa-icon-li-home::marker, .fa-icon-home::before, .fa-li-include-home, li.fa-icon-li-hashtag::marker, .fa-icon-hashtag::before, .fa-li-include-hashtag, li.fa-icon-li-link::marker, .fa-icon-link::before, .fa-li-include-link, li.fa-icon-li-feather::marker, .fa-icon-feather::before, .fa-li-include-feather, li.fa-icon-li-camera::marker, .fa-icon-camera::before, .fa-li-include-camera, li.fa-icon-li-laptop-code::marker, .fa-icon-laptop-code::before, .fa-li-include-laptop-code { font-family: "Font Awesome 5 Free"; font-weight: 900; }
+
+.fa-li-include-laptop-code { content: " "; }
+
+.fa-icon-laptop-code::before { content: " "; }
+
+li.fa-icon-li-laptop-code::marker { content: " "; }
+
+.fa-li-include-camera { content: " "; }
+
+.fa-icon-camera::before { content: " "; }
+
+li.fa-icon-li-camera::marker { content: " "; }
+
+.fa-li-include-newspaper { content: " "; }
+
+.fa-icon-newspaper::before { content: " "; }
+
+li.fa-icon-li-newspaper::marker { content: " "; }
+
+.fa-li-include-feather { content: " "; }
+
+.fa-icon-feather::before { content: " "; }
+
+li.fa-icon-li-feather::marker { content: " "; }
+
+.fa-li-include-id-card { content: " "; }
+
+.fa-icon-id-card::before { content: " "; }
+
+li.fa-icon-li-id-card::marker { content: " "; }
+
+.fa-li-include-link { content: " "; }
+
+.fa-icon-link::before { content: " "; }
+
+li.fa-icon-li-link::marker { content: " "; }
+
+.fa-li-include-hashtag { content: " "; }
+
+.fa-icon-hashtag::before { content: " "; }
+
+li.fa-icon-li-hashtag::marker { content: " "; }
+
+.fa-li-include-file { content: " "; }
+
+.fa-icon-file::before { content: " "; }
+
+li.fa-icon-li-file::marker { content: " "; }
+
+.fa-li-include-file-alt { content: " "; }
+
+.fa-icon-file-alt::before { content: " "; }
+
+li.fa-icon-li-file-alt::marker { content: " "; }
+
+.fa-li-include-bookmark { content: " "; }
+
+.fa-icon-bookmark::before { content: " "; }
+
+li.fa-icon-li-bookmark::marker { content: " "; }
+
+.fa-li-include-calendar-alt { content: " "; }
+
+.fa-icon-calendar-alt::before { content: " "; }
+
+li.fa-icon-li-calendar-alt::marker { content: " "; }
+
+.fa-li-include-home { content: " "; }
+
+.fa-icon-home::before { content: " "; }
+
+li.fa-icon-li-home::marker { content: " "; }
+
+.fa-li-include-leaf { content: " "; }
+
+.fa-icon-leaf::before { content: " "; }
+
+li.fa-icon-li-leaf::marker { content: " "; }
+
+.fa-li-include-users { content: " "; }
+
+.fa-icon-users::before { content: " "; }
+
+li.fa-icon-li-users::marker { content: " "; }
+
+.fa-li-include-folder-open { content: " "; }
+
+.fa-icon-folder-open::before { content: " "; }
+
+li.fa-icon-li-folder-open::marker { content: " "; }
+
+.fa-li-include-folder-open-black { content: " "; }
+
+.fa-icon-folder-open-black::before { content: " "; }
+
+li.fa-icon-li-folder-open-black::marker { content: " "; }
+
+.fa-li-include-star-of-life { content: " "; }
+
+.fa-icon-star-of-life::before { content: " "; }
+
+li.fa-icon-li-star-of-life::marker { content: " "; }
+
+.fa-li-include-tag { content: " "; }
+
+.fa-icon-tag::before { content: " "; }
+
+li.fa-icon-li-tag::marker { content: " "; }
+
+.fa-li-include-rss-square { content: " "; }
+
+.fa-icon-rss-square::before { content: " "; }
+
+li.fa-icon-li-rss-square::marker { content: " "; }
+
+.fa-li-include-envelope { content: " "; }
+
+.fa-icon-envelope::before { content: " "; }
+
+li.fa-icon-li-envelope::marker { content: " "; }
+
+.fa-li-include-keyboard { content: " "; }
+
+.fa-icon-keyboard::before { content: " "; }
+
+li.fa-icon-li-keyboard::marker { content: " "; }
+
+.fa-li-include-map-marked-alt { content: " "; }
+
+.fa-icon-map-marked-alt::before { content: " "; }
+
+li.fa-icon-li-map-marked-alt::marker { content: " "; }
+
+.fa-li-include-vk { content: " "; }
+
+.fa-icon-vk::before { content: " "; }
+
+li.fa-icon-li-vk::marker { content: " "; }
+
+.fa-li-include-twitter { content: " "; }
+
+.fa-icon-twitter::before { content: " "; }
+
+li.fa-icon-li-twitter::marker { content: " "; }
+
+.fa-li-include-facebook-f { content: " "; }
+
+.fa-icon-facebook-f::before { content: " "; }
+
+li.fa-icon-li-facebook-f::marker { content: " "; }
+
+.fa-li-include-github { content: " "; }
+
+.fa-icon-github::before { content: " "; }
+
+li.fa-icon-li-github::marker { content: " "; }
+
+.fa-li-include-instagram { content: " "; }
+
+.fa-icon-instagram::before { content: " "; }
+
+li.fa-icon-li-instagram::marker { content: " "; }
+
+.fa-li-include-linkedin { content: " "; }
+
+.fa-icon-linkedin::before { content: " "; }
+
+li.fa-icon-li-linkedin::marker { content: " "; }
+
+.fa-li-include-bullhorn { content: " "; }
+
+.fa-icon-bullhorn::before { content: " "; }
+
+li.fa-icon-li-bullhorn::marker { content: " "; }
+
+.fa-li-include-icons { content: " "; }
+
+.fa-icon-icons::before { content: " "; }
+
+li.fa-icon-li-icons::marker { content: " "; }
+
+.fa-li-include-dove { content: " "; }
+
+.fa-icon-dove::before { content: " "; }
+
+li.fa-icon-li-dove::marker { content: " "; }
+
+.fa-li-include-yin-yang { content: " "; }
+
+.fa-icon-yin-yang::before { content: " "; }
+
+li.fa-icon-li-yin-yang::marker { content: " "; }
+
+.fa-li-include-globe { content: " "; }
+
+.fa-icon-globe::before { content: " "; }
+
+li.fa-icon-li-globe::marker { content: " "; }
+
+.fa-li-include-brain { content: " "; }
+
+.fa-icon-brain::before { content: " "; }
+
+li.fa-icon-li-brain::marker { content: " "; }
+
+.fa-li-include-gem { content: " "; }
+
+.fa-icon-gem::before { content: " "; }
+
+li.fa-icon-li-gem::marker { content: " "; }
+
+.fa-li-include-magic { content: " "; }
+
+.fa-icon-magic::before { content: " "; }
+
+li.fa-icon-li-magic::marker { content: " "; }
+
+.fa-li-include-photo-video { content: " "; }
+
+.fa-icon-photo-video::before { content: " "; }
+
+li.fa-icon-li-photo-video::marker { content: " "; }
+
+.fa-li-include-microchip { content: " "; }
+
+.fa-icon-microchip::before { content: " "; }
+
+li.fa-icon-li-microchip::marker { content: " "; }
+
+.fa-li-include-linux { content: " "; }
+
+.fa-icon-linux::before { content: " "; }
+
+li.fa-icon-li-linux::marker { content: " "; }
+
+.fa-li-include-book { content: " "; }
+
+.fa-icon-book::before { content: " "; }
+
+li.fa-icon-li-book::marker { content: " "; }
+
+.fa-li-include-book-open { content: " "; }
+
+.fa-icon-book-open::before { content: " "; }
+
+li.fa-icon-li-book-open::marker { content: " "; }
+
+.fa-li-include-university { content: " "; }
+
+.fa-icon-university::before { content: " "; }
+
+li.fa-icon-li-university::marker { content: " "; }
+
+.fa-li-include-rust { content: " "; }
+
+.fa-icon-rust::before { content: " "; }
+
+li.fa-icon-li-rust::marker { content: " "; }
+
+.fa-li-include-biohazard { content: " "; }
+
+.fa-icon-biohazard::before { content: " "; }
+
+li.fa-icon-li-biohazard::marker { content: " "; }
+
+.fa-li-include-server { content: " "; }
+
+.fa-icon-server::before { content: " "; }
+
+li.fa-icon-li-server::marker { content: " "; }
+
+.fa-li-include-feather-alt { content: " "; }
+
+.fa-icon-feather-alt::before { content: " "; }
+
+li.fa-icon-li-feather-alt::marker { content: " "; }
+
+.fa-li-include-star { content: " "; }
+
+.fa-icon-star::before { content: " "; }
+
+li.fa-icon-li-star::marker { content: " "; }
+
+.fa-li-include-comment-dots { content: " "; }
+
+.fa-icon-comment-dots::before { content: " "; }
+
+li.fa-icon-li-comment-dots::marker { content: " "; }
+
+.fa-li-include-comments { content: " "; }
+
+.fa-icon-comments::before { content: " "; }
+
+li.fa-icon-li-comments::marker { content: " "; }
+
+.fa-li-include-comment { content: " "; }
+
+.fa-icon-comment::before { content: " "; }
+
+li.fa-icon-li-comment::marker { content: " "; }
+
+.fa-li-include-share-alt { content: " "; }
+
+.fa-icon-share-alt::before { content: " "; }
+
+li.fa-icon-li-share-alt::marker { content: " "; }
+
+.fa-li-include-language { content: " "; }
+
+.fa-icon-language::before { content: " "; }
+
+li.fa-icon-li-language::marker { content: " "; }
+
+.fa-li-include-copy { content: " "; }
+
+.fa-icon-copy::before { content: " "; }
+
+li.fa-icon-li-copy::marker { content: " "; }
+
+.fa-li-include-square { content: " "; }
+
+.fa-icon-square::before, .stub::before { content: " "; }
+
+li.fa-icon-li-square::marker { content: " "; }
+
+.fa-li-include-check-square { content: " "; }
+
+.fa-icon-check-square::before, .done::before { content: " "; }
+
+li.fa-icon-li-check-square::marker { content: " "; }
+
+.img-icon-inaturalist { white-space: nowrap; }
+
+.img-icon-inaturalist::before { content: ""; background-image: url(/assets/img/ico/inaturalist.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-inaturalist span { white-space: normal; }
+
+.img-icon-gbif { white-space: nowrap; }
+
+.img-icon-gbif::before { content: ""; background-image: url(/assets/img/ico/gbif.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-gbif span { white-space: normal; }
+
+.img-icon-rust { white-space: nowrap; }
+
+.img-icon-rust::before { content: ""; background-image: url(/assets/img/ico/rust.png); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-rust span { white-space: normal; }
+
+.img-icon-ruby { white-space: nowrap; }
+
+.img-icon-ruby::before { content: ""; background-image: url(/assets/img/ico/ruby.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-ruby span { white-space: normal; }
+
+.img-icon-csharp { white-space: nowrap; }
+
+.img-icon-csharp::before { content: ""; background-image: url(/assets/img/ico/csharp.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-csharp span { white-space: normal; }
+
+.img-icon-gentoo { white-space: nowrap; }
+
+.img-icon-gentoo::before { content: ""; background-image: url(/assets/img/ico/gentoo.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-gentoo span { white-space: normal; }
+
+.img-icon-kde { white-space: nowrap; }
+
+.img-icon-kde::before { content: ""; background-image: url(/assets/img/ico/kde.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-kde span { white-space: normal; }
+
+.img-icon-linux-mint { white-space: nowrap; }
+
+.img-icon-linux-mint::before { content: ""; background-image: url(/assets/img/ico/linux-mint.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-linux-mint span { white-space: normal; }
+
+.img-icon-kde-neon { white-space: nowrap; }
+
+.img-icon-kde-neon::before { content: ""; background-image: url(/assets/img/ico/kde-neon.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-kde-neon span { white-space: normal; }
+
+.img-icon-camera { white-space: nowrap; }
+
+.img-icon-camera::before { content: ""; background-image: url(/assets/img/ico/camera.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-camera span { white-space: normal; }
+
+.img-icon-gmail { white-space: nowrap; }
+
+.img-icon-gmail::before { content: ""; background-image: url(/assets/img/ico/gmail.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-gmail span { white-space: normal; }
+
+.img-icon-jekyll { white-space: nowrap; }
+
+.img-icon-jekyll::before { content: ""; background-image: url(/assets/img/ico/jekyll.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-jekyll span { white-space: normal; }
+
+.img-icon-instagram { white-space: nowrap; }
+
+.img-icon-instagram::before { content: ""; background-image: url(/assets/img/ico/instagram.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-instagram span { white-space: normal; }
+
+.img-icon-github { white-space: nowrap; }
+
+.img-icon-github::before { content: ""; background-image: url(/assets/img/ico/github.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-github span { white-space: normal; }
+
+.img-icon-darktable { white-space: nowrap; }
+
+.img-icon-darktable::before { content: ""; background-image: url(/assets/img/ico/darktable.png); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-darktable span { white-space: normal; }
+
+.img-icon-hugin { white-space: nowrap; }
+
+.img-icon-hugin::before { content: ""; background-image: url(/assets/img/ico/hugin.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-hugin span { white-space: normal; }
+
+.img-icon-luminance-hdr { white-space: nowrap; }
+
+.img-icon-luminance-hdr::before { content: ""; background-image: url(/assets/img/ico/luminance-hdr.png); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-luminance-hdr span { white-space: normal; }
+
+.img-icon-imagemagick { white-space: nowrap; }
+
+.img-icon-imagemagick::before { content: ""; background-image: url(/assets/img/ico/imagemagick.png); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-imagemagick span { white-space: normal; }
+
+.img-icon-staticman { white-space: nowrap; }
+
+.img-icon-staticman::before { content: ""; background-image: url(/assets/img/ico/staticman.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-staticman span { white-space: normal; }
+
+.img-icon-heroku { white-space: nowrap; }
+
+.img-icon-heroku::before { content: ""; background-image: url(/assets/img/ico/heroku.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-heroku span { white-space: normal; }
+
+.img-icon-gitlab { white-space: nowrap; }
+
+.img-icon-gitlab::before { content: ""; background-image: url(/assets/img/ico/gitlab.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-gitlab span { white-space: normal; }
+
+.img-icon-git { white-space: nowrap; }
+
+.img-icon-git::before { content: ""; background-image: url(/assets/img/ico/git.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-git span { white-space: normal; }
+
+.img-icon-html5 { white-space: nowrap; }
+
+.img-icon-html5::before { content: ""; background-image: url(/assets/img/ico/html5.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-html5 span { white-space: normal; }
+
+.img-icon-css3 { white-space: nowrap; }
+
+.img-icon-css3::before { content: ""; background-image: url(/assets/img/ico/css3.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-css3 span { white-space: normal; }
+
+.img-icon-javascript { white-space: nowrap; }
+
+.img-icon-javascript::before { content: ""; background-image: url(/assets/img/ico/javascript.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-javascript span { white-space: normal; }
+
+.img-icon-paratype { white-space: nowrap; }
+
+.img-icon-paratype::before { content: ""; background-image: url(/assets/img/ico/paratype.png); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-paratype span { white-space: normal; }
+
+.img-icon-fa { white-space: nowrap; }
+
+.img-icon-fa::before { content: ""; background-image: url(/assets/img/ico/fontawesome.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-fa span { white-space: normal; }
+
+.img-icon-gf { white-space: nowrap; }
+
+.img-icon-gf::before { content: ""; background-image: url(/assets/img/ico/google-fonts.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-gf span { white-space: normal; }
+
+.img-icon-yoomoney { white-space: nowrap; }
+
+.img-icon-yoomoney::before { content: ""; background-image: url(/assets/img/ico/yoomoney.png); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-yoomoney span { white-space: normal; }
+
+.img-icon-gce { white-space: nowrap; }
+
+.img-icon-gce::before { content: ""; background-image: url(/assets/img/ico/gce.png); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-gce span { white-space: normal; }
+
+.img-icon-analytics { white-space: nowrap; }
+
+.img-icon-analytics::before { content: ""; background-image: url(/assets/img/ico/analytics.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-analytics span { white-space: normal; }
+
+.img-icon-metrica { white-space: nowrap; }
+
+.img-icon-metrica::before { content: ""; background-image: url(/assets/img/ico/metrika.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-metrica span { white-space: normal; }
+
+.img-icon-metrika { white-space: nowrap; }
+
+.img-icon-metrika::before { content: ""; background-image: url(/assets/img/ico/metrika.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-metrika span { white-space: normal; }
+
+.img-icon-liquid { white-space: nowrap; }
+
+.img-icon-liquid::before { content: ""; background-image: url(/assets/img/ico/liquid.png); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-liquid span { white-space: normal; }
+
+.img-icon-wikipedia { white-space: nowrap; }
+
+.img-icon-wikipedia::before { content: ""; background-image: url(/assets/img/ico/wikipedia.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-wikipedia span { white-space: normal; }
+
+.img-icon-locus-map { white-space: nowrap; }
+
+.img-icon-locus-map::before { content: ""; background-image: url(/assets/img/ico/locus-map.png); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-locus-map span { white-space: normal; }
+
+.img-icon-kdeconnect { white-space: nowrap; }
+
+.img-icon-kdeconnect::before { content: ""; background-image: url(/assets/img/ico/kdeconnect.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-kdeconnect span { white-space: normal; }
+
+.img-icon-gpxlab { white-space: nowrap; }
+
+.img-icon-gpxlab::before { content: ""; background-image: url(/assets/img/ico/gpxlab.png); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-gpxlab span { white-space: normal; }
+
+.img-icon-gpsbabel { white-space: nowrap; }
+
+.img-icon-gpsbabel::before { content: ""; background-image: url(/assets/img/ico/gpsbabel.png); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-gpsbabel span { white-space: normal; }
+
+.img-icon-phil-harvey { white-space: nowrap; }
+
+.img-icon-phil-harvey::before { content: ""; background-image: url(/assets/img/ico/phil-harvey.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-phil-harvey span { white-space: normal; }
+
+.img-icon-hugin-ru { white-space: nowrap; }
+
+.img-icon-hugin-ru::before { content: ""; background-image: url(/assets/img/ico/hugin-ru.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-hugin-ru span { white-space: normal; }
+
+.img-icon-giscus { white-space: nowrap; }
+
+.img-icon-giscus::before { content: ""; background-image: url(/assets/img/ico/giscus.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-giscus span { white-space: normal; }
+
+.img-icon-webmaster { white-space: nowrap; }
+
+.img-icon-webmaster::before { content: ""; background-image: url(/assets/img/ico/webmaster.svg); background-size: 100% 100%; background-repeat: no-repeat; display: inline-block; width: 1em; height: 1em; vertical-align: -12%; margin-right: 0.2em; }
+
+.img-icon-webmaster span { white-space: normal; }
+
+.img-icon-jekyll::before { width: 0.5em; }
+
+.img-icon-staticman::before { width: 1.5em; }
+
+.img-icon-javascript::before { vertical-align: -7%; }
+
+p.meta { font-family: "PT Sans Narrow", gnarrow, "Arial Narrow", sans-serif; color: #777777; }
+
+p.meta a, p.meta a:link, p.meta a:visited { color: #777777; }
+
+div.glossary_box { columns: 2; column-gap: 20px; }
+
+@media screen and (max-width: 650px) { div.glossary_box { columns: 1; } }
+
+div.glossary_group { break-inside: avoid-column; margin-bottom: 20px; }
+
+div.glossary_group h2 { margin-top: 0px; }
+
+@media print { .giscus { display: none; } }
+
+.done { font-weight: bold; }
+
+.stub { color: #777777; }
+
+.stub:link, .stub:visited { color: #777777; }
+
+/*# sourceMappingURL=local.css.map */

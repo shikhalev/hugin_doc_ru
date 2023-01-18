@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ru"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://hugin.shikhalev.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hugin.shikhalev.org/" rel="alternate" type="text/html" hreflang="ru" /><updated>2023-01-18T00:35:38+00:00</updated><id>https://hugin.shikhalev.org/feed.xml</id><title type="html">Hugin по-русски</title><subtitle>Проект перевода/переложения документации по редактору панорам Hugin на русский язык</subtitle><author><name>Иван Шихалев</name></author><entry><title type="html">Еще немного переведено</title><link href="https://hugin.shikhalev.org/2022/12/13/trs.html" rel="alternate" type="text/html" title="Еще немного переведено" /><published>2022-12-13T00:00:00+00:00</published><updated>2022-12-13T00:00:00+00:00</updated><id>https://hugin.shikhalev.org/2022/12/13/trs</id><content type="html" xml:base="https://hugin.shikhalev.org/2022/12/13/trs.html"><![CDATA[<h2 id="глоссарий">Глоссарий</h2>
+
+<ul>
+  <li><a href="/tr/glossary/dynamic_range.html">Динамический диапазон</a></li>
+  <li><a href="/tr/glossary/image_positioning_model.html">Модель позиционирования изображения</a>
+    <ul>
+      <li><a href="/tr/glossary/roll.html">Крен</a></li>
+      <li><a href="/tr/glossary/pitch.html">Тангаж</a></li>
+      <li><a href="/tr/glossary/yaw.html">Рысканье</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="внешние-инструменты">Внешние инструменты</h2>
+
+<ul>
+  <li><a href="/tr/panotools/smartblend.html">SmartBlend</a> (устарело)</li>
+</ul>]]></content><author><name>Иван Шихалев</name></author><summary type="html"><![CDATA[Глоссарий Динамический диапазон Модель позиционирования изображения Крен Тангаж Рысканье Внешние инструменты SmartBlend (устарело)]]></summary></entry><entry><title type="html">Небольшая заметка</title><link href="https://hugin.shikhalev.org/2022/12/03/tiff-canvas.html" rel="alternate" type="text/html" title="Небольшая заметка" /><published>2022-12-03T00:00:00+00:00</published><updated>2022-12-03T00:00:00+00:00</updated><id>https://hugin.shikhalev.org/2022/12/03/tiff-canvas</id><content type="html" xml:base="https://hugin.shikhalev.org/2022/12/03/tiff-canvas.html"><![CDATA[<p>Отдельной заметкой вынес особенность формируемых в Hu­gin TIFF-файлов.</p>
+
+<ul>
+  <li><a href="/guide/notes/tiff_canvas.html">Размер холста в TIFF</a></li>
+</ul>]]></content><author><name>Иван Шихалев</name></author><summary type="html"><![CDATA[Отдельной заметкой вынес особенность формируемых в Hu­gin TIFF-файлов. Размер холста в TIFF]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://hugin.shikhalev.org/assets/img/notes/tiff_canvas/cropped.jpg" /><media:content medium="image" url="https://hugin.shikhalev.org/assets/img/notes/tiff_canvas/cropped.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Статья в руководстве</title><link href="https://hugin.shikhalev.org/2022/11/30/quick-start.html" rel="alternate" type="text/html" title="Статья в руководстве" /><published>2022-11-30T00:00:00+00:00</published><updated>2022-11-30T00:00:00+00:00</updated><id>https://hugin.shikhalev.org/2022/11/30/quick-start</id><content type="html" xml:base="https://hugin.shikhalev.org/2022/11/30/quick-start.html"><![CDATA[<p>Написал статью по базовому использованию Hugin.</p>
+
+<ul>
+  <li><a href="/guide/hugin/quick_start.html">Быстрый старт</a></li>
+</ul>]]></content><author><name>Иван Шихалев</name></author><summary type="html"><![CDATA[Написал статью по базовому использованию Hugin. Быстрый старт]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://hugin.shikhalev.org/assets/img/quick_start/01_loaded.png" /><media:content medium="image" url="https://hugin.shikhalev.org/assets/img/quick_start/01_loaded.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Уже переведено</title><link href="https://hugin.shikhalev.org/2022/11/29/start.html" rel="alternate" type="text/html" title="Уже переведено" /><published>2022-11-29T00:00:00+00:00</published><updated>2022-11-29T00:00:00+00:00</updated><id>https://hugin.shikhalev.org/2022/11/29/start</id><content type="html" xml:base="https://hugin.shikhalev.org/2022/11/29/start.html"><![CDATA[<p>Пока очень мало, но кое-что есть.</p>
+
+<h2 id="hugin">Hugin</h2>
+
+<ul>
+  <li><a href="/tr/hugin/">Обзор</a></li>
+  <li><a href="/tr/hugin/main/">Главное окно (простой интерфейс пользователя)</a>
+    <ul>
+      <li><a href="/tr/hugin/main/assistant_tab.html">Вкладка «Ассистент»</a></li>
+      <li><a href="/tr/hugin/main/preview_tab.html">Вкладка «Предпросмотр»</a></li>
+      <li><a href="/tr/hugin/main/#layout">Вкладка «Размещение»</a></li>
+      <li><a href="/tr/hugin/main/projection_tab.html">Вкладка «Проекция»</a></li>
+      <li><a href="/tr/hugin/main/move_drag_tab.html">Вкладка «Сдвиг/Смещение»</a></li>
+      <li><a href="/tr/hugin/main/crop_tab.html">Вкладка «Обрезка»</a></li>
+    </ul>
+  </li>
+</ul>
+
+<!--more-->
+
+<h2 id="глоссарий">Глоссарий</h2>
+
+<ul>
+  <li><a href="/tr/glossary/16bit.html">16 бит</a></li>
+  <li><a href="/tr/glossary/hdr.html">HDR</a></li>
+  <li><a href="/tr/glossary/alpha_channel.html">Альфа-канал</a></li>
+  <li><a href="/tr/glossary/bracketing.html">Брекетинг</a></li>
+</ul>
+
+<h2 id="прочее">Прочее</h2>
+
+<ul>
+  <li><a href="/tr/tutorials/full_16_bit_workflow.html">Полностью 16-битный процесс</a></li>
+  <li><a href="/tr/tools/enblend.html">Enblend</a></li>
+</ul>]]></content><author><name>Иван Шихалев</name></author><summary type="html"><![CDATA[Пока очень мало, но кое-что есть. Hugin Обзор Главное окно (простой интерфейс пользователя) Вкладка «Ассистент» Вкладка «Предпросмотр» Вкладка «Размещение» Вкладка «Проекция» Вкладка «Сдвиг/Смещение» Вкладка «Обрезка»]]></summary></entry></feed>

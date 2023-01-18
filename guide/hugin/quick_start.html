@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" title="CC BY-SA 4.0">
+  <meta name="license" content="CC BY-SA 4.0">
+  <link rel="icon" href="https://hugin.shikhalev.org/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+  
+  <link rel="stylesheet" href="/assets/local.css" type="text/css">
+  
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Быстрый старт | Hugin по-русски</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Быстрый старт" />
+<meta name="author" content="Иван Шихалев" />
+<meta property="og:locale" content="ru" />
+<meta name="description" content="Базовый процесс создания панорамы в Hugin пошагово" />
+<meta property="og:description" content="Базовый процесс создания панорамы в Hugin пошагово" />
+<link rel="canonical" href="https://hugin.shikhalev.org/guide/hugin/quick_start.html" />
+<meta property="og:url" content="https://hugin.shikhalev.org/guide/hugin/quick_start.html" />
+<meta property="og:site_name" content="Hugin по-русски" />
+<meta property="og:image" content="https://hugin.shikhalev.org/img/2022/11/30/quick_start/01_loaded-640x640-500-261-0-0.webp" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-11-30T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://hugin.shikhalev.org/img/2022/11/30/quick_start/01_loaded-640x640-500-261-0-0.webp" />
+<meta property="twitter:title" content="Быстрый старт" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Иван Шихалев"},"dateModified":"2022-11-30T00:00:00+00:00","datePublished":"2022-11-30T00:00:00+00:00","description":"Базовый процесс создания панорамы в Hugin пошагово","headline":"Быстрый старт","image":"https://hugin.shikhalev.org/img/2022/11/30/quick_start/01_loaded-640x640-500-261-0-0.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://hugin.shikhalev.org/guide/hugin/quick_start.html"},"url":"https://hugin.shikhalev.org/guide/hugin/quick_start.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JBR18FLSCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JBR18FLSCW');
+</script>
+
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+   ym(91267624, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/91267624" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --></head>
+
+<body>
+
+<div id="global-box">
+
+<div id="watermark-container">
+  <div id="watermark">shikhalev.org</div>
+</div>
+
+<div id="grid">
+
+<header id="site-header"><p class="logo"><a href="/">Hugin по-русски</a></p></header>
+
+<nav id="navy"><div class="wrapper">
+  <input type="checkbox" id="navy-check">
+  <label for="navy-check">
+    <span id="menu-icon" class="fas">&#xf0c9;</span>
+  </label>
+  <div id="navy-menu"><a class="navy-item fa-icon-book-open" href="/guide/">Руководство</a><a class="navy-item fa-icon-language" href="/tr/">Перевод</a><a class="navy-item fa-icon-id-card" href="/about/">О проекте</a></div>
+</div></nav>
+
+<main id="main"><aside class="categories">
+  <a class="fa-icon-home" href="/" title="Главная страница сайта"></a>​<a class="fa-icon-book-open" href="/guide/" title="Руководство">Руководство</a>​<a class="fa-icon-folder-open-black" href="/guide/hugin/" title="Руководство по Hugin">Hugin</a></aside>
+<article class="layout-page"><header class="page-header"><h1 class="title-page" itemprop="name headline">Быстрый старт</h1><aside class="share">
+  <a class="fab" target="_blank" title="Поделиться во ВКонтакте" href="https://vk.com/share.php?url=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2Fhugin%2Fquick_start.html">&#xf189;</a>
+  <a class="fab" target="_blank" title="Поделиться в Фейсбуке" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2Fhugin%2Fquick_start.html">&#xf39e;</a>
+  <a class="fab" target="_blank" title="Поделиться в Телеграме" href="https://t.me/share/url?url=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2Fhugin%2Fquick_start.html">&#xf3fe;</a>
+  <a class="fab" target="_blank" title="Поделиться в Твиттере" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2Fhugin%2Fquick_start.html&text=%D0%91%D1%8B%D1%81%D1%82%D1%80%D1%8B%D0%B9+%D1%81%D1%82%D0%B0%D1%80%D1%82">&#xf099;</a>
+  <a class="fab" target="_blank" title="Сохранить ссылку в Evernote" href="https://www.evernote.com/clip.action?title=%D0%91%D1%8B%D1%81%D1%82%D1%80%D1%8B%D0%B9+%D1%81%D1%82%D0%B0%D1%80%D1%82&url=https%3A%2F%2Fhugin.shikhalev.org%2Fguide%2Fhugin%2Fquick_start.html">&#xf839;</a>
+</aside>
+</header><hr style="clear: both;">
+
+
+
+
+
+
+<p>Эта статья описывает процесс создания панорамы в Hugin в прос­том и общем виде<sup id="fnref:ref" role="doc-noteref"><a href="#fn:ref" class="footnote" rel="footnote">1</a></sup>. С од­ной стороны, мы не бу­дем рассматривать
+сложные случаи, с дру­гой — в боль­шин­с­т­ве случаев, если исходные кадры сняты аккуратно, этого вполне достаточно.</p>
+
+<h2 id="вкратце-о-съемке">
+<a class="anchor" href="#%D0%B2%D0%BA%D1%80%D0%B0%D1%82%D1%86%D0%B5-%D0%BE-%D1%81%D1%8A%D0%B5%D0%BC%D0%BA%D0%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Вкратце о съемке</h2>
+
+<figure class="__figure __implicit_figure __right" style="max-width:320px;"><a href="/img/2022/11/30/quick_start/source-fhd.webp" class="__image_link"><img src="/img/2022/11/30/quick_start/source-320.webp" class="__image" alt="Исходные кадры для панорамы" title="Исходные кадры для панорамы"></a></figure>
+
+<p>Для панорамы я выбрал 12 кад­ров, которые представляют на са­мом деле 4 сце­ны, снятые с <a href="/guide/ref/glossary.html#bracketing">бре­ке­тин­гом</a> по экспозиции ±2EV.
+Это достаточно обычный случай, поскольку именно там, где используются панорамы, очень часто динамический диапазон сцены существенно
+шире не толь­ко диапазона, который способны отобразить наши мониторы, но и диапазона, который способна зафиксировать камера.</p>
+
+<p>Сцены перекрываются друг с другом примерно на по­ло­ви­ну кадра. Вообще, желательно делать перекрытие около трети, т.е. <em>меньше</em>
+половины кадра, но не все­гда удается.</p>
+
+<p>Снимки конвертированы в 16-бит­ный <a href="/guide/ref/format/tiff.html">TIFF</a><sup id="fnref:src" role="doc-noteref"><a href="#fn:src" class="footnote" rel="footnote">2</a></sup> посредством <a href="/guide/tools/other/raw_converters.html">Darktable</a>. Вообще, современный Hugin уже умеет работать
+непосредственно с <a href="/guide/ref/format/raw.html">ис­ход­ны­ми raw-фай­ла­ми</a>, но это отдельная тема, да и конвертация в спе­ци­а­ли­зи­ро­ван­ном соф­те дает больше контроля.
+При кон­вер­та­ции были отключены по мак­си­му­му все изменения, фактически оставлен только баланс белого, да и то — по умол­ча­нию из ка­ме­ры.</p>
+
+<p>Снималось все <a href="/guide/shoot/hands.html">с рук</a>, на 18mm фокусного расстояния (поскольку ка­ме­ра — кроп — Canon EOS 77D, эквивалентное фокусное расстояние примерно
+28mm для пол­но­кад­ро­вых камер).</p>
+
+<h2 id="стыковка">
+<a class="anchor" href="#%D1%81%D1%82%D1%8B%D0%BA%D0%BE%D0%B2%D0%BA%D0%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>Стыковка</h2>
+
+<p><em>Первым шагом</em> загружаем снимки в прог­рам­му. В ос­нов­ном окне в вер­х­ней части, во <a href="/guide/hugin/gui/simple.html#assistant">вклад­ке «Ассистент»</a> имеется большая кнопка
+с со­от­вет­с­т­ву­ю­щей надписью <strong>«1. За­гру­зить снимки…»</strong>, которую и следует нажать.</p>
+
+<figure class="__figure __implicit_figure __center" style="max-width:800px;"><a href="/img/2022/11/30/quick_start/01_loaded-fhd.webp" class="__image_link"><img src="/img/2022/11/30/quick_start/01_loaded-800.webp" class="__image" alt="Главное окно Hugin со све­же­за­гру­жен­ны­ми кадрами" title="Главное окно Hugin со све­же­за­гру­жен­ны­ми кадрами" id="scr_loaded"></a></figure>
+
+<p>В процессе мы можем видеть сообщение:</p>
+
+<figure class="__figure __implicit_figure __center" style="max-width:415px;"><a href="/img/2022/11/30/quick_start/big_range-fhd.webp" class="__image_link"><img src="/img/2022/11/30/quick_start/big_range-415.webp" class="__image" alt="Сообщение о боль­шом диапазоне яркости" title="Сообщение о боль­шом диапазоне яркости"></a></figure>
+
+<p>Сообщает нам оно о том, что с од­ной стороны мы загрузили изображения, которые вместе покрывают большой диапазон яркости, но при этом,
+с дру­гой стороны, Hugin не мо­жет автоматически определить их в стоп­ки с оди­на­ко­вы­ми сценами. Это, в об­щем-то, прямое следствие съемки
+с рук — кадры соответствуют друг другу не иде­аль­но. Тут же нам рекомендуют пойти в <a href="/guide/hugin/gui/advanced.html">ре­дак­тор панорамы</a> и вручную определить
+эти стопки. Но мы туда не пой­дем.</p>
+
+<p>Возвращаясь к <a href="#scr_loaded">пер­во­му скриншоту</a>, можно заметить зеленую подсказку, которая советует нам использовать цилиндрическую проекцию.
+Учтем, когда перейдем к соб­с­т­вен­но выбору проекции.</p>
+
+<p>Также стоит обратить внимание на па­ра­мет­ры во вклад­ке: <em>«Тип объектива»</em>, <em>«Фокусное расстояние»</em> и <em>«Множитель фокусного расстояния»</em>
+(т.е. <a href="/guide/ref/glossary.html#crop_factor">кроп-фактор</a>). Актуальные значения Hugin берет из <a href="/guide/ref/format/exif.html">EXIF-ме­та­дан­ных</a> загруженных файлов, если они там, конечно, есть.
+У нас они есть, и полученные значения нас вполне устраивают, хотя множитель можно и исправить на бо­лее точ­ный 1.6, но это не кри­тич­но.
+Однако, если, например, снимать на пол­нос­тью ручной объектив, то соответствующих данных не бу­дет, и их <em>следует</em> указать вручную, особенно
+это касается <a href="/guide/shoot/lens.html">типа объ­ек­ти­ва</a> — довольно часто панорамы снимаются на фи­шай и именно <a href="/guide/shoot/lens.html#fisheye">фи­шай-объ­ек­ти­вы</a> часто бывают
+полностью ручными.</p>
+
+<p><em>Второй шаг</em> нам снова подсказывает интерфейс, а имен­но — кнопка с над­писью <strong>«2. Вы­ров­нять…»</strong> — нажимаем и некоторое время наблюдаем
+процесс выравнивания:</p>
+
+<figure class="__figure __implicit_figure __center" style="max-width:500px;"><a href="/img/2022/11/30/quick_start/aligning-fhd.webp" class="__image_link"><img src="/img/2022/11/30/quick_start/aligning-500.webp" class="__image" alt="Окно процесса выравнивания" title="Окно процесса выравнивания"></a></figure>
+
+<p>Программа автоматически находит контрольные точки и выстраивает в со­от­вет­с­т­вии с ни­ми снимки. На этом этапе нас могут поджидать затруднения,
+если кадры плохо стыкуются, что бывает не так уж редко при съем­ке с рук. Также усложняющим фактором может стать объектив с боль­шим
+фокусным расстоянием. В этом случае нам уже <em>придется</em> идти в ре­дак­тор панорамы и вручную стыковать снимки. К счастью, когда мы снимаем
+далекие объекты на ко­рот­ко­фо­кус­ный (широкоугольный) объектив, аккуратно и с не­ко­то­рой привычкой, автоматика срабатывает вполне успешно.</p>
+
+<p>Получаем следующую картину:</p>
+
+<figure class="__figure __implicit_figure __center" style="max-width:800px;"><a href="/img/2022/11/30/quick_start/02_aligned-fhd.webp" class="__image_link"><img src="/img/2022/11/30/quick_start/02_aligned-800.webp" class="__image" alt="Главное окно после выравнивания" title="Главное окно после выравнивания" id="scr_aligned"></a></figure>
+
+<p>Теперь мы видим уже собранную картинку, правда, немного кривоватую. Кроме того, она темная, но с этим ничего не по­де­лать — сведение
+экспозиций будет выполнено только на фи­наль­ном этапе, в про­цес­се же работы имеем то, что имеем.</p>
+
+<p>Двигаемся дальше.</p>
+
+<h2 id="выбор-проекции">
+<a class="anchor" href="#%D0%B2%D1%8B%D0%B1%D0%BE%D1%80-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%86%D0%B8%D0%B8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Выбор <a href="/guide/ref/projection/">проекции</a>
+</h2>
+
+<p><em>Третьим шагом</em> мы идем во <a href="/guide/hugin/gui/simple.html#projection">вклад­ку «Проекция»</a> и выбираем, что понравится. Выбор определяется задачами, характером картинки,
+художественным вкусом и прочими субъективными факторами. Так или иначе, тут можно и поэкспериментировать. В прин­ци­пе, рекомендованная нам
+в на­ча­ле <a href="/guide/ref/projection/cylindrical.html">цилиндрическая проекция</a> тоже подходит, но, чтобы облака не бы­ли неестественно растянуты, выберем <a href="/guide/ref/projection/equirectangular.html">эквидистантную</a>.</p>
+
+<figure class="__figure __implicit_figure __center" style="max-width:800px;"><a href="/img/2022/11/30/quick_start/03_projection-fhd.webp" class="__image_link"><img src="/img/2022/11/30/quick_start/03_projection-800.webp" class="__image" alt="Главное окно с выбором проекции" title="Главное окно с выбором проекции" id="scr_projection"></a></figure>
+
+<h2 id="выравнивание-и-обрезка">
+<a class="anchor" href="#%D0%B2%D1%8B%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D0%B1%D1%80%D0%B5%D0%B7%D0%BA%D0%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>Выравнивание и обрезка</h2>
+
+<p><em>Четвертый шаг</em> — идем во <a href="/guide/hugin/gui/simple.html#move_drag">вклад­ку «Сдвиг/Смещение»</a>, наживаем там по очереди кнопки: «По центру», «Уместить» и «Вы­пря­мить», самая интересная из которых
+последняя — она пытается автоматически выровнять горизонтали и вертикали в кадре. Получилось не очень, поэтому подтягиваем немного мышкой ту­да-сю­да, ориентируясь
+на чув­с­т­во композиции и память о том, как этот пейзаж выглядит вживую.</p>
+
+<figure class="__figure __implicit_figure __center" style="max-width:800px;"><a href="/img/2022/11/30/quick_start/04_moved-fhd.webp" class="__image_link"><img src="/img/2022/11/30/quick_start/04_moved-800.webp" class="__image" alt="Главное окно со смещениями и выравниванием" title="Главное окно со смещениями и выравниванием" id="scr_moved"></a></figure>
+
+<p>Если на этом этапе ничего хорошего не по­лу­ча­ет­ся, имеет смысл вернуться на шаг назад и выбрать другую проекцию.</p>
+
+<p><em>Шаг пятый</em> — обрезка. Идем в <a href="/guide/hugin/gui/simple.html#crop">со­от­вет­с­т­ву­ю­щую вкладку</a> и нажимаем кнопку «HDR Автообрезка», после чего визуальная рамка устанавливается так,
+чтобы выбрать прямоугольник максимальную площадь, такой чтобы под ним были как «темновые», так и «светлые» снимки. Находящаяся рядом кнопка «Автообрезка»
+так же выбирает максимальный прямоугольник, но смотрит на лю­бое заполнение, т.е. просто сплошную картинку. Если у нас нет большого диапазона яркостей,
+т.е. снимали мы без бре­ке­тин­га, то «HDR Автообрезка» будет работать так же.</p>
+
+<figure class="__figure __implicit_figure __center" style="max-width:800px;"><a href="/img/2022/11/30/quick_start/05_crop-fhd.webp" class="__image_link"><img src="/img/2022/11/30/quick_start/05_crop-800.webp" class="__image" alt="Главное окно: обрезка" title="Главное окно: обрезка" id="scr_crop"></a></figure>
+
+<p>Сто­ит ли здесь вручную выбрать другую обрезку? Тут два момента:</p>
+
+<ul>
+  <li>
+    <p>Делать финальное кадрирование в Hugin не сто­ит. Это все таки не гра­фи­чес­кий редактор, поэтому очень даже имеет смысл получить максимально возможную
+панораму, которую затем можно довести до ума в другом софте, более для этого приспособленном, где можно покрутить кривые, цвета и так далее.</p>
+  </li>
+  <li>
+    <p>С дру­гой стороны, может возникнуть такая ситуация, когда полученная склейка сама по се­бе далековата от пря­мо­у­голь­ни­ка, например, отсутствуют углы.
+В та­ких случаях автоматика может выбрать не ту область, которая нужна, и тогда, конечно, следует руками выставить нужный прямоугольник.</p>
+
+    <p>Если при этом захватить черные незаполненные участки, ничего страшного не про­и­зой­дет, просто будут черные участки. Потом в фо­то­ре­дак­то­ре можно будет
+их об­ре­зать, залить или заполнить фрагментами из других мест (если, скажем, это небо или ровное поле).</p>
+  </li>
+</ul>
+
+<h2 id="результат">
+<a class="anchor" href="#%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82" aria-hidden="true"><span class="octicon octicon-link"></span></a>Результат</h2>
+
+<p>В дей­с­т­ви­тель­нос­ти до на­сто­я­ще­го момента панорамы как единого изображения еще нигде не су­щес­т­ву­ет. Но уже есть все для ее создания.
+<em>Последний шаг</em> — возвращаемся на вклад­ку «Ассистент» и нажимаем финальную кноп­ку — <strong>«3. Со­здать па­но­ра­му…»</strong> — теперь она нам доступна.</p>
+
+<p>Открывается диалог:</p>
+
+<figure class="__figure __implicit_figure __center" style="max-width:600px;"><a href="/img/2022/11/30/quick_start/06_dialog-fhd.webp" class="__image_link"><img src="/img/2022/11/30/quick_start/06_dialog-600.webp" class="__image" alt="Диалог сшивки панорамы" title="Диалог сшивки панорамы" id="scr_dialog"></a></figure>
+
+<p>Что мы здесь видим?</p>
+
+<ul>
+  <li>
+    <p><em>Размер и формат файла.</em> Размер трогать не стоит. Лучше будет отресайзить картинку уже в другом софте после финальной обработки. Формат, опять же
+для дальнейшей обработки лучше выбрать TIFF<sup id="fnref:tgt" role="doc-noteref"><a href="#fn:tgt" class="footnote" rel="footnote">3</a></sup>. В этом случае мы получим та­кой же, как на вхо­де, 16-бит­ный TIFF, который будет гораздо лучше тянуться
+и раскрашиваться, чем 8-бит­ный <a href="/guide/ref/format/jpeg.html">JPEG</a>. Сжатие можно оставить по умол­ча­нию, в лю­бом случае, это не тот формат, который вы будете непосредственно
+выкладывать в ин­тер­нет.</p>
+  </li>
+  <li>
+    <p><em>Вывод.</em> Здесь можно видеть, что доступны две галочки — это потому что у нас большой диапазон яркостей. Если же изначально мы клеим панораму
+из 8-битных снимков без бре­ке­тин­га, то эти две галочки будут недоступны, а верхняя — для уз­ко­го динамического диапазона — напротив, доступна.</p>
+
+    <p>Что лучше, сначала сведение, потом объединение, или наоборот? Практика показывает, что когда как. Просто ставим обе галочки, а потом выберем
+из по­лу­чив­ше­го­ся, что нам больше понравится.</p>
+  </li>
+</ul>
+
+<p>Нажимаем <strong>«ОК»</strong>, тут Hugin нас заставит сохранить проект и задать префикс выходных файлов, там стандартные диалоги сохранения, так что
+обойдемся без скриншотов.</p>
+
+<p>И ждем. Дальнейший процесс не очень быстрый, а для боль­ших и сложных панорам может занимать и часы (конечно, все зависит и от ва­ше­го
+аппаратного обеспечения).</p>
+
+<figure class="__figure __implicit_figure __center" style="max-width:800px;"><a href="/img/2022/11/30/quick_start/07_stitching-fhd.webp" class="__image_link"><img src="/img/2022/11/30/quick_start/07_stitching-800.webp" class="__image" alt="Процесс сшивки" title="Процесс сшивки" id="scr_stitching"></a></figure>
+
+<p>На скриншоте слева мы видим собственно процесс, а справа менеджер заданий — после того, как мы сохранили проект и передали его на обработку,
+можем создать новый проект с дру­гой панорамой, пройти все вышеописанные шаги и в спис­ке справа будут два проекта. Там их можно
+при­ос­та­нав­ли­вать/за­пус­кать, менять порядок и т.д.</p>
+
+<p>В итоге получаем (если выставили две галочки) два файла — в данном случае с именами <code class="language-plaintext highlighter-rouge">IMG_2593 - IMG_​2604_​blended_​fused.tif</code> и <code class="language-plaintext highlighter-rouge">IMG_2593 - IMG_2604_fused.tif</code>.
+Пристально их рассматриваем на пред­мет <a href="/guide/ref/glossary.html#ghosting">«призраков»</a>, нестыковок, волнообразных градиентов на не­бе и т.д., выбираем наиболее подходящий и доводим
+его до фи­наль­ной картинки в <a href="/guide/tools/other/gimp.html">GIMP</a>‘е, или, как ни стран­но, в <a href="/guide/tools/other/raw_converters.html">Dark­table</a>.</p>
+
+<p>Полученные файлы не отличаются высоким контрастом и яркими цветами, но, напомню, они 16-битные, и свобода улучшения у нас довольно большая.</p>
+
+<p>Собственно, вот что мы примерно получаем<sup id="fnref:cnv" role="doc-noteref"><a href="#fn:cnv" class="footnote" rel="footnote">4</a></sup>:</p>
+
+<ul>
+  <li>Файл без каких либо корректировок, только изменение размера и конвертация в JPEG.</li>
+</ul>
+
+<figure class="__figure __implicit_figure __center" style="max-width:640px;"><a href="/img/2022/11/30/quick_start/fused-fhd.webp" class="__image_link"><img src="/img/2022/11/30/quick_start/fused-640.webp" class="__image" alt="Результат склейки панорамы" title="Результат склейки панорамы"></a></figure>
+
+<ul>
+  <li>Файл после обработки <s>напильником</s> в Darktable.</li>
+</ul>
+
+<figure class="__figure __implicit_figure __center" style="max-width:800px;"><a href="/img/2022/11/30/quick_start/fused_darktable-fhd.webp" class="__image_link"><img src="/img/2022/11/30/quick_start/fused_darktable-800.webp" class="__image" alt="Финальная панорама после Darktable" title="Финальная панорама после Darktable"></a></figure>
+
+<p>Ну, собственно, последний файл и является нашей целью и итогом настоящей статьи. <em>Проблемные</em> ситуации и сложные случаи не рассмотрены намеренно,
+как и подробности различных проекций — это все отдельные и весьма обширные темы.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:ref" role="doc-endnote">
+      <p>Данная статья во мно­гом похожа на мою старую статью <a href="https://shikhalev.org/2016/06/hugin.html">«Пингвин-фо­то­лю­би­тель: 3. Панорамы»</a>. В от­ли­чие от нее здесь используется
+    более актуальная версия Hugin, взяты более интересные исходники, и в це­лом тема существенно углублена при со­хра­не­нии установки
+    на «hap­py path», без слож­ных случаев. <a href="#fnref:ref" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:src" role="doc-endnote">
+      <p>Можно ли клеить панорамы, если у вас нет 16-бит­ных TIFF или 14-бит­ных исходных raw-файлов, а есть только 8-бит­ный JPEG из, например,
+    «мыльницы»? Конечно, можно. Понятно, что чем лучше исходники, тем лучше (при про­чих равных) результат, но в прин­ци­пе любые фотографии
+    подойдут. <a href="#fnref:src" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:tgt" role="doc-endnote">
+      <p>Впрочем, никто не за­пре­ща­ет формировать сразу финальную картинку в фор­ма­те JPEG, с за­дан­ны­ми размерами, с окон­ча­тель­ной обрезкой…
+    Однако, трудно себе представить ситуацию, когда имеется Hugin (и достаточно мощное железо), но нет никакого фоторедактора для фи­наль­ной
+    доводки. <a href="#fnref:tgt" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:cnv" role="doc-endnote">
+      <p>Есть некоторый нюанс с по­лу­ча­е­мы­ми файлами в фор­ма­те TIFF, описанный в от­дель­ной за­мет­ке — <a href="/guide/notes/tiff_canvas.html">«Размер холста в TIFF»</a>. <a href="#fnref:cnv" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+
+<hr style="clear: both;">
+
+<script src="https://giscus.app/client.js" data-repo="shikhalev/hugin_doc_ru" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTkyMTM5NjU=" data-category="General" data-category-id="DIC_kwDOD3NKjc4B_XvC" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="ru" data-loading="lazy" crossorigin="anonymous" async>
+</script>
+
+</article>
+
+</main><aside id="search">
+<script async src="https://cse.google.com/cse.js?cx=b2790c4aaf6b24d8c"></script>
+<div class="gcse-search"></div>
+
+</aside><aside id="toc" class="toc toc-page">
+  <h4>Содержание</h4>
+  <ul id="toc_list" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#вкратце-о-съемке">Вкратце о съемке</a></li>
+<li class="toc-entry toc-h2"><a href="#стыковка">Стыковка</a></li>
+<li class="toc-entry toc-h2"><a href="#выбор-проекции">Выбор проекции</a></li>
+<li class="toc-entry toc-h2"><a href="#выравнивание-и-обрезка">Выравнивание и обрезка</a></li>
+<li class="toc-entry toc-h2"><a href="#результат">Результат</a></li>
+</ul>
+</aside><aside class="backlinks" id="backs"><h4>Ссылки сюда</h4><ul><li class="fa-icon-li-file-alt"><a href="/2022/11/30/quick-start.html" title="Статья в руководстве">Статья в руководстве</a></li><li class="fa-icon-li-file"><a href="/guide/notes/tiff_canvas.html" title="Некоторая странность в файлах TIFF, генерируемых Hugin">Размер холста в TIFF</a></li></ul>
+    </aside><aside id="donate" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><!-- скрываем через style, чтоб не менять макет полностью -->
+<aside id="ga" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><aside id="feeds" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside><aside id="contacts"><h4>Обратная связь</h4>
+
+<ul>
+  <li class="fa-icon-li-github">
+    <a href="https://github.com/shikhalev/hugin_doc_ru" style="font-weight: bold;">shikhalev/hugin_doc_ru</a>
+    <ul>
+      <li class="fa-icon-li-comments"><a href="https://github.com/shikhalev/hugin_doc_ru/discussions">Обсуждения</a></li>
+      <li class="fa-icon-li-comment-dots"><a href="https://github.com/shikhalev/hugin_doc_ru/issues">Проблемы и задачи</a></li>
+    </ul>
+  </li>
+  <li class="fa-icon-li-envelope">
+    <a href="mailto:hugin-doc-ru@shikhalev.org">hugin-doc-ru@shikhalev.org</a>
+  </li>
+  <li class="fa-icon-li-home">
+    <a href="https://shikhalev.org/" style="font-weight: bold;">https://shikhalev.org/</a>
+  </li>
+</ul>
+</aside><aside id="sidebar" style="border:none;box-shadow:none;"></aside><footer id="site-footer"><!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=91267624&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://metrika-informer.com/informer/91267624/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;float:right;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="91267624" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<p style="font-weight: bold;">© 2022 <a href="/about/">Иван Шихалев</a></p>
+
+<p>Материалы сайта опубликованы под лицензией
+<a style="font-weight: bold;" href="https://www.gnu.org/licenses/fdl-1.3.ru.html">GNU FDL 1.3</a>,
+если не оговорено иное. <a href="https://github.com/shikhalev/jekyll-theme">Программный код</a> непосредственно сайта — под лицензией
+<a style="font-weight: bold;" href="https://opensource.org/licenses/MIT">MIT</a>.</p>
+
+<p>Сайт сформирован статическим генератором <a style="font-weight: bold;" href="https://jekyllrb.com/">Jekyll</a>. Отдельная благодарность автору <a style="font-weight: bold;" href="https://github.com/allejo/jekyll-toc">allejo/jekyll-toc</a>.</p>
+</footer>
+
+<div id="hl"></div>
+<div id="hr"></div>
+<div id="hb"></div>
+<div id="fl"></div>
+<div id="fr"></div>
+
+</div> <!-- #grid -->
+
+<div id="topper" title="Вернуться наверх страницы"><span class="fas">&#xf35b;</span></div>
+<script async src="/assets/js/topper.js"></script>
+
+</div> <!-- #global-box -->
+
+</body>
+
+</html>
