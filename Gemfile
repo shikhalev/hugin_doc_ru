@@ -28,4 +28,4 @@ group :jekyll_plugins do
 end
 
 gem 'shi-jekyll-images', '~> 0.1.0.9'
-gem 'jekyll-theme-shikhalev', '0.1.0.5'
+gem 'jekyll-theme-shikhalev', '~> 0.1.0.5'

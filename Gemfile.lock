@@ -100,7 +100,7 @@ DEPENDENCIES
   jekyll-remote-theme
   jekyll-seo-tag
   jekyll-sitemap
-  jekyll-theme-shikhalev (= 0.1.0.5)
+  jekyll-theme-shikhalev (~> 0.1.0.5)
   jekyll-toc
   json
   shi-jekyll-images (~> 0.1.0.9)
